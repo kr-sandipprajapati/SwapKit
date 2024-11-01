@@ -1,4 +1,4 @@
-export enum RPCUrl {
+export const DefaultRPCUrl = {
   Arbitrum = "https://arb1.arbitrum.io/rpc",
   Avalanche = "https://node-router.thorswap.net/avalanche",
   Base = "https://base.llamarpc.com",
@@ -21,6 +21,20 @@ export enum RPCUrl {
   THORChain = "https://rpc.thorswap.net",
   THORChainStagenet = "https://stagenet-rpc.ninerealms.com",
   Solana = "https://solana-rpc.publicnode.com",
+} as const;
+
+export let RPCUrl: typeof DefaultRPCUrl;
+
+// Initialize with default values
+RPCUrl = { ...DefaultRPCUrl };
+
+// Dynamic initialization
+if (typeof window !== 'undefined') {
+  import('../helpers/others').then(({ initializeWorkingRPCUrls }) => {
+    initializeWorkingRPCUrls().then((workingUrls) => {
+      RPCUrl = workingUrls;
+    });
+  });
 }
 
 export const FALLBACK_URLS: Record<keyof typeof RPCUrl, string[]> = {

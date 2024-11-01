@@ -175,3 +175,16 @@ export const getRPCUrl = async (chain: keyof typeof RPCUrl): Promise<string> => 
   // If all fallbacks fail, return primary
   return primaryUrl;
 };
+
+export const initializeWorkingRPCUrls = async () => {
+  const workingUrls: Record<keyof typeof RPCUrl, string> = {} as Record<keyof typeof RPCUrl, string>;
+  
+  await Promise.all(
+    Object.keys(RPCUrl).map(async (chain) => {
+      const workingUrl = await getRPCUrl(chain as keyof typeof RPCUrl);
+      workingUrls[chain as keyof typeof RPCUrl] = workingUrl;
+    })
+  );
+
+  return workingUrls;
+};

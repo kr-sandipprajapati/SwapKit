@@ -186,7 +186,6 @@ export const BaseThorchainToolbox = ({
 
   const prefix = `${stagenet ? "s" : ""}${chain.toLowerCase()}`;
   const derivationPath = DerivationPath[chain];
-  const rpcUrl = getRPC(chainId, stagenet);
   const nodeUrl = stagenet
     ? isMaya
       ? "https://stagenet.mayanode.mayachain.info"
@@ -267,6 +266,7 @@ export const BaseThorchainToolbox = ({
     if (!signer) throw new Error("Signer not defined");
 
     const registry = createDefaultRegistry();
+    const rpcUrl = await getRPC(chainId, stagenet);
     const signingClient = await createSigningStargateClient(rpcUrl, signer, {
       registry,
     });

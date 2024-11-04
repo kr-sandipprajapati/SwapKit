@@ -126,12 +126,7 @@ const testRPCConnection = async (chain: keyof typeof RPCUrl, url: string): Promi
           params: [],
         };
       case "Radix":
-        return {
-          jsonrpc: "2.0",
-          id: 1,
-          method: "system.health",
-          params: [],
-        };
+        return "";
       case "Solana":
         return {
           jsonrpc: "2.0",
@@ -143,9 +138,18 @@ const testRPCConnection = async (chain: keyof typeof RPCUrl, url: string): Promi
     }
   };
 
+  function getChainStatuEndpoint() {
+    switch (chain) {
+      case "Radix":
+        return "/status/network-configuration";
+      default:
+        return "";
+    }
+  }
+
   try {
     const endpoint = url.startsWith("wss") ? url.replace("wss", "https") : url;
-    const response = await fetch(endpoint, {
+    const response = await fetch(`${endpoint}${getChainStatuEndpoint()}`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(getRpcBody()),
@@ -172,18 +176,22 @@ export const getRPCUrl = async (chain: keyof typeof RPCUrl): Promise<string> => 
     }
   }
 
-  // If all fallbacks fail, return primary
   return primaryUrl;
 };
 
-export const initializeWorkingRPCUrls = async () => {
-  const workingUrls: Record<keyof typeof RPCUrl, string> = {} as Record<keyof typeof RPCUrl, string>;
-  
+export const initializeWorkingRPCUrls = async (
+  chains: (keyof typeof RPCUrl)[] = Object.keys(RPCUrl) as (keyof typeof RPCUrl)[],
+) => {
+  const workingUrls: Record<keyof typeof RPCUrl, string> = {} as Record<
+    keyof typeof RPCUrl,
+    string
+  >;
+
   await Promise.all(
-    Object.keys(RPCUrl).map(async (chain) => {
+    chains.map(async (chain) => {
       const workingUrl = await getRPCUrl(chain as keyof typeof RPCUrl);
       workingUrls[chain as keyof typeof RPCUrl] = workingUrl;
-    })
+    }),
   );
 
   return workingUrls;

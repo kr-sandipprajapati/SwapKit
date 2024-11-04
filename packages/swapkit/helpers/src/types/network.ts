@@ -1,55 +1,56 @@
 export const DefaultRPCUrl = {
-  Arbitrum = "https://arb1.arbitrum.io/rpc",
-  Avalanche = "https://node-router.thorswap.net/avalanche",
-  Base = "https://base.llamarpc.com",
-  BinanceSmartChain = "https://bsc-dataseed.binance.org",
-  Bitcoin = "https://node-router.thorswap.net/bitcoin",
-  BitcoinCash = "https://node-router.thorswap.net/bitcoin-cash",
-  Chainflip = "wss://mainnet-archive.chainflip.io",
-  Cosmos = "https://node-router.thorswap.net/cosmos/rpc",
-  Dash = "https://node-router.thorswap.net/dash",
-  Dogecoin = "https://node-router.thorswap.net/dogecoin",
-  Ethereum = "https://node-router.thorswap.net/ethereum",
-  Kujira = "https://rpc-kujira.synergynodes.com/",
-  Litecoin = "https://node-router.thorswap.net/litecoin",
-  Maya = "https://tendermint.mayachain.info",
-  MayaStagenet = "https://stagenet.tendermint.mayachain.info",
-  Optimism = "https://mainnet.optimism.io",
-  Polkadot = "wss://rpc.polkadot.io",
-  Polygon = "https://polygon-rpc.com",
-  Radix = "https://radix-mainnet.rpc.grove.city/v1/326002fc/core",
-  THORChain = "https://rpc.thorswap.net",
-  THORChainStagenet = "https://stagenet-rpc.ninerealms.com",
-  Solana = "https://solana-rpc.publicnode.com",
-} as const;
+  Arbitrum: "https://arb1.arbitrum.io/rpc",
+  Avalanche: "https://node-router.thorswap.net/avalanche-c",
+  Base: "https://base.llamarpc.com",
+  BinanceSmartChain: "https://bsc-dataseed.binance.org",
+  Bitcoin: "https://node-router.thorswap.net/bitcoin",
+  BitcoinCash: "https://node-router.thorswap.net/bitcoin-cash",
+  Chainflip: "wss://mainnet-archive.chainflip.io",
+  Cosmos: "https://node-router.thorswap.net/cosmos/rpc",
+  Dash: "https://node-router.thorswap.net/dash",
+  Dogecoin: "https://node-router.thorswap.net/dogecoin",
+  Ethereum: "https://node-router.thorswap.net/ethereum",
+  Kujira: "https://kujira-rpc.publicnode.com:443",
+  Litecoin: "https://node-router.thorswap.net/litecoin",
+  Maya: "https://tendermint.mayachain.info",
+  MayaStagenet: "https://stagenet.tendermint.mayachain.info",
+  Optimism: "https://mainnet.optimism.io",
+  Polkadot: "wss://rpc.polkadot.io",
+  Polygon: "https://polygon-rpc.com",
+  Radix: "https://radix-mainnet.rpc.grove.city/v1/326002fc/core",
+  THORChain: "https://rpc.thorswap.net",
+  THORChainStagenet: "https://stagenet-rpc.ninerealms.com",
+  Solana: "https://solana-rpc.publicnode.com",
+};
 
 export let RPCUrl: typeof DefaultRPCUrl;
 
-// Initialize with default values
 RPCUrl = { ...DefaultRPCUrl };
 
-// Dynamic initialization
-if (typeof window !== 'undefined') {
-  import('../helpers/others').then(({ initializeWorkingRPCUrls }) => {
-    initializeWorkingRPCUrls().then((workingUrls) => {
-      RPCUrl = workingUrls;
-    });
-  });
-}
+export const initializeRPCUrlsWithFallback = async (
+  chains: (keyof typeof RPCUrl)[] = Object.keys(RPCUrl) as (keyof typeof RPCUrl)[],
+) => {
+  const { initializeWorkingRPCUrls } = await import("../helpers/others");
+  const workingUrls = await initializeWorkingRPCUrls(chains);
+  RPCUrl = { ...RPCUrl, ...workingUrls };
+};
 
 export const FALLBACK_URLS: Record<keyof typeof RPCUrl, string[]> = {
   Arbitrum: [
     "https://arb-mainnet.g.alchemy.com/v2/demo",
     "https://arbitrum.blockpi.network/v1/rpc/public",
   ],
-  Avalanche: ["https://api.avax.network/ext/bc/C/rpc", "https://rpc.ankr.com/avalanche"],
+  Avalanche: [
+    "https://api.avax.network/ext/bc/C/rpc",
+    "https://avalanche-c-chain-rpc.publicnode.com",
+  ],
   Base: ["https://base.blockpi.network/v1/rpc/public", "https://1rpc.io/base"],
   BinanceSmartChain: ["https://bsc-rpc.gateway.pokt.network", "https://bsc-dataseed2.binance.org"],
-  Bitcoin: ["https://btc.getblock.io/mainnet", "https://bitcoin.publicnode.com"],
+  Bitcoin: ["https://bitcoin.publicnode.com"],
   BitcoinCash: ["https://bch-dataseed.binance.org", "https://bch.getblock.io/mainnet"],
   Chainflip: ["wss://archive-1.mainnet.chainflip.io", "wss://archive-2.mainnet.chainflip.io"],
   Cosmos: ["https://cosmos-rpc.quickapi.com", "https://cosmos-rpc.publicnode.com"],
-  Dash: ["https://dash.getblock.io/mainnet", "https://x.dash.blockpi.network/v1/rpc/public"],
+  Dash: ["https://dash-rpc.publicnode.com"],
   Dogecoin: ["https://doge.getblock.io/mainnet", "https://dogecoin.publicnode.com"],
   Ethereum: ["https://eth.llamarpc.com", "https://rpc.ankr.com/eth"],
   Kujira: ["https://kujira-rpc.polkachu.com", "https://kujira-rpc.ibs.team"],

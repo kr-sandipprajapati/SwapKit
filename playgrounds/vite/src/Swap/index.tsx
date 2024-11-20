@@ -38,7 +38,6 @@ export default function Swap({
     });
 
     if (quote?.routes[0]) {
-      debugger;
       skClient?.kado.swap({ route: quote.routes[0] });
     }
   };

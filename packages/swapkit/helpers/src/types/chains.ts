@@ -81,7 +81,6 @@ export const ChainIdToChain: Record<ChainId, Chain> = {
   [ChainId.Fiat]: Chain.Fiat,
   [ChainId.Kujira]: Chain.Kujira,
   [ChainId.Ethereum]: Chain.Ethereum,
-  [ChainId.Fiat]: Chain.Fiat,
   [ChainId.Litecoin]: Chain.Litecoin,
   [ChainId.MayaStagenet]: Chain.Maya,
   [ChainId.Maya]: Chain.Maya,

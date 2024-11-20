@@ -12,6 +12,22 @@ export const list = {
   count: 27,
   tokens: [
     {
+      chain: "BTC",
+      chainId: "bitcoin",
+      decimals: 8,
+      identifier: "BTC.BTC",
+      logoURI: "",
+      ticker: "BTC",
+    },
+    {
+      chain: "ETH",
+      chainId: "1",
+      decimals: 18,
+      identifier: "ETH.ETH",
+      logoURI: "",
+      ticker: "ETH",
+    },
+    {
       chain: "FIAT",
       chainId: "fiat",
       decimals: 2,

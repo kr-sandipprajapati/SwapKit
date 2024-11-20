@@ -9,7 +9,7 @@ export const SupportedKadoChain = {
   kujira: Chain.Kujira,
   ethereum: Chain.Ethereum,
   "cosmos hub": Chain.Cosmos,
-  bitocin: Chain.Bitcoin,
+  bitcoin: Chain.Bitcoin,
   base: Chain.Base,
   Avalanche: Chain.Avalanche,
   Arbitrum: Chain.Arbitrum,

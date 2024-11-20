@@ -312,7 +312,7 @@ function plugin({
     fiatMethod: KadoFiatMethod;
   }) {
     try {
-      const transactionType = sellAsset.chain === Chain.Fiat ? "sell" : "buy";
+      const transactionType = sellAsset.chain === Chain.Fiat ? "buy" : "sell";
 
       const currency = (
         sellAsset.chain === Chain.Fiat ? sellAsset.symbol : buyAsset.symbol
@@ -324,7 +324,7 @@ function plugin({
         transactionType,
         fiatMethod,
         partner: "fortress",
-        amount: buyAsset.getValue("string"),
+        amount: sellAsset.getValue("string"),
         asset: asset.symbol,
         blockchain: ChainToKadoChain(asset.chain),
         currency,

@@ -326,7 +326,7 @@ function plugin({
         partner: "fortress",
         amount: buyAsset.getValue("string"),
         asset: asset.symbol,
-        blockchain: asset.chain,
+        blockchain: ChainToKadoChain(asset.chain),
         currency,
       };
 

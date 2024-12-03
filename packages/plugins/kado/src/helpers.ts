@@ -9,7 +9,7 @@ export const SupportedKadoChain = {
   kujira: Chain.Kujira,
   ethereum: Chain.Ethereum,
   "cosmos hub": Chain.Cosmos,
-  bitocin: Chain.Bitcoin,
+  bitcoin: Chain.Bitcoin,
   base: Chain.Base,
   Avalanche: Chain.Avalanche,
   Arbitrum: Chain.Arbitrum,
@@ -23,7 +23,7 @@ export const ChainToKadoChain = (chain: Chain) => {
 };
 
 export const KadoChainToChain = (kadoChain: string) => {
-  return Object.keys(SupportedKadoChain).includes(kadoChain)
-    ? SupportedKadoChain[kadoChain as keyof typeof SupportedKadoChain]
-    : undefined;
+  const found = Object.keys(SupportedKadoChain).includes(kadoChain);
+  if (!found) throw new Error(`KadoChain ${kadoChain} not supported`);
+  return SupportedKadoChain[kadoChain as keyof typeof SupportedKadoChain];
 };

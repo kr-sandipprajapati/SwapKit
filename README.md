@@ -25,6 +25,11 @@ Implement our JS/TS SDK in any frontend, or backend, and build your UI/UX around
 
 The SwapKit REST API empowers you to build an elite application with cross-chain swap functionality, with native Bitcoin.
 
+{% hint style="warning" %}
+Please note we are in the process of deprecating SwapKit API V1, for documentation on SwapKit API V2 - please visit [https://api.swapkit.dev/docs/](https://api.swapkit.dev/docs/).\
+(If you are a first time integrator - using SwapKit API V2 is highly recommended)
+{% endhint %}
+
 {% content-ref url="swapkit-api/swapkit-api/" %}
 [swapkit-api](swapkit-api/swapkit-api/)
 {% endcontent-ref %}

@@ -2,7 +2,12 @@
 description: Integrate our API directly into your dApp.
 ---
 
-# ⚙ SwapKit API
+# ⚙️ SwapKit API
+
+{% hint style="warning" %}
+Please note we are in the process of deprecating SwapKit API V1, for documentation on SwapKit API V2 - please visit [https://api.swapkit.dev/docs/](https://api.swapkit.dev/docs/).\
+(If you are a first time integrator - using SwapKit API V2 is highly recommended)
+{% endhint %}
 
 The SwapKit API by THORSwap is a cutting-edge quote and routing API for cross-chain swaps. Our comprehensive solution enables you to swap assets across a variety of blockchains, in a decentralized manner. Our robust API links decentralised exchanges (DEXs), and DEX aggregators, to provide the absolute best possible quote for your trade. Explore our API, the best solution for trading **native Bitcoin,** without the need for a centralized custodian.
 
@@ -22,11 +27,9 @@ Here you can find our full API reference
 
 ### Using the API
 
-To use the endpoints at `api.thorswap.net/`, you need to provide a Header such as `Referer: <project-name>`. 
+To use the endpoints at `api.thorswap.net/`, you need to provide a Header such as `Referer: <project-name>`.
 
-Here are the endpoints for the various services:
-Quote API: [https://api.thorswap.net/aggregator](https://api.thorswap.net/aggregator/)
-Tokenlist API: [https://api.thorswap.net/tokenlist](https://api.thorswap.net/tokenlist/)
+Here are the endpoints for the various services: Quote API: [https://api.thorswap.net/aggregator](https://api.thorswap.net/aggregator/) Tokenlist API: [https://api.thorswap.net/tokenlist](https://api.thorswap.net/tokenlist/)
 
 By 2024, we will require API keys in requests. You can get an API key by filling out [this form](https://forms.gle/uwgJUmBuorW5ZGDV7).
 
@@ -44,7 +47,7 @@ Our API supports quotes from 9 blockchains, including **native Bitcoin**. The fu
 
 * Avalanche
 * Binance Chain (Beacon Chain)
-* Bitcoin&#x20;
+* Bitcoin
 * Bitcoin Cash
 * Cosmos Chain
 * Dogecoin

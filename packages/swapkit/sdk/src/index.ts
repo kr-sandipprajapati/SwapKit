@@ -2,6 +2,7 @@ import { swaptkitExternalProvidersApi } from "@swapkit/api";
 import { Chain, ChainToChainId, SwapKit, type SwapKitParams } from "@swapkit/core";
 import { ChainflipPlugin } from "@swapkit/plugin-chainflip";
 import { EVMPlugin } from "@swapkit/plugin-evm";
+import { KadoPlugin } from "@swapkit/plugin-kado";
 import { RadixPlugin } from "@swapkit/plugin-radix";
 import { MayachainPlugin, ThorchainPlugin } from "@swapkit/plugin-thorchain";
 import { wallets as defaultWallets } from "@swapkit/wallets";
@@ -12,6 +13,7 @@ export * from "@swapkit/tokens";
 const defaultPlugins = {
   ...ChainflipPlugin,
   ...EVMPlugin,
+  ...KadoPlugin,
   ...MayachainPlugin,
   ...ThorchainPlugin,
   ...RadixPlugin,

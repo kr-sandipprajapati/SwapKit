@@ -1,5 +1,50 @@
 # @swapkit/wallet-talisman
 
+## 1.3.17
+
+### Patch Changes
+
+- Updated dependencies [[`cc61490`](https://github.com/thorswap/SwapKit/commit/cc61490c52782468ab6e4494e5120df5b2f6d038), [`cc61490`](https://github.com/thorswap/SwapKit/commit/cc61490c52782468ab6e4494e5120df5b2f6d038), [`cc61490`](https://github.com/thorswap/SwapKit/commit/cc61490c52782468ab6e4494e5120df5b2f6d038)]:
+  - @swapkit/helpers@2.2.0
+  - @swapkit/toolbox-evm@1.7.10
+  - @swapkit/toolbox-substrate@1.3.10
+
+## 1.3.16
+
+### Patch Changes
+
+- Updated dependencies [[`baeb2e6`](https://github.com/thorswap/SwapKit/commit/baeb2e66990bd6c351432196f9e3670b598acdcd), [`448604a`](https://github.com/thorswap/SwapKit/commit/448604ac8a5f901be53cbbf0be113ad8ff6d9c75)]:
+  - @swapkit/toolbox-substrate@1.3.9
+  - @swapkit/helpers@2.1.0
+  - @swapkit/toolbox-evm@1.7.9
+
+## 1.3.15
+
+### Patch Changes
+
+- Updated dependencies [[`00488c6`](https://github.com/thorswap/SwapKit/commit/00488c6235e4d1c322cd5b4b26dc8143f90e73d3)]:
+  - @swapkit/helpers@2.0.0
+  - @swapkit/toolbox-evm@1.7.8
+  - @swapkit/toolbox-substrate@1.3.8
+
+## 1.3.14
+
+### Patch Changes
+
+- Updated dependencies [[`d88fe02`](https://github.com/thorswap/SwapKit/commit/d88fe02d8683a74a9b2f521b60381032099e5c40)]:
+  - @swapkit/helpers@1.19.0
+  - @swapkit/toolbox-evm@1.7.7
+  - @swapkit/toolbox-substrate@1.3.7
+
+## 1.3.13
+
+### Patch Changes
+
+- Updated dependencies [[`c634681`](https://github.com/thorswap/SwapKit/commit/c634681d1d36f7be272d285c09a832e61e64767e), [`c634681`](https://github.com/thorswap/SwapKit/commit/c634681d1d36f7be272d285c09a832e61e64767e)]:
+  - @swapkit/helpers@1.18.0
+  - @swapkit/toolbox-evm@1.7.6
+  - @swapkit/toolbox-substrate@1.3.6
+
 ## 1.3.12
 
 ### Patch Changes

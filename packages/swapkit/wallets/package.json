@@ -1,7 +1,9 @@
 {
   "description": "SwapKit - Wallets",
   "dependencies": {
+    "@swapkit/wallet-bitget": "workspace:*",
     "@swapkit/wallet-coinbase": "workspace:*",
+    "@swapkit/wallet-ctrl": "workspace:*",
     "@swapkit/wallet-evm-extensions": "workspace:*",
     "@swapkit/wallet-exodus": "workspace:*",
     "@swapkit/wallet-keepkey": "workspace:*",
@@ -15,8 +17,7 @@
     "@swapkit/wallet-radix": "workspace:*",
     "@swapkit/wallet-talisman": "workspace:*",
     "@swapkit/wallet-trezor": "workspace:*",
-    "@swapkit/wallet-wc": "workspace:*",
-    "@swapkit/wallet-xdefi": "workspace:*"
+    "@swapkit/wallet-wc": "workspace:*"
   },
   "files": [
     "src/",
@@ -40,5 +41,5 @@
   },
   "type": "module",
   "types": "./src/index.ts",
-  "version": "1.2.36"
+  "version": "2.0.3"
 }

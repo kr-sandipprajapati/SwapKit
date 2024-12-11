@@ -1,5 +1,71 @@
 # @swapkit/wallet-ledger
 
+## 1.9.1
+
+### Patch Changes
+
+- Updated dependencies [[`cc61490`](https://github.com/thorswap/SwapKit/commit/cc61490c52782468ab6e4494e5120df5b2f6d038), [`cc61490`](https://github.com/thorswap/SwapKit/commit/cc61490c52782468ab6e4494e5120df5b2f6d038), [`cc61490`](https://github.com/thorswap/SwapKit/commit/cc61490c52782468ab6e4494e5120df5b2f6d038)]:
+  - @swapkit/helpers@2.2.0
+  - @swapkit/toolbox-cosmos@1.6.4
+  - @swapkit/toolbox-evm@1.7.10
+  - @swapkit/toolbox-utxo@1.2.10
+
+## 1.9.0
+
+### Minor Changes
+
+- [#1120](https://github.com/thorswap/SwapKit/pull/1120) [`448604a`](https://github.com/thorswap/SwapKit/commit/448604ac8a5f901be53cbbf0be113ad8ff6d9c75) Thanks [@towanTG](https://github.com/towanTG)! - Improves Chain typing and removes WalletChain type
+
+### Patch Changes
+
+- Updated dependencies [[`448604a`](https://github.com/thorswap/SwapKit/commit/448604ac8a5f901be53cbbf0be113ad8ff6d9c75)]:
+  - @swapkit/helpers@2.1.0
+  - @swapkit/toolbox-cosmos@1.6.3
+  - @swapkit/toolbox-evm@1.7.9
+  - @swapkit/toolbox-utxo@1.2.9
+
+## 1.8.0
+
+### Minor Changes
+
+- [#1115](https://github.com/thorswap/SwapKit/pull/1115) [`00f766e`](https://github.com/thorswap/SwapKit/commit/00f766e9215cf3182638793470befab5ead29f74) Thanks [@towanTG](https://github.com/towanTG)! - Adds new TC hardwar app code
+
+### Patch Changes
+
+- Updated dependencies [[`00488c6`](https://github.com/thorswap/SwapKit/commit/00488c6235e4d1c322cd5b4b26dc8143f90e73d3)]:
+  - @swapkit/helpers@2.0.0
+  - @swapkit/toolbox-cosmos@1.6.2
+  - @swapkit/toolbox-evm@1.7.8
+  - @swapkit/toolbox-utxo@1.2.8
+
+## 1.7.0
+
+### Minor Changes
+
+- [#1107](https://github.com/thorswap/SwapKit/pull/1107) [`d88fe02`](https://github.com/thorswap/SwapKit/commit/d88fe02d8683a74a9b2f521b60381032099e5c40) Thanks [@towanTG](https://github.com/towanTG)! - Adds Kado plugin
+
+### Patch Changes
+
+- Updated dependencies [[`d88fe02`](https://github.com/thorswap/SwapKit/commit/d88fe02d8683a74a9b2f521b60381032099e5c40)]:
+  - @swapkit/helpers@1.19.0
+  - @swapkit/toolbox-cosmos@1.6.1
+  - @swapkit/toolbox-evm@1.7.7
+  - @swapkit/toolbox-utxo@1.2.7
+
+## 1.6.0
+
+### Minor Changes
+
+- [#1105](https://github.com/thorswap/SwapKit/pull/1105) [`87952e1`](https://github.com/thorswap/SwapKit/commit/87952e1090922eb2ea77729a096af9146c22e8a4) Thanks [@towanTG](https://github.com/towanTG)! - Updates thorchain ledger app code
+
+### Patch Changes
+
+- Updated dependencies [[`c634681`](https://github.com/thorswap/SwapKit/commit/c634681d1d36f7be272d285c09a832e61e64767e), [`c634681`](https://github.com/thorswap/SwapKit/commit/c634681d1d36f7be272d285c09a832e61e64767e)]:
+  - @swapkit/toolbox-cosmos@1.6.0
+  - @swapkit/helpers@1.18.0
+  - @swapkit/toolbox-evm@1.7.6
+  - @swapkit/toolbox-utxo@1.2.6
+
 ## 1.5.5
 
 ### Patch Changes

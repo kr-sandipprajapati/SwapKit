@@ -1,5 +1,50 @@
 # @swapkit/helpers
 
+## 2.2.0
+
+### Minor Changes
+
+- [#1109](https://github.com/thorswap/SwapKit/pull/1109) [`cc61490`](https://github.com/thorswap/SwapKit/commit/cc61490c52782468ab6e4494e5120df5b2f6d038) Thanks [@0xepicode](https://github.com/0xepicode)! - Removes Kuji reference and adds new SwapKitError codes
+
+### Patch Changes
+
+- [#1109](https://github.com/thorswap/SwapKit/pull/1109) [`cc61490`](https://github.com/thorswap/SwapKit/commit/cc61490c52782468ab6e4494e5120df5b2f6d038) Thanks [@0xepicode](https://github.com/0xepicode)! - ChainApi type
+
+- [#1109](https://github.com/thorswap/SwapKit/pull/1109) [`cc61490`](https://github.com/thorswap/SwapKit/commit/cc61490c52782468ab6e4494e5120df5b2f6d038) Thanks [@0xepicode](https://github.com/0xepicode)! - Bitget wallet
+
+## 2.1.0
+
+### Minor Changes
+
+- [#1120](https://github.com/thorswap/SwapKit/pull/1120) [`448604a`](https://github.com/thorswap/SwapKit/commit/448604ac8a5f901be53cbbf0be113ad8ff6d9c75) Thanks [@towanTG](https://github.com/towanTG)! - Improves Chain typing and removes WalletChain type
+
+## 2.0.0
+
+### Major Changes
+
+- [#1114](https://github.com/thorswap/SwapKit/pull/1114) [`00488c6`](https://github.com/thorswap/SwapKit/commit/00488c6235e4d1c322cd5b4b26dc8143f90e73d3) Thanks [@towanTG](https://github.com/towanTG)! - Breaking Changes - Renames xdefi wallet to ctrl and updates enums, types accordingly
+
+## 1.19.0
+
+### Minor Changes
+
+- [#1107](https://github.com/thorswap/SwapKit/pull/1107) [`d88fe02`](https://github.com/thorswap/SwapKit/commit/d88fe02d8683a74a9b2f521b60381032099e5c40) Thanks [@towanTG](https://github.com/towanTG)! - Adds Kado plugin
+
+### Patch Changes
+
+- Updated dependencies [[`d88fe02`](https://github.com/thorswap/SwapKit/commit/d88fe02d8683a74a9b2f521b60381032099e5c40)]:
+  - @swapkit/tokens@1.11.0
+
+## 1.18.0
+
+### Minor Changes
+
+- [#1101](https://github.com/thorswap/SwapKit/pull/1101) [`c634681`](https://github.com/thorswap/SwapKit/commit/c634681d1d36f7be272d285c09a832e61e64767e) Thanks [@ochhii1337](https://github.com/ochhii1337)! - Removes support for THORSwap API - improves support for SwapkitAPI. Adds api object to the swapkit client.
+
+### Patch Changes
+
+- [#1101](https://github.com/thorswap/SwapKit/pull/1101) [`c634681`](https://github.com/thorswap/SwapKit/commit/c634681d1d36f7be272d285c09a832e61e64767e) Thanks [@ochhii1337](https://github.com/ochhii1337)! - Adds new SwapKitError Code
+
 ## 1.17.2
 
 ### Patch Changes

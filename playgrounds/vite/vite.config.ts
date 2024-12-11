@@ -41,6 +41,8 @@ export default defineConfig({
 
       "@swapkit/plugin-chainflip": resolve("../../packages/plugins/chainflip/src"),
       "@swapkit/plugin-evm": resolve("../../packages/plugins/evm/src"),
+      "@swapkit/plugin-kado": resolve("../../packages/plugins/kado/src"),
+      "@swapkit/plugin-radix": resolve("../../packages/plugins/radix/src"),
       "@swapkit/plugin-thorchain": resolve("../../packages/plugins/thorchain/src"),
 
       "@swapkit/toolbox-cosmos": resolve("../../packages/toolboxes/cosmos/src"),
@@ -50,20 +52,23 @@ export default defineConfig({
       "@swapkit/toolbox-substrate": resolve("../../packages/toolboxes/substrate/src"),
       "@swapkit/toolbox-utxo": resolve("../../packages/toolboxes/utxo/src"),
 
+      "@swapkit/wallet-bitget": resolve("../../packages/wallets/bitget/src"),
       "@swapkit/wallet-coinbase": resolve("../../packages/wallets/coinbase/src"),
       "@swapkit/wallet-evm-extensions": resolve("../../packages/wallets/evm-extensions/src"),
       "@swapkit/wallet-exodus": resolve("../../packages/wallets/exodus/src"),
       "@swapkit/wallet-keepkey": resolve("../../packages/wallets/keepkey/src"),
+      "@swapkit/wallet-keepkey-bex": resolve("../../packages/wallets/keepkey-bex/src"),
       "@swapkit/wallet-keplr": resolve("../../packages/wallets/keplr/src"),
       "@swapkit/wallet-keystore": resolve("../../packages/wallets/keystore/src"),
       "@swapkit/wallet-ledger": resolve("../../packages/wallets/ledger/src"),
       "@swapkit/wallet-okx": resolve("../../packages/wallets/okx/src"),
+      "@swapkit/wallet-onekey": resolve("../../packages/wallets/onekey/src"),
       "@swapkit/wallet-phantom": resolve("../../packages/wallets/phantom/src"),
       "@swapkit/wallet-radix": resolve("../../packages/wallets/radix/src"),
       "@swapkit/wallet-talisman": resolve("../../packages/wallets/talisman/src"),
       "@swapkit/wallet-trezor": resolve("../../packages/wallets/trezor/src"),
       "@swapkit/wallet-wc": resolve("../../packages/wallets/wc/src"),
-      "@swapkit/wallet-xdefi": resolve("../../packages/wallets/xdefi/src"),
+      "@swapkit/wallet-ctrl": resolve("../../packages/wallets/ctrl/src"),
 
       crypto: "crypto-browserify",
       stream: "stream-browserify",

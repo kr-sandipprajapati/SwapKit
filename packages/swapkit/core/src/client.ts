@@ -1,4 +1,11 @@
-import type { EVMTransaction, QuoteResponseRoute } from "@swapkit/api";
+import type {
+  EVMTransaction,
+  PriceRequest,
+  QuoteRequest,
+  QuoteResponseRoute,
+  TrackerParams,
+} from "@swapkit/api";
+import { SwapKitApi } from "@swapkit/api";
 
 import {
   ApproveMode,
@@ -9,6 +16,7 @@ import {
   type ChainWallet,
   type ConditionalAssetValueReturn,
   type ConnectConfig,
+  type CryptoChain,
   type EVMChain,
   EVMChains,
   type FeeOption,
@@ -18,7 +26,6 @@ import {
   type SwapKitPluginParams,
   type SwapKitWallet,
   type SwapParams,
-  type WalletChain,
 } from "@swapkit/helpers";
 import type { TransferParams as CosmosTransferParams } from "@swapkit/toolbox-cosmos";
 import type { TransferParams as EVMTransferParams } from "@swapkit/toolbox-evm";
@@ -40,9 +47,7 @@ export type SwapKitParams<P, W> = {
   apis?: ChainApis;
   config?: ConnectConfig;
   plugins?: P;
-  rpcUrls?: { [key in Chain]?: string };
-  // TODO: migrate to `config` only
-  stagenet?: boolean;
+  rpcUrls?: { [key in CryptoChain]?: string };
   wallets?: W;
 };
 
@@ -54,9 +59,10 @@ export function SwapKit<
   config = {},
   plugins,
   rpcUrls = {},
-  stagenet = false,
   wallets = {} as Wallets,
 }: SwapKitParams<Plugins, Wallets> = {}) {
+  const stagenet = config.stagenet;
+  const isDev = config.swapkitConfig?.isDev;
   type PluginName = keyof Plugins;
   const connectedWallets = {} as FullWallet;
 
@@ -104,7 +110,7 @@ export function SwapKit<
     return plugin;
   }
 
-  function addChain<T extends Chain>(connectWallet: ChainWallet<T>) {
+  function addChain<T extends CryptoChain>(connectWallet: ChainWallet<T>) {
     const currentWallet = getWallet(connectWallet.chain);
 
     connectedWallets[connectWallet.chain] = { ...currentWallet, ...connectWallet };
@@ -217,12 +223,11 @@ export function SwapKit<
   }
 
   async function getWalletWithBalance<T extends Chain>(chain: T, potentialScamFilter = true) {
-    const defaultBalance = [AssetValue.from({ chain })];
-    const wallet = getWallet(chain);
-
-    if (!wallet) {
+    if (chain === Chain.Fiat || !getWallet(chain)) {
       throw new SwapKitError("core_wallet_connection_not_found");
     }
+    const wallet = getWallet(chain as Exclude<Chain, Chain.Fiat>);
+    const defaultBalance = [AssetValue.from({ chain })];
 
     if ("getBalance" in wallet) {
       const balance = await wallet.getBalance(wallet.address, potentialScamFilter);
@@ -254,9 +259,11 @@ export function SwapKit<
     assetValue,
     ...params
   }: UTXOTransferParams | EVMTransferParams | CosmosTransferParams) {
-    const chain = assetValue.chain as WalletChain;
-    const wallet = getWallet(chain);
-    if (!wallet) throw new SwapKitError("core_wallet_connection_not_found");
+    const chain = assetValue.chain;
+    if ([Chain.Fiat, Chain.Radix].includes(chain) || !getWallet(chain)) {
+      throw new SwapKitError("core_wallet_connection_not_found");
+    }
+    const wallet = getWallet(chain as Exclude<Chain, Chain.Fiat | Chain.Radix>);
 
     return wallet.transfer({ ...params, assetValue });
   }
@@ -315,7 +322,7 @@ export function SwapKit<
     const { assetValue } = params;
     const { chain } = assetValue;
 
-    if (!getWallet(chain)) throw new SwapKitError("core_wallet_connection_not_found");
+    if (!getWallet(chain as Chain)) throw new SwapKitError("core_wallet_connection_not_found");
 
     const baseValue = AssetValue.from({ chain });
 
@@ -402,6 +409,26 @@ export function SwapKit<
     }
   }
 
+  const swapkitConfig = config.swapkitConfig || {};
+  const swapkitApiKey = swapkitConfig?.swapkitApiKey || config?.swapkitApiKey;
+  const referer = swapkitConfig.useHashedApiKey ? swapkitConfig.referer : undefined;
+
+  const api = swapkitApiKey
+    ? {
+        getGasRate: () => SwapKitApi.getGasRate(isDev, swapkitApiKey, referer),
+        getPrice: (body: PriceRequest) => SwapKitApi.getPrice(body, isDev, swapkitApiKey, referer),
+        getSwapQuote: (params: QuoteRequest) =>
+          SwapKitApi.getSwapQuote(params, isDev, swapkitApiKey, referer),
+        getTokenList: (provider: string) => SwapKitApi.getTokenList(provider),
+        getTokenListProviders: () =>
+          SwapKitApi.getTokenListProvidersV2(isDev, swapkitApiKey, referer),
+        getTokenTradingPairs: (providers: PluginNameEnum[]) =>
+          SwapKitApi.getTokenTradingPairs(providers, isDev, swapkitApiKey, referer),
+        getTrackerDetails: (payload: TrackerParams) =>
+          SwapKitApi.getTrackerDetails(payload, swapkitApiKey, referer),
+      }
+    : { undefined };
+
   return {
     ...availablePlugins,
     ...connectWalletMethods,
@@ -424,5 +451,6 @@ export function SwapKit<
     transfer,
     validateAddress,
     verifyMessage,
+    api,
   };
 }

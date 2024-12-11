@@ -1,5 +1,100 @@
 # @swapkit/core
 
+## 3.2.2
+
+### Patch Changes
+
+- Updated dependencies [[`993774d`](https://github.com/thorswap/SwapKit/commit/993774d8f83199e7766ebd359d766a52c8720abe)]:
+  - @swapkit/toolbox-solana@1.3.11
+  - @swapkit/helpers@2.2.0
+
+## 3.2.1
+
+### Patch Changes
+
+- Updated dependencies [[`cc61490`](https://github.com/thorswap/SwapKit/commit/cc61490c52782468ab6e4494e5120df5b2f6d038), [`cc61490`](https://github.com/thorswap/SwapKit/commit/cc61490c52782468ab6e4494e5120df5b2f6d038), [`cc61490`](https://github.com/thorswap/SwapKit/commit/cc61490c52782468ab6e4494e5120df5b2f6d038)]:
+  - @swapkit/helpers@2.2.0
+  - @swapkit/plugin-evm@1.3.7
+  - @swapkit/api@2.0.4
+  - @swapkit/toolbox-cosmos@1.6.4
+  - @swapkit/toolbox-evm@1.7.10
+  - @swapkit/toolbox-radix@1.2.26
+  - @swapkit/toolbox-solana@1.3.10
+  - @swapkit/toolbox-substrate@1.3.10
+  - @swapkit/toolbox-utxo@1.2.10
+
+## 3.2.0
+
+### Minor Changes
+
+- [#1120](https://github.com/thorswap/SwapKit/pull/1120) [`448604a`](https://github.com/thorswap/SwapKit/commit/448604ac8a5f901be53cbbf0be113ad8ff6d9c75) Thanks [@towanTG](https://github.com/towanTG)! - Improves Chain typing and removes WalletChain type
+
+### Patch Changes
+
+- Updated dependencies [[`baeb2e6`](https://github.com/thorswap/SwapKit/commit/baeb2e66990bd6c351432196f9e3670b598acdcd), [`448604a`](https://github.com/thorswap/SwapKit/commit/448604ac8a5f901be53cbbf0be113ad8ff6d9c75), [`18f1bd7`](https://github.com/thorswap/SwapKit/commit/18f1bd7c52516b48d571badae3580236f8aa62e9)]:
+  - @swapkit/toolbox-substrate@1.3.9
+  - @swapkit/helpers@2.1.0
+  - @swapkit/api@2.0.3
+  - @swapkit/plugin-evm@1.3.6
+  - @swapkit/toolbox-cosmos@1.6.3
+  - @swapkit/toolbox-evm@1.7.9
+  - @swapkit/toolbox-radix@1.2.25
+  - @swapkit/toolbox-solana@1.3.9
+  - @swapkit/toolbox-utxo@1.2.9
+
+## 3.1.1
+
+### Patch Changes
+
+- Updated dependencies [[`00488c6`](https://github.com/thorswap/SwapKit/commit/00488c6235e4d1c322cd5b4b26dc8143f90e73d3)]:
+  - @swapkit/helpers@2.0.0
+  - @swapkit/plugin-evm@1.3.5
+  - @swapkit/api@2.0.2
+  - @swapkit/toolbox-cosmos@1.6.2
+  - @swapkit/toolbox-evm@1.7.8
+  - @swapkit/toolbox-radix@1.2.24
+  - @swapkit/toolbox-solana@1.3.8
+  - @swapkit/toolbox-substrate@1.3.8
+  - @swapkit/toolbox-utxo@1.2.8
+
+## 3.1.0
+
+### Minor Changes
+
+- [#1107](https://github.com/thorswap/SwapKit/pull/1107) [`d88fe02`](https://github.com/thorswap/SwapKit/commit/d88fe02d8683a74a9b2f521b60381032099e5c40) Thanks [@towanTG](https://github.com/towanTG)! - Adds Kado plugin
+
+### Patch Changes
+
+- Updated dependencies [[`d88fe02`](https://github.com/thorswap/SwapKit/commit/d88fe02d8683a74a9b2f521b60381032099e5c40)]:
+  - @swapkit/helpers@1.19.0
+  - @swapkit/plugin-evm@1.3.4
+  - @swapkit/api@2.0.1
+  - @swapkit/toolbox-cosmos@1.6.1
+  - @swapkit/toolbox-evm@1.7.7
+  - @swapkit/toolbox-radix@1.2.23
+  - @swapkit/toolbox-solana@1.3.7
+  - @swapkit/toolbox-substrate@1.3.7
+  - @swapkit/toolbox-utxo@1.2.7
+
+## 3.0.0
+
+### Major Changes
+
+- [#1101](https://github.com/thorswap/SwapKit/pull/1101) [`c634681`](https://github.com/thorswap/SwapKit/commit/c634681d1d36f7be272d285c09a832e61e64767e) Thanks [@ochhii1337](https://github.com/ochhii1337)! - Removes support for THORSwap API - improves support for SwapkitAPI. Adds api object to the swapkit client.
+
+### Patch Changes
+
+- Updated dependencies [[`c634681`](https://github.com/thorswap/SwapKit/commit/c634681d1d36f7be272d285c09a832e61e64767e), [`c634681`](https://github.com/thorswap/SwapKit/commit/c634681d1d36f7be272d285c09a832e61e64767e), [`c634681`](https://github.com/thorswap/SwapKit/commit/c634681d1d36f7be272d285c09a832e61e64767e)]:
+  - @swapkit/api@2.0.0
+  - @swapkit/toolbox-cosmos@1.6.0
+  - @swapkit/helpers@1.18.0
+  - @swapkit/plugin-evm@1.3.3
+  - @swapkit/toolbox-evm@1.7.6
+  - @swapkit/toolbox-radix@1.2.22
+  - @swapkit/toolbox-solana@1.3.6
+  - @swapkit/toolbox-substrate@1.3.6
+  - @swapkit/toolbox-utxo@1.2.6
+
 ## 2.1.2
 
 ### Patch Changes

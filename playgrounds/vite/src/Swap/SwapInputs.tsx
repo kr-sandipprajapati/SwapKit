@@ -1,5 +1,5 @@
 "use client";
-import type { AssetValue, EVMTransaction, QuoteResponseRoute, SwapKit } from "@swapkit/sdk";
+import type { AssetValue, Chain, EVMTransaction, QuoteResponseRoute, SwapKit } from "@swapkit/sdk";
 import { ProviderName, SwapKitApi, SwapKitNumber } from "@swapkit/sdk";
 import { useCallback, useState } from "react";
 
@@ -21,8 +21,7 @@ export const SwapInputs = ({ skClient, inputAsset, outputAsset, handleSwap }: Pr
     (amountValue: string) => {
       if (!inputAsset) return;
 
-      // ... LoL
-      const amount = inputAsset.mul(0).add(amountValue);
+      const amount = inputAsset.set(amountValue);
       setInput(amount.gt(inputAsset) ? inputAsset : amount);
     },
     [inputAsset],
@@ -34,8 +33,8 @@ export const SwapInputs = ({ skClient, inputAsset, outputAsset, handleSwap }: Pr
     setLoading(true);
     setRoutes([]);
 
-    const sourceAddress = skClient.getAddress(inputAsset.chain);
-    const destinationAddress = skClient.getAddress(outputAsset.chain);
+    const sourceAddress = skClient.getAddress(inputAsset.chain as Chain);
+    const destinationAddress = skClient.getAddress(outputAsset.chain as Chain);
     // const providers = Object.values(ProviderName);
 
     try {
@@ -70,7 +69,7 @@ export const SwapInputs = ({ skClient, inputAsset, outputAsset, handleSwap }: Pr
 
     const tx = route.tx as EVMTransaction;
 
-    tx?.from && (await skClient.isAssetValueApproved(inputAssetValue, tx?.from))
+    (tx?.from && (await skClient.isAssetValueApproved(inputAssetValue, tx?.from))) || !tx?.from
       ? handleSwap(route, false)
       : tx?.from
         ? skClient.approveAssetValue(inputAssetValue, tx?.from)

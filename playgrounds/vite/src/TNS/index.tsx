@@ -3,7 +3,7 @@ import { useCallback, useState } from "react";
 import type { SwapKitClient } from "../swapKitClient";
 
 export default function TNS({ skClient }: { skClient: SwapKitClient }) {
-  const [selectedChain, setSelectedChain] = useState(Chain.THORChain);
+  const [selectedChain, setSelectedChain] = useState<Chain>(Chain.THORChain);
   const [name, setName] = useState("");
   const [tnsSearch, setTnsSearch] = useState("");
   const [tnsDetail, setTnsDetail] = useState<THORNameDetails>();

@@ -1,14 +1,23 @@
 import type { RadixNetwork } from "@swapkit/toolbox-radix";
 import type { Chain } from "./chains";
 import type { ChainApis } from "./sdk";
-import type { ChainWallet } from "./wallet";
+import type { ChainWallet, CryptoChain } from "./wallet";
 
-export type ConnectConfig = {
-  stagenet?: boolean;
-  /**
-   * @required for swapkit API access
-   */
+/**
+ * @optional for swapkit API access
+ */
+type SwapkitConfig = {
+  swapkitConfig?: {
+    isDev?: boolean;
+    swapkitApiKey?: string;
+    useHashedApiKey?: boolean;
+    referer?: string;
+  };
   swapkitApiKey?: string;
+};
+
+export type ConnectConfig = SwapkitConfig & {
+  stagenet?: boolean;
   /**
    * @required for AVAX & BSC
    */
@@ -69,13 +78,18 @@ export type ConnectConfig = {
     applicationVersion: string;
     network: RadixNetwork;
   };
+
+  /**
+   * @optional for setting the kado api key
+   */
+  kadoApiKey?: string;
 };
 
 export type ConnectWalletParams<M = { [key in string]: any }> = {
-  addChain: <T extends Chain>(params: ChainWallet<T> & M) => void;
+  addChain: <T extends CryptoChain>(params: ChainWallet<T> & M) => void;
   apis: ChainApis;
   config: ConnectConfig;
-  rpcUrls: { [chain in Chain]?: string };
+  rpcUrls: { [chain in CryptoChain]?: string };
 };
 
 export type Witness = {

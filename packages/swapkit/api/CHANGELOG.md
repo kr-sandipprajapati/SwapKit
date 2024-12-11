@@ -1,5 +1,50 @@
 # @swapkit/api
 
+## 2.0.4
+
+### Patch Changes
+
+- Updated dependencies [[`cc61490`](https://github.com/thorswap/SwapKit/commit/cc61490c52782468ab6e4494e5120df5b2f6d038), [`cc61490`](https://github.com/thorswap/SwapKit/commit/cc61490c52782468ab6e4494e5120df5b2f6d038), [`cc61490`](https://github.com/thorswap/SwapKit/commit/cc61490c52782468ab6e4494e5120df5b2f6d038)]:
+  - @swapkit/helpers@2.2.0
+
+## 2.0.3
+
+### Patch Changes
+
+- [#1117](https://github.com/thorswap/SwapKit/pull/1117) [`18f1bd7`](https://github.com/thorswap/SwapKit/commit/18f1bd7c52516b48d571badae3580236f8aa62e9) Thanks [@mfaizan1](https://github.com/mfaizan1)! - add cf boost param to quote request for api v2
+
+- Updated dependencies [[`448604a`](https://github.com/thorswap/SwapKit/commit/448604ac8a5f901be53cbbf0be113ad8ff6d9c75)]:
+  - @swapkit/helpers@2.1.0
+
+## 2.0.2
+
+### Patch Changes
+
+- Updated dependencies [[`00488c6`](https://github.com/thorswap/SwapKit/commit/00488c6235e4d1c322cd5b4b26dc8143f90e73d3)]:
+  - @swapkit/helpers@2.0.0
+
+## 2.0.1
+
+### Patch Changes
+
+- Updated dependencies [[`d88fe02`](https://github.com/thorswap/SwapKit/commit/d88fe02d8683a74a9b2f521b60381032099e5c40)]:
+  - @swapkit/helpers@1.19.0
+
+## 2.0.0
+
+### Major Changes
+
+- [#1101](https://github.com/thorswap/SwapKit/pull/1101) [`c634681`](https://github.com/thorswap/SwapKit/commit/c634681d1d36f7be272d285c09a832e61e64767e) Thanks [@ochhii1337](https://github.com/ochhii1337)! - Removes support for THORSwap API - improves support for SwapkitAPI. Adds api object to the swapkit client.
+
+### Minor Changes
+
+- [#1101](https://github.com/thorswap/SwapKit/pull/1101) [`c634681`](https://github.com/thorswap/SwapKit/commit/c634681d1d36f7be272d285c09a832e61e64767e) Thanks [@ochhii1337](https://github.com/ochhii1337)! - Added x-payload-hash logic and update api v2 requests to include this header
+
+### Patch Changes
+
+- Updated dependencies [[`c634681`](https://github.com/thorswap/SwapKit/commit/c634681d1d36f7be272d285c09a832e61e64767e), [`c634681`](https://github.com/thorswap/SwapKit/commit/c634681d1d36f7be272d285c09a832e61e64767e)]:
+  - @swapkit/helpers@1.18.0
+
 ## 1.11.2
 
 ### Patch Changes

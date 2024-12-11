@@ -265,6 +265,11 @@ export const QuoteRequestSchema = z
         description: "Set to true to include an transaction object (EVM only)",
       }),
     ),
+    cfBoost: z.optional(
+      z.boolean({
+        description: "Set to true to enable CF boost to speed up Chainflip swaps. BTC only.",
+      }),
+    ),
   })
   .refine((data) => data.sellAsset !== data.buyAsset, {
     message: "Must be different",
@@ -474,6 +479,33 @@ export const EVMTransactionDetailsSchema = z.object({
 
 export type EVMTransactionDetails = z.infer<typeof EVMTransactionDetailsSchema>;
 
+const EncodeObjectSchema = z.object({
+  typeUrl: z.string(),
+  value: z.unknown(),
+});
+
+const FeeSchema = z.object({
+  amount: z.array(
+    z.object({
+      denom: z.string(),
+      amount: z.string(),
+    }),
+  ),
+  gas: z.string(),
+});
+
+// Define the full schema
+export const CosmosTransactionSchema = z.object({
+  memo: z.string(),
+  accountNumber: z.number(),
+  sequence: z.number(),
+  chainId: z.nativeEnum(ChainId),
+  msgs: z.array(EncodeObjectSchema),
+  fee: FeeSchema,
+});
+
+export type CosmosTransaction = z.infer<typeof CosmosTransactionSchema>;
+
 export const RouteLegSchema = z.object({
   sellAsset: z.string({
     description: "Asset to sell",
@@ -646,7 +678,7 @@ const QuoteResponseRouteItem = z.object({
   ),
   fees: FeesSchema,
   txType: z.optional(z.nativeEnum(RouteQuoteTxType)),
-  tx: z.optional(z.union([EVMTransactionSchema, z.string()])),
+  tx: z.optional(z.union([EVMTransactionSchema, CosmosTransactionSchema, z.string()])),
   estimatedTime: z.optional(EstimatedTimeSchema), // TODO remove optionality
   totalSlippageBps: z.number({
     description: "Total slippage in bps",
@@ -682,3 +714,15 @@ export const QuoteResponseSchema = z.object({
 export type QuoteResponse = z.infer<typeof QuoteResponseSchema>;
 export type QuoteResponseRoute = z.infer<typeof QuoteResponseRouteItem>;
 export type QuoteResponseRouteLeg = z.infer<typeof QuoteResponseRouteLegItem>;
+
+export const GasResponseSchema = z.array(
+  z.object({
+    id: z.number(),
+    chainId: z.string(),
+    value: z.string(),
+    unit: z.string(),
+    createdAt: z.string(),
+  }),
+);
+
+export type GasResponse = z.infer<typeof GasResponseSchema>;

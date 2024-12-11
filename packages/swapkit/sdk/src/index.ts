@@ -1,4 +1,5 @@
-import { SwapKit, type SwapKitParams } from "@swapkit/core";
+import { swaptkitExternalProvidersApi } from "@swapkit/api";
+import { Chain, ChainToChainId, SwapKit, type SwapKitParams } from "@swapkit/core";
 import { ChainflipPlugin } from "@swapkit/plugin-chainflip";
 import { EVMPlugin } from "@swapkit/plugin-evm";
 import { RadixPlugin } from "@swapkit/plugin-radix";
@@ -26,6 +27,23 @@ export const createSwapKit = <P extends typeof defaultPlugins, W extends typeof 
     wallets: wallets || defaultWallets,
     plugins: plugins || defaultPlugins,
   });
+};
+
+export const getSwapKitExternalApis = ({
+  chains,
+  apiKey,
+  isDev = false,
+}: { chains: Chain[]; apiKey: string; isDev?: boolean }) => {
+  const apis = Object.fromEntries(Object.values(Chain).map((chain) => [chain, null])) as Record<
+    Chain,
+    ReturnType<typeof swaptkitExternalProvidersApi>
+  >;
+
+  for (const chain of chains) {
+    apis[chain] = swaptkitExternalProvidersApi(apiKey, ChainToChainId[chain], isDev);
+  }
+
+  return apis;
 };
 
 export { SwapKitApi } from "@swapkit/api";

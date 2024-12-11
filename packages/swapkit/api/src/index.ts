@@ -1,3 +1,4 @@
+import { swaptkitExternalProvidersApi } from "./external-providers/endpoints";
 import * as microgardEndpoints from "./microgard/endpoints";
 import { mayachainMidgard, thorchainMidgard } from "./midgard/endpoints";
 import * as swapkitApiEndpoints from "./swapkitApi/endpoints";
@@ -10,6 +11,7 @@ export * from "./microgard/types";
 export * from "./thorswapStatic/types";
 export * from "./thornode/types";
 export * from "./swapkitApi/types";
+export * from "./external-providers/types";
 
 export const SwapKitApi = {
   ...microgardEndpoints,
@@ -19,4 +21,5 @@ export const SwapKitApi = {
   ...thorswapStaticEndpoints,
   thorchainMidgard,
   mayachainMidgard,
+  swaptkitExternalProvidersApi,
 };

@@ -1,4 +1,4 @@
-import { Chain, SwapKitError, WalletOption } from "@swapkit/helpers";
+import { Chain, SwapKitError, WalletOption } from "@internal/helpers";
 
 import { decodeAddress, encodeAddress } from "@polkadot/util-crypto";
 

@@ -8,7 +8,7 @@ import {
   FeeOption,
   SwapKitNumber,
   type UTXOChain,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import { Psbt, address as btcLibAddress, initEccLib, payments } from "bitcoinjs-lib";
 import { ECPairFactory, type ECPairInterface } from "ecpair";
 

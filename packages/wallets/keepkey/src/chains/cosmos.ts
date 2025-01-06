@@ -6,7 +6,7 @@ import {
   type DerivationPathArray,
   derivationPathToString,
   getRPCUrl,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import type { BaseCosmosToolboxType, TransferParams } from "@swapkit/toolbox-cosmos";
 
 import { bip32ToAddressNList } from "../helpers/coins";

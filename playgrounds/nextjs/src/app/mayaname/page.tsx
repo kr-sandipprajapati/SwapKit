@@ -1,8 +1,14 @@
 "use client";
 
-import { AssetValue, Chain, getMAYANameCost } from "@swapkit/helpers";
+import { AssetValue, Chain, getMAYANameCost } from "@internal/helpers";
 import { Button } from "~/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "~/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "~/components/ui/card";
 import { useSwapKit } from "~/lib/swapKit";
 // import { useSwapKit } from "~/lib/swapKit";
 

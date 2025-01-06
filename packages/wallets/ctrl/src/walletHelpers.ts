@@ -11,7 +11,7 @@ import {
   WalletOption,
   erc20ABI,
   getRPCUrl,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import type { TransferParams } from "@swapkit/toolbox-cosmos";
 import type {
   ApproveParams,
@@ -19,7 +19,7 @@ import type {
   CallParams,
   EVMTxParams,
   Eip1193Provider,
-} from "@swapkit/toolbox-evm";
+} from "@internal/toolbox-evm";
 import type { PublicKey, SOLToolbox, SolanaProvider } from "@swapkit/toolbox-solana";
 
 type TransactionMethod = "transfer" | "deposit";
@@ -282,7 +282,7 @@ export function getCtrlMethods(provider: BrowserProvider) {
         throw new SwapKitError("wallet_ctrl_contract_address_not_provided");
       }
       const { createContract, createContractTxObject, isStateChangingCall, toHexString } =
-        await import("@swapkit/toolbox-evm");
+        await import("@internal/toolbox-evm");
 
       const isStateChanging = isStateChangingCall(abi, funcName);
 
@@ -312,7 +312,7 @@ export function getCtrlMethods(provider: BrowserProvider) {
     },
     approve: async ({ assetAddress, spenderAddress, amount, from }: ApproveParams) => {
       const { MAX_APPROVAL, createContractTxObject, toHexString } = await import(
-        "@swapkit/toolbox-evm"
+        "@internal/toolbox-evm"
       );
       const funcParams = [spenderAddress, BigInt(amount || MAX_APPROVAL)];
       const txOverrides = { from };
@@ -342,7 +342,7 @@ export function getCtrlMethods(provider: BrowserProvider) {
         throw new SwapKitError("wallet_ctrl_send_transaction_no_address");
       }
 
-      const { toHexString } = await import("@swapkit/toolbox-evm");
+      const { toHexString } = await import("@internal/toolbox-evm");
 
       return provider.send("eth_sendTransaction", [
         {

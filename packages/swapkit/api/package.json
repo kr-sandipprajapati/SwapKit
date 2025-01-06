@@ -1,7 +1,7 @@
 {
   "author": "swapkit-oss",
   "dependencies": {
-    "@swapkit/helpers": "workspace:*",
+    "@internal/helpers": "workspace:*",
     "zod": "3.23.8"
   },
   "description": "SwapKit - API",

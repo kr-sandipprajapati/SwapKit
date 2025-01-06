@@ -1,4 +1,4 @@
-import type { AssetValue, FeeOption, WalletTxParams } from "@swapkit/helpers";
+import type { AssetValue, FeeOption, WalletTxParams } from "@internal/helpers";
 import type { BigNumberish, JsonFragment, Transaction } from "ethers";
 
 import type {

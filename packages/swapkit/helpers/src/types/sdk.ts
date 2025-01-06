@@ -1,5 +1,5 @@
-import type { CovalentApiType, EthplorerApiType } from "@swapkit/toolbox-evm";
-import type { BlockchairApiType } from "@swapkit/toolbox-utxo";
+import type { CovalentApiType, EthplorerApiType } from "@internal/toolbox-evm";
+import type { BlockchairApiType } from "@internal/toolbox-utxo";
 
 import type { AssetValue } from "../modules/assetValue";
 import type { Chain, CosmosChain, UTXOChain } from "./chains";

@@ -9,7 +9,7 @@ import {
   addEVMWalletNetwork,
   ensureEVMApiKeys,
   prepareNetworkSwitch,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import type {
   ARBToolbox,
   BASEToolbox,
@@ -17,7 +17,7 @@ import type {
   Eip1193Provider,
   MATICToolbox,
   OPToolbox,
-} from "@swapkit/toolbox-evm";
+} from "@internal/toolbox-evm";
 import type { InjectedWindow } from "@swapkit/toolbox-substrate";
 
 declare const window: {
@@ -42,7 +42,7 @@ export const getWeb3WalletMethods = async ({
   covalentApiKey?: string;
   ethplorerApiKey?: string;
 }) => {
-  const { BrowserProvider, getToolboxByChain } = await import("@swapkit/toolbox-evm");
+  const { BrowserProvider, getToolboxByChain } = await import("@internal/toolbox-evm");
 
   if (!ethereumWindowProvider) {
     throw new SwapKitError({
@@ -105,7 +105,7 @@ export const getWalletForChain = async ({
         throw new SwapKitError({ errorKey: "wallet_talisman_not_found", info: { chain } });
       }
 
-      const { getProvider } = await import("@swapkit/toolbox-evm");
+      const { getProvider } = await import("@internal/toolbox-evm");
 
       const evmWallet = await getWeb3WalletMethods({
         chain,

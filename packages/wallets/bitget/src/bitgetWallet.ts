@@ -4,7 +4,7 @@ import {
   EVMChains,
   WalletOption,
   setRequestClientConfig,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 
 import { getWalletForChain } from "./helpers";
 

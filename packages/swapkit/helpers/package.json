@@ -6,12 +6,12 @@
     "@swapkit/tokens": "workspace:*"
   },
   "devDependencies": {
+    "@internal/toolbox-evm": "workspace:*",
+    "@internal/toolbox-utxo": "workspace:*",
     "@swapkit/toolbox-cosmos": "workspace:*",
-    "@swapkit/toolbox-evm": "workspace:*",
     "@swapkit/toolbox-radix": "workspace:*",
     "@swapkit/toolbox-solana": "workspace:*",
-    "@swapkit/toolbox-substrate": "workspace:*",
-    "@swapkit/toolbox-utxo": "workspace:*"
+    "@swapkit/toolbox-substrate": "workspace:*"
   },
   "files": [
     "src/",
@@ -20,7 +20,7 @@
   "homepage": "https://github.com/thorswap/SwapKit",
   "license": "Apache-2.0",
   "main": "./dist/index.js",
-  "name": "@swapkit/helpers",
+  "name": "@internal/helpers",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thorswap/SwapKit.git"

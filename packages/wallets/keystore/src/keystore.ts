@@ -12,14 +12,14 @@ import {
   getRPCUrl,
   setRequestClientConfig,
   updatedLastIndex,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import type { DepositParam, TransferParams } from "@swapkit/toolbox-cosmos";
 import type {
   Psbt,
   TransactionType,
   UTXOTransferParams,
   UTXOWalletTransferParams,
-} from "@swapkit/toolbox-utxo";
+} from "@internal/toolbox-utxo";
 
 type KeystoreSupportedChain = Exclude<Chain, Chain.Fiat | Chain.Radix>;
 
@@ -57,7 +57,7 @@ const getWalletMethodsForChain = async ({
     case Chain.Ethereum:
     case Chain.Optimism:
     case Chain.Polygon: {
-      const { HDNodeWallet, getProvider, getToolboxByChain } = await import("@swapkit/toolbox-evm");
+      const { HDNodeWallet, getProvider, getToolboxByChain } = await import("@internal/toolbox-evm");
 
       const keys = ensureEVMApiKeys({ chain, covalentApiKey, ethplorerApiKey });
       const provider = getProvider(chain, rpcUrl);
@@ -68,7 +68,7 @@ const getWalletMethodsForChain = async ({
     }
 
     case Chain.BitcoinCash: {
-      const { BCHToolbox } = await import("@swapkit/toolbox-utxo");
+      const { BCHToolbox } = await import("@internal/toolbox-utxo");
       const toolbox = BCHToolbox({ rpcUrl, apiKey: blockchairApiKey, apiClient: api });
       const keys = await toolbox.createKeysForPath({ phrase, derivationPath });
       const address = toolbox.getAddressFromKeys(keys);
@@ -98,7 +98,7 @@ const getWalletMethodsForChain = async ({
     case Chain.Dash:
     case Chain.Dogecoin:
     case Chain.Litecoin: {
-      const { getToolboxByChain } = await import("@swapkit/toolbox-utxo");
+      const { getToolboxByChain } = await import("@internal/toolbox-utxo");
 
       const toolbox = getToolboxByChain(chain)({
         rpcUrl,

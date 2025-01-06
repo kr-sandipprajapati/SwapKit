@@ -20,7 +20,7 @@ import {
   getMemoForWithdraw,
   getMinAmountByChain,
   wrapWithThrow,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 
 import type {
   AddLiquidityParams,

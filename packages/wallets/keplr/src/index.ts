@@ -8,7 +8,7 @@ import {
   WalletOption,
   type WalletTxParams,
   setRequestClientConfig,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import { chainRegistry } from "./chainRegistry";
 
 declare global {

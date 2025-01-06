@@ -6,8 +6,8 @@ import {
   ProviderName,
   RequestClient,
   blockTimes,
-} from "@swapkit/helpers";
-import type { SwapKitPluginParams, SwapParams } from "@swapkit/helpers";
+} from "@internal/helpers";
+import type { SwapKitPluginParams, SwapParams } from "@internal/helpers";
 import { ChainToKadoChain } from "./helpers";
 import type {
   KadoBlockchainsResponse,

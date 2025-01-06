@@ -24,7 +24,7 @@ import {
   SwapKitNumber,
   type WalletTxParams,
   getRPCUrl,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import { HDKey } from "micro-key-producer/slip10.js";
 
 export function validateAddress(address: string) {

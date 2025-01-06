@@ -1,5 +1,5 @@
 import crypto from "crypto";
-import { ProviderName, RequestClient, SwapKitError } from "@swapkit/helpers";
+import { ProviderName, RequestClient, SwapKitError } from "@internal/helpers";
 
 import {
   type BrokerDepositChannelParams,

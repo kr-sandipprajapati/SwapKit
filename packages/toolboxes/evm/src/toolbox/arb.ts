@@ -5,7 +5,7 @@ import {
   ChainToExplorerUrl,
   FeeOption,
   getRPCUrl,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import type { BrowserProvider, JsonRpcProvider, Provider, Signer } from "ethers";
 
 import type { CovalentApiType } from "../api/covalentApi";

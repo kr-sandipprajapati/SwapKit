@@ -5,9 +5,9 @@ import {
   type DerivationPathArray,
   NetworkDerivationPath,
   derivationPathToString,
-} from "@swapkit/helpers";
-import type { JsonRpcProvider, Provider, TransactionRequest } from "@swapkit/toolbox-evm";
-import { AbstractSigner } from "@swapkit/toolbox-evm";
+} from "@internal/helpers";
+import type { JsonRpcProvider, Provider, TransactionRequest } from "@internal/toolbox-evm";
+import { AbstractSigner } from "@internal/toolbox-evm";
 
 import { bip32ToAddressNList } from "../helpers/coins";
 
@@ -71,7 +71,7 @@ export class KeepKeySigner extends AbstractSigner {
     if (isEIP1559 && !maxPriorityFeePerGas) throw new Error("Missing maxFeePerGas");
     if (!(isEIP1559 || gasPrice)) throw new Error("Missing gasPrice");
 
-    const { toHexString } = await import("@swapkit/toolbox-evm");
+    const { toHexString } = await import("@internal/toolbox-evm");
 
     const nonceValue = nonce
       ? BigInt(nonce)

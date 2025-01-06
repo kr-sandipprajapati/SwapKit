@@ -28,5 +28,6 @@
   },
   "type": "module",
   "types": "./src/index.ts",
-  "version": "1.0.53"
+  "version": "1.0.53",
+  "private": true
 }

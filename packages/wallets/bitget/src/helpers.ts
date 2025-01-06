@@ -1,4 +1,3 @@
-import { PublicKey } from "@solana/web3.js";
 import {
   type AssetValue,
   Chain,
@@ -12,9 +11,10 @@ import {
   getRPCUrl,
   prepareNetworkSwitch,
 } from "@internal/helpers";
-import type { TransferParams } from "@swapkit/toolbox-cosmos";
 import type { Eip1193Provider } from "@internal/toolbox-evm";
 import type { Psbt, UTXOTransferParams } from "@internal/toolbox-utxo";
+import { PublicKey } from "@solana/web3.js";
+import type { TransferParams } from "@swapkit/toolbox-cosmos";
 
 export function cosmosTransfer(rpcUrl?: string) {
   return async ({ from, recipient, assetValue, memo }: TransferParams) => {

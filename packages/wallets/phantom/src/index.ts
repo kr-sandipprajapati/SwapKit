@@ -1,4 +1,3 @@
-import { PublicKey, SystemProgram, Transaction } from "@solana/web3.js";
 import {
   type AssetValue,
   Chain,
@@ -9,6 +8,7 @@ import {
   ensureEVMApiKeys,
   setRequestClientConfig,
 } from "@internal/helpers";
+import { PublicKey, SystemProgram, Transaction } from "@solana/web3.js";
 import type { SolanaProvider } from "@swapkit/toolbox-solana";
 
 export const PHANTOM_SUPPORTED_CHAINS = [Chain.Bitcoin, Chain.Ethereum, Chain.Solana] as const;

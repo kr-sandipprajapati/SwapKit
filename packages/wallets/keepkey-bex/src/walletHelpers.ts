@@ -10,7 +10,6 @@ import {
   erc20ABI,
   getRPCUrl,
 } from "@internal/helpers";
-import type { TransferParams } from "@swapkit/toolbox-cosmos";
 import type {
   ApproveParams,
   BrowserProvider,
@@ -18,6 +17,7 @@ import type {
   EVMTxParams,
   Eip1193Provider,
 } from "@internal/toolbox-evm";
+import type { TransferParams } from "@swapkit/toolbox-cosmos";
 
 interface UTXOProvider {
   request: (

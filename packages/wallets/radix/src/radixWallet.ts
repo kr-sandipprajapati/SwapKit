@@ -1,4 +1,11 @@
 import {
+  AssetValue,
+  Chain,
+  type ConnectWalletParams,
+  WalletOption,
+  setRequestClientConfig,
+} from "@internal/helpers";
+import {
   type FungibleResourcesCollectionItem,
   GatewayApiClient,
   type StateEntityDetailsVaultResponseItem,
@@ -6,13 +13,6 @@ import {
   type StateEntityFungiblesPageResponse,
 } from "@radixdlt/babylon-gateway-api-sdk";
 import { DataRequestBuilder, RadixDappToolkit } from "@radixdlt/radix-dapp-toolkit";
-import {
-  AssetValue,
-  Chain,
-  type ConnectWalletParams,
-  WalletOption,
-  setRequestClientConfig,
-} from "@internal/helpers";
 
 const RadixMainnet = {
   networkId: 1,

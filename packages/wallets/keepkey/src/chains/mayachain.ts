@@ -1,4 +1,3 @@
-import type { KeepKeySdk } from "@keepkey/keepkey-sdk";
 import {
   type AssetValue,
   Chain,
@@ -8,6 +7,7 @@ import {
   derivationPathToString,
   getRPCUrl,
 } from "@internal/helpers";
+import type { KeepKeySdk } from "@keepkey/keepkey-sdk";
 import type { DepositParam, ThorchainToolboxType, TransferParams } from "@swapkit/toolbox-cosmos";
 
 import { bip32ToAddressNList } from "../helpers/coins.js";

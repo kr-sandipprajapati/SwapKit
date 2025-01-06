@@ -1,4 +1,3 @@
-import type EthereumApp from "@ledgerhq/hw-app-eth";
 import {
   ChainId,
   type DerivationPathArray,
@@ -12,6 +11,7 @@ import {
   Transaction,
   type TransactionRequest,
 } from "@internal/toolbox-evm";
+import type EthereumApp from "@ledgerhq/hw-app-eth";
 
 import { getLedgerTransport } from "../helpers/getLedgerTransport";
 

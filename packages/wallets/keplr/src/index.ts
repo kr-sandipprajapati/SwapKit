@@ -1,4 +1,3 @@
-import type { Keplr } from "@keplr-wallet/types";
 import {
   type AssetValue,
   type Chain,
@@ -9,6 +8,7 @@ import {
   type WalletTxParams,
   setRequestClientConfig,
 } from "@internal/helpers";
+import type { Keplr } from "@keplr-wallet/types";
 import { chainRegistry } from "./chainRegistry";
 
 declare global {

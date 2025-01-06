@@ -1,4 +1,3 @@
-import type { QuoteResponseRoute } from "@swapkit/api";
 import {
   AssetValue,
   Chain,
@@ -15,6 +14,7 @@ import {
   type UTXOChain,
   getMemoForLoan,
 } from "@internal/helpers";
+import type { QuoteResponseRoute } from "@swapkit/api";
 
 import { basePlugin } from "./basePlugin";
 import { prepareTxParams, validateAddressType } from "./shared";

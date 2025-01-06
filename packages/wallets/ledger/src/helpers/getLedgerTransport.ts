@@ -1,5 +1,5 @@
-import type Transport from "@ledgerhq/hw-transport";
 import { SwapKitError } from "@internal/helpers";
+import type Transport from "@ledgerhq/hw-transport";
 
 const getNavigatorUsb = () =>
   // @ts-ignore

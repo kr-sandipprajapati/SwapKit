@@ -1,3 +1,4 @@
+import type { Wallet } from "@passkeys/core";
 import {
   Chain,
   ChainToHexChainId,
@@ -8,16 +9,15 @@ import {
   ensureEVMApiKeys,
   prepareNetworkSwitch,
   setRequestClientConfig,
-} from "@internal/helpers";
+} from "@swapkit/helpers";
 import {
   type AVAXToolbox,
   BrowserProvider,
   type Eip1193Provider,
   getProvider,
   getToolboxByChain,
-} from "@internal/toolbox-evm";
-import { BTCToolbox, Psbt, type UTXOTransferParams } from "@internal/toolbox-utxo";
-import type { Wallet } from "@passkeys/core";
+} from "@swapkit/toolbox-evm";
+import { BTCToolbox, Psbt, type UTXOTransferParams } from "@swapkit/toolbox-utxo";
 import {
   AddressPurpose,
   BitcoinNetworkType,

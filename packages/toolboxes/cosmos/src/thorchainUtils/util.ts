@@ -1,4 +1,4 @@
-import { type AssetValue, Chain, ChainId, StagenetChain, getRPCUrl } from "@internal/helpers";
+import { type AssetValue, Chain, ChainId, StagenetChain, getRPCUrl } from "@swapkit/helpers";
 
 import { createStargateClient, getDenomWithChain } from "../util";
 import { bech32ToBase64 } from "./addressFormat";

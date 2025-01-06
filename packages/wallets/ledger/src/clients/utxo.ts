@@ -1,12 +1,12 @@
+import type BitcoinApp from "@ledgerhq/hw-app-btc";
+import type { CreateTransactionArg } from "@ledgerhq/hw-app-btc/lib-es/createTransaction";
 import {
   type DerivationPathArray,
   SwapKitError,
   derivationPathToString,
   getWalletFormatFor,
-} from "@internal/helpers";
-import type { Psbt, UTXOType } from "@internal/toolbox-utxo";
-import type BitcoinApp from "@ledgerhq/hw-app-btc";
-import type { CreateTransactionArg } from "@ledgerhq/hw-app-btc/lib-es/createTransaction";
+} from "@swapkit/helpers";
+import type { Psbt, UTXOType } from "@swapkit/toolbox-utxo";
 
 import { getLedgerTransport } from "../helpers/getLedgerTransport";
 
@@ -21,7 +21,7 @@ const signUTXOTransaction = async (
   { psbt, inputUtxos, btcApp, derivationPath }: Params,
   options?: Partial<CreateTransactionArg>,
 ) => {
-  const { Transaction } = await import("@internal/toolbox-utxo");
+  const { Transaction } = await import("@swapkit/toolbox-utxo");
 
   const inputs = inputUtxos.map((item) => {
     const utxoTx = Transaction.fromHex(item.txHex || "");
@@ -108,7 +108,7 @@ const BaseLedgerUTXO = ({
         );
       },
       getAddress: async () => {
-        const { toCashAddress } = await import("@internal/toolbox-utxo");
+        const { toCashAddress } = await import("@swapkit/toolbox-utxo");
 
         await checkBtcAppAndCreateTransportWebUSB(false);
 

@@ -1,12 +1,12 @@
 {
   "author": "swapkit-oss",
   "dependencies": {
-    "@internal/helpers": "workspace:*",
-    "@internal/toolbox-evm": "workspace:*",
-    "@internal/toolbox-utxo": "workspace:*",
     "@swapkit/api": "workspace:*",
+    "@swapkit/helpers": "workspace:*",
     "@swapkit/toolbox-cosmos": "workspace:*",
-    "@swapkit/toolbox-substrate": "workspace:*"
+    "@swapkit/toolbox-evm": "workspace:*",
+    "@swapkit/toolbox-substrate": "workspace:*",
+    "@swapkit/toolbox-utxo": "workspace:*"
   },
   "description": "SwapKit Plugin - Thorchain",
   "files": [
@@ -31,6 +31,5 @@
   },
   "type": "module",
   "types": "./src/index.ts",
-  "version": "2.2.5",
-  "private": true
+  "version": "2.2.5"
 }

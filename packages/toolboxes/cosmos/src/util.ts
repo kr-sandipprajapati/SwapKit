@@ -15,7 +15,7 @@ import {
   defaultRequestHeaders,
   getGasAsset,
   getRPCUrl,
-} from "@internal/helpers";
+} from "@swapkit/helpers";
 
 import type { CosmosNativeTransferTxParams } from "./thorchainUtils";
 import type { CosmosMaxSendableAmountParams } from "./types";

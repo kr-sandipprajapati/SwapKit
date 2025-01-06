@@ -1,10 +1,3 @@
-import {
-  type AssetValue,
-  Chain,
-  type SubstrateChain,
-  SwapKitError,
-  SwapKitNumber,
-} from "@internal/helpers";
 import { type ApiPromise, Keyring } from "@polkadot/api";
 import type { SubmittableExtrinsic } from "@polkadot/api/types";
 import type { Callback, IKeyringPair, ISubmittableResult, Signer } from "@polkadot/types/types";
@@ -14,6 +7,13 @@ import {
   decodeAddress as decodePolkadotAddress,
   encodeAddress as encodePolkadotAddress,
 } from "@polkadot/util-crypto";
+import {
+  type AssetValue,
+  Chain,
+  type SubstrateChain,
+  SwapKitError,
+  SwapKitNumber,
+} from "@swapkit/helpers";
 
 import { Network, type SubstrateNetwork } from "../types/network";
 

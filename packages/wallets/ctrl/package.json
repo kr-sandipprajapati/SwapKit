@@ -1,12 +1,12 @@
 {
   "description": "SwapKit Wallet - Ctrl",
   "dependencies": {
-    "@internal/helpers": "workspace:*",
-    "@internal/toolbox-evm": "workspace:*",
-    "@internal/toolbox-utxo": "workspace:*",
     "@keplr-wallet/types": "0.12.110",
+    "@swapkit/helpers": "workspace:*",
     "@swapkit/toolbox-cosmos": "workspace:*",
-    "@swapkit/toolbox-solana": "workspace:*"
+    "@swapkit/toolbox-evm": "workspace:*",
+    "@swapkit/toolbox-solana": "workspace:*",
+    "@swapkit/toolbox-utxo": "workspace:*"
   },
   "files": [
     "src/",
@@ -30,6 +30,5 @@
   },
   "type": "module",
   "types": "./src/index.ts",
-  "version": "2.0.7",
-  "private": true
+  "version": "2.0.7"
 }

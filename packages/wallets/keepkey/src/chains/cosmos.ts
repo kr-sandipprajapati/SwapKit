@@ -1,3 +1,4 @@
+import type { KeepKeySdk } from "@keepkey/keepkey-sdk";
 import {
   Chain,
   ChainId,
@@ -5,8 +6,7 @@ import {
   type DerivationPathArray,
   derivationPathToString,
   getRPCUrl,
-} from "@internal/helpers";
-import type { KeepKeySdk } from "@keepkey/keepkey-sdk";
+} from "@swapkit/helpers";
 import type { BaseCosmosToolboxType, TransferParams } from "@swapkit/toolbox-cosmos";
 
 import { bip32ToAddressNList } from "../helpers/coins";

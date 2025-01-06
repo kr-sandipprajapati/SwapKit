@@ -1,9 +1,9 @@
-import type { EVMWallets } from "@internal/toolbox-evm";
-import type { UTXOWallets } from "@internal/toolbox-utxo";
 import type { CosmosWallets, ThorchainWallets } from "@swapkit/toolbox-cosmos";
+import type { EVMWallets } from "@swapkit/toolbox-evm";
 import type { RadixWallets } from "@swapkit/toolbox-radix";
 import type { SolanaWallets } from "@swapkit/toolbox-solana";
 import type { SubstrateWallets } from "@swapkit/toolbox-substrate";
+import type { UTXOWallets } from "@swapkit/toolbox-utxo";
 import type { Eip1193Provider } from "ethers";
 
 import type { AssetValue } from "../modules/assetValue";

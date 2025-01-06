@@ -1,3 +1,8 @@
+import type {
+  KeepKeySdk,
+  TypesThorchainSignDocDeposit,
+  TypesThorchainSignDocTransfer,
+} from "@keepkey/keepkey-sdk";
 import {
   type AssetValue,
   Chain,
@@ -6,12 +11,7 @@ import {
   type DerivationPathArray,
   derivationPathToString,
   getRPCUrl,
-} from "@internal/helpers";
-import type {
-  KeepKeySdk,
-  TypesThorchainSignDocDeposit,
-  TypesThorchainSignDocTransfer,
-} from "@keepkey/keepkey-sdk";
+} from "@swapkit/helpers";
 import type { DepositParam, ThorchainToolboxType, TransferParams } from "@swapkit/toolbox-cosmos";
 
 import { bip32ToAddressNList } from "../helpers/coins.js";

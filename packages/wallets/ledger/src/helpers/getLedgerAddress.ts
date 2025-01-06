@@ -1,4 +1,4 @@
-import { Chain } from "@internal/helpers";
+import { Chain } from "@swapkit/helpers";
 
 import type { CosmosLedgerClients, EVMLedgerClients, UTXOLedgerClients } from "../types";
 

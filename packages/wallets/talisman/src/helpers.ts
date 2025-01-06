@@ -1,3 +1,4 @@
+import { decodeAddress, encodeAddress } from "@polkadot/util-crypto";
 import {
   Chain,
   ChainToHexChainId,
@@ -8,7 +9,7 @@ import {
   addEVMWalletNetwork,
   ensureEVMApiKeys,
   prepareNetworkSwitch,
-} from "@internal/helpers";
+} from "@swapkit/helpers";
 import type {
   ARBToolbox,
   BASEToolbox,
@@ -16,8 +17,7 @@ import type {
   Eip1193Provider,
   MATICToolbox,
   OPToolbox,
-} from "@internal/toolbox-evm";
-import { decodeAddress, encodeAddress } from "@polkadot/util-crypto";
+} from "@swapkit/toolbox-evm";
 import type { InjectedWindow } from "@swapkit/toolbox-substrate";
 
 declare const window: {
@@ -42,7 +42,7 @@ export const getWeb3WalletMethods = async ({
   covalentApiKey?: string;
   ethplorerApiKey?: string;
 }) => {
-  const { BrowserProvider, getToolboxByChain } = await import("@internal/toolbox-evm");
+  const { BrowserProvider, getToolboxByChain } = await import("@swapkit/toolbox-evm");
 
   if (!ethereumWindowProvider) {
     throw new SwapKitError({
@@ -105,7 +105,7 @@ export const getWalletForChain = async ({
         throw new SwapKitError({ errorKey: "wallet_talisman_not_found", info: { chain } });
       }
 
-      const { getProvider } = await import("@internal/toolbox-evm");
+      const { getProvider } = await import("@swapkit/toolbox-evm");
 
       const evmWallet = await getWeb3WalletMethods({
         chain,

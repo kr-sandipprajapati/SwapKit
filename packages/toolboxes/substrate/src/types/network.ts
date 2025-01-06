@@ -1,4 +1,4 @@
-import type { SubstrateChain } from "@internal/helpers";
+import type { SubstrateChain } from "@swapkit/helpers";
 
 export const polkadotNetwork = {
   prefix: 0,

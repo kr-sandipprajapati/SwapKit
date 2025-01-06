@@ -2,13 +2,10 @@
   "$schema": "https://unpkg.com/@changesets/config@3.0.1/schema.json",
   "access": "public",
   "baseBranch": "develop",
-  "changelog": [
-    "@changesets/changelog-github",
-    { "repo": "knackroot/SwapKit" }
-  ],
+  "changelog": ["@changesets/changelog-github", { "repo": "thorswap/SwapKit" }],
   "commit": false,
   "fixed": [],
   "linked": [],
-  "ignore": ["@internal/*", "@swapkit/*"],
+  "ignore": ["@internal/*"],
   "updateInternalDependencies": "patch"
 }

@@ -1,3 +1,4 @@
+import type { QuoteResponseRoute } from "@swapkit/api";
 import {
   AssetValue,
   Chain,
@@ -11,8 +12,7 @@ import {
   type SwapKitPluginParams,
   type SwapParams,
   type UTXOChain,
-} from "@internal/helpers";
-import type { QuoteResponseRoute } from "@swapkit/api";
+} from "@swapkit/helpers";
 import { basePlugin } from "./basePlugin";
 import { prepareTxParams, validateAddressType } from "./shared";
 import type { AddLiquidityParams, CoreTxParams, CreateLiquidityParams } from "./types";
@@ -66,7 +66,7 @@ function plugin({ getWallet, stagenet = false }: SwapKitPluginParams) {
 
         case Chain.Arbitrum:
         case Chain.Ethereum: {
-          const { getChecksumAddressFromAsset } = await import("@internal/toolbox-evm");
+          const { getChecksumAddressFromAsset } = await import("@swapkit/toolbox-evm");
           const wallet = getWallet(chain);
 
           const abi = chain === Chain.Arbitrum ? MayaArbitrumVaultAbi : MayaEthereumVaultAbi;

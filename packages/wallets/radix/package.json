@@ -1,10 +1,10 @@
 {
   "author": "swapkit-oss",
   "dependencies": {
-    "@internal/helpers": "workspace:*",
     "@radixdlt/babylon-gateway-api-sdk": "1.6.1",
     "@radixdlt/radix-dapp-toolkit": "2.0.3",
-    "@radixdlt/wallet-sdk": "1.0.1"
+    "@radixdlt/wallet-sdk": "1.0.1",
+    "@swapkit/helpers": "workspace:*"
   },
   "description": "SwapKit Lib ",
   "files": [
@@ -29,6 +29,5 @@
   },
   "type": "module",
   "types": "./src/index.ts",
-  "version": "1.2.27",
-  "private": true
+  "version": "1.2.27"
 }

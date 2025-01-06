@@ -1,10 +1,10 @@
 {
   "description": "SwapKit Wallet - Talisman",
   "dependencies": {
-    "@polkadot/util": "12.6.2",
-    "@polkadot/util-crypto": "12.6.2",
     "@internal/helpers": "workspace:*",
     "@internal/toolbox-evm": "workspace:*",
+    "@polkadot/util": "12.6.2",
+    "@polkadot/util-crypto": "12.6.2",
     "@swapkit/toolbox-substrate": "workspace:*"
   },
   "files": [

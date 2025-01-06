@@ -1,8 +1,8 @@
 {
   "author": "swapkit-oss",
   "dependencies": {
-    "@swapkit/api": "workspace:*",
-    "@internal/helpers": "workspace:*"
+    "@internal/helpers": "workspace:*",
+    "@swapkit/api": "workspace:*"
   },
   "description": "SwapKit Plugin - Kado",
   "files": [

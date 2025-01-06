@@ -1,15 +1,15 @@
 {
   "author": "swapkit-oss",
   "dependencies": {
-    "@swapkit/api": "workspace:*",
     "@internal/helpers": "workspace:*",
+    "@internal/toolbox-evm": "workspace:*",
+    "@internal/toolbox-utxo": "workspace:*",
+    "@swapkit/api": "workspace:*",
     "@swapkit/plugin-evm": "workspace:*",
     "@swapkit/toolbox-cosmos": "workspace:*",
-    "@internal/toolbox-evm": "workspace:*",
     "@swapkit/toolbox-radix": "workspace:*",
     "@swapkit/toolbox-solana": "workspace:*",
-    "@swapkit/toolbox-substrate": "workspace:*",
-    "@internal/toolbox-utxo": "workspace:*"
+    "@swapkit/toolbox-substrate": "workspace:*"
   },
   "description": "SwapKit - Core",
   "files": [

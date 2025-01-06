@@ -1,11 +1,11 @@
 {
   "author": "swapkit-oss",
   "dependencies": {
+    "@internal/helpers": "workspace:*",
     "@radixdlt/babylon-gateway-api-sdk": "1.6.1",
     "@radixdlt/radix-dapp-toolkit": "2.0.3",
     "@radixdlt/wallet-sdk": "1.0.1",
-    "@scure/bip39": "1.3.0",
-    "@internal/helpers": "workspace:*"
+    "@scure/bip39": "1.3.0"
   },
   "description": "SwapKit - Toolbox radix",
   "files": [

@@ -2,10 +2,10 @@
   "author": "swapkit-oss",
   "dependencies": {
     "@bitcoinerlab/secp256k1": "1.1.1",
+    "@internal/helpers": "workspace:*",
     "@psf/bitcoincashjs-lib": "4.0.3",
     "@scure/bip32": "1.4.0",
     "@scure/bip39": "1.3.0",
-    "@internal/helpers": "workspace:*",
     "bitcoinjs-lib": "6.1.6",
     "bs58check": "4.0.0",
     "cashaddrjs": "0.4.4",

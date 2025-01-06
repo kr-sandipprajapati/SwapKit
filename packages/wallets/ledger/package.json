@@ -3,6 +3,9 @@
     "@cosmjs/amino": "0.32.4",
     "@cosmjs/crypto": "0.32.4",
     "@cosmjs/proto-signing": "0.32.4",
+    "@internal/helpers": "workspace:*",
+    "@internal/toolbox-evm": "workspace:*",
+    "@internal/toolbox-utxo": "workspace:*",
     "@ledgerhq/devices": "8.4.0",
     "@ledgerhq/errors": "6.17.0",
     "@ledgerhq/hw-app-btc": "10.3.0",
@@ -12,13 +15,12 @@
     "@ledgerhq/hw-transport-webusb": "6.29.0",
     "@ledgerhq/wallet-api-client": "1.5.10",
     "@scure/base": "1.1.7",
-    "@internal/helpers": "workspace:*",
     "@swapkit/toolbox-cosmos": "workspace:*",
-    "@internal/toolbox-evm": "workspace:*",
-    "@internal/toolbox-utxo": "workspace:*",
-    "@types/ripemd160": "2.0.3",
     "cosmjs-types": "0.9.0",
     "ripemd160": "2.0.2"
+  },
+  "devDependencies": {
+    "@types/ripemd160": "2.0.3"
   },
   "description": "SwapKit Wallet - Ledger",
   "files": [

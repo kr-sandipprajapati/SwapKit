@@ -2,9 +2,9 @@
   "description": "SwapKit Wallet - Keepkey BEX",
   "dependencies": {
     "@internal/helpers": "workspace:*",
-    "@swapkit/toolbox-cosmos": "workspace:*",
     "@internal/toolbox-evm": "workspace:*",
-    "@internal/toolbox-utxo": "workspace:*"
+    "@internal/toolbox-utxo": "workspace:*",
+    "@swapkit/toolbox-cosmos": "workspace:*"
   },
   "files": [
     "src/",

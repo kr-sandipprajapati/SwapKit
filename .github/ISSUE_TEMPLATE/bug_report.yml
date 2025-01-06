@@ -58,7 +58,7 @@ body:
         - label: "@swapkit/sdk"
         - label: "@swapkit/core"
         - label: "@swapkit/api"
-        - label: "@swapkit/helpers"
+        - label: "@internal/helpers"
         - label: "@swapkit/tokens"
 
         - label: "@swapkit/toolbox-cosmos"

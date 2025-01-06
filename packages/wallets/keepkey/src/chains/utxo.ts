@@ -5,7 +5,7 @@ import {
   FeeOption,
   type UTXOChain,
   derivationPathToString,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import type {
   BCHToolbox,
   BaseUTXOToolbox,

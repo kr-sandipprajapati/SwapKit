@@ -9,7 +9,7 @@ import {
   ensureEVMApiKeys,
   prepareNetworkSwitch,
   setRequestClientConfig,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import type { AVAXToolbox, BrowserProvider, Eip1193Provider } from "@internal/toolbox-evm";
 
 declare const window: {

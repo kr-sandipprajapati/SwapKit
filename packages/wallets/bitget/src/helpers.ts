@@ -11,7 +11,7 @@ import {
   addEVMWalletNetwork,
   getRPCUrl,
   prepareNetworkSwitch,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import type { TransferParams } from "@swapkit/toolbox-cosmos";
 import type { Eip1193Provider } from "@internal/toolbox-evm";
 import type { Psbt, UTXOTransferParams } from "@internal/toolbox-utxo";

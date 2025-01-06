@@ -12,7 +12,7 @@ import {
   getRPCUrl,
   setRequestClientConfig,
   updatedLastIndex,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import type { DepositParam, TransferParams } from "@swapkit/toolbox-cosmos";
 import type {
   Psbt,

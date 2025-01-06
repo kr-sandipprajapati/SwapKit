@@ -1,4 +1,4 @@
-import { Chain, ChainToExplorerUrl, SwapKitError } from "@swapkit/helpers";
+import { Chain, ChainToExplorerUrl, SwapKitError } from "@internal/helpers";
 
 export function getExplorerTxUrl({ chain, txHash }: { txHash: string; chain: Chain }) {
   const baseUrl = ChainToExplorerUrl[chain];

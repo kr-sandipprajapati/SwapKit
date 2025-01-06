@@ -5,7 +5,7 @@ import {
   type EVMChain,
   WalletOption,
   setRequestClientConfig,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 
 import { KeepKeySdk } from "@keepkey/keepkey-sdk";
 export type { PairingInfo } from "@keepkey/keepkey-sdk";

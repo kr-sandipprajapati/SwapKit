@@ -9,7 +9,7 @@ import {
   SwapKitError,
   type SwapKitPluginParams,
   type SwapParams,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 
 type ApproveParams = {
   assetValue: AssetValue;

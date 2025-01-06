@@ -2,7 +2,7 @@
   "author": "swapkit-oss",
   "dependencies": {
     "@swapkit/api": "workspace:*",
-    "@swapkit/helpers": "workspace:*",
+    "@internal/helpers": "workspace:*",
     "@swapkit/toolbox-cosmos": "workspace:*",
     "@internal/toolbox-evm": "workspace:*",
     "@swapkit/toolbox-substrate": "workspace:*",

@@ -9,7 +9,7 @@ import {
   ensureEVMApiKeys,
   prepareNetworkSwitch,
   setRequestClientConfig,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import {
   type AVAXToolbox,
   BrowserProvider,

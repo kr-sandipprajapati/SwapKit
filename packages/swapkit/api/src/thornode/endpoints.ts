@@ -1,4 +1,4 @@
-import { AssetValue, RequestClient } from "@swapkit/helpers";
+import { AssetValue, RequestClient } from "@internal/helpers";
 import type {
   InboundAddressesItem,
   LastBlockItem,

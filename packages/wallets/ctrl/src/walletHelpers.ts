@@ -11,7 +11,7 @@ import {
   WalletOption,
   erc20ABI,
   getRPCUrl,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import type { TransferParams } from "@swapkit/toolbox-cosmos";
 import type {
   ApproveParams,

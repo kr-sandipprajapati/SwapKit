@@ -12,7 +12,7 @@ import {
   type SwapKitPluginParams,
   type SwapParams,
   type UTXOChain,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import { basePlugin } from "./basePlugin";
 import { prepareTxParams, validateAddressType } from "./shared";
 import type { AddLiquidityParams, CoreTxParams, CreateLiquidityParams } from "./types";

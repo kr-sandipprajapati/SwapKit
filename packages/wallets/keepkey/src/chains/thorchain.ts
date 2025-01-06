@@ -11,7 +11,7 @@ import {
   type DerivationPathArray,
   derivationPathToString,
   getRPCUrl,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import type { DepositParam, ThorchainToolboxType, TransferParams } from "@swapkit/toolbox-cosmos";
 
 import { bip32ToAddressNList } from "../helpers/coins.js";

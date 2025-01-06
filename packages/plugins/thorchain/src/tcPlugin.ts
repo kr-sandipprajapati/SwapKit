@@ -14,7 +14,7 @@ import {
   TCEthereumVaultAbi,
   type UTXOChain,
   getMemoForLoan,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 
 import { basePlugin } from "./basePlugin";
 import { prepareTxParams, validateAddressType } from "./shared";

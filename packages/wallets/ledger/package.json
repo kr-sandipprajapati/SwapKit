@@ -12,7 +12,7 @@
     "@ledgerhq/hw-transport-webusb": "6.29.0",
     "@ledgerhq/wallet-api-client": "1.5.10",
     "@scure/base": "1.1.7",
-    "@swapkit/helpers": "workspace:*",
+    "@internal/helpers": "workspace:*",
     "@swapkit/toolbox-cosmos": "workspace:*",
     "@internal/toolbox-evm": "workspace:*",
     "@internal/toolbox-utxo": "workspace:*",

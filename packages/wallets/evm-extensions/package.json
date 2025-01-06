@@ -1,7 +1,7 @@
 {
   "description": "SwapKit Wallet - EVM Extensions",
   "dependencies": {
-    "@swapkit/helpers": "workspace:*",
+    "@internal/helpers": "workspace:*",
     "@internal/toolbox-evm": "workspace:*"
   },
   "files": [

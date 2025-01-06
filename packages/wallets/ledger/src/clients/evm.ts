@@ -4,7 +4,7 @@ import {
   type DerivationPathArray,
   NetworkDerivationPath,
   derivationPathToString,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import {
   AbstractSigner,
   type Provider,

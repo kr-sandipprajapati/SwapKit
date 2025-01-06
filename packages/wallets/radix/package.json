@@ -4,7 +4,7 @@
     "@radixdlt/babylon-gateway-api-sdk": "1.6.1",
     "@radixdlt/radix-dapp-toolkit": "2.0.3",
     "@radixdlt/wallet-sdk": "1.0.1",
-    "@swapkit/helpers": "workspace:*"
+    "@internal/helpers": "workspace:*"
   },
   "description": "SwapKit Lib ",
   "files": [

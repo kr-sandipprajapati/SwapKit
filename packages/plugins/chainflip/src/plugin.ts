@@ -8,7 +8,7 @@ import {
   SwapKitError,
   type SwapKitPluginParams,
   type UTXOWallets,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import type { RequestSwapDepositAddressParams } from "./types";
 
 type SupportedChain = keyof (EVMWallets & SubstrateWallets & UTXOWallets & SolanaWallets);

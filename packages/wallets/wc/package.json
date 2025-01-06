@@ -2,7 +2,7 @@
   "dependencies": {
     "@cosmjs/amino": "0.32.4",
     "@cosmjs/proto-signing": "0.32.4",
-    "@swapkit/helpers": "workspace:*",
+    "@internal/helpers": "workspace:*",
     "@swapkit/toolbox-cosmos": "workspace:*",
     "@internal/toolbox-evm": "workspace:*",
     "@walletconnect/modal-sign-html": "2.6.2",

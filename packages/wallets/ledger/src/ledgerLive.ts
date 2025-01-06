@@ -16,7 +16,7 @@ import {
   SwapKitNumber,
   WalletOption,
   setRequestClientConfig,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import { ETHToolbox, getProvider } from "@internal/toolbox-evm";
 import type { UTXOTransferParams } from "@internal/toolbox-utxo";
 import { BigNumber as BigNumberJS } from "bignumber.js";

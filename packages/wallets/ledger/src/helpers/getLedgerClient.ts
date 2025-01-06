@@ -1,4 +1,4 @@
-import { Chain, type DerivationPathArray, SwapKitError, WalletOption } from "@swapkit/helpers";
+import { Chain, type DerivationPathArray, SwapKitError, WalletOption } from "@internal/helpers";
 
 import { CosmosLedger } from "../clients/cosmos";
 import {

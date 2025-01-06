@@ -1,6 +1,6 @@
 import { Assets, Chains } from "@chainflip/sdk/swap";
-import { AssetValue, SwapKitError, wrapWithThrow } from "@swapkit/helpers";
-import { Chain } from "@swapkit/helpers";
+import { AssetValue, SwapKitError, wrapWithThrow } from "@internal/helpers";
+import { Chain } from "@internal/helpers";
 import type { ETHToolbox } from "@internal/toolbox-evm";
 import type { ChainflipToolbox } from "@swapkit/toolbox-substrate";
 

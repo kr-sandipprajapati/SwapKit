@@ -2,7 +2,7 @@
   "description": "SwapKit Wallet - Ctrl",
   "dependencies": {
     "@keplr-wallet/types": "0.12.110",
-    "@swapkit/helpers": "workspace:*",
+    "@internal/helpers": "workspace:*",
     "@swapkit/toolbox-cosmos": "workspace:*",
     "@internal/toolbox-evm": "workspace:*",
     "@swapkit/toolbox-solana": "workspace:*",

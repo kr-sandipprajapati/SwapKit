@@ -11,7 +11,7 @@ import {
   WalletOption,
   ensureEVMApiKeys,
   setRequestClientConfig,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import type { ARBToolbox, AVAXToolbox, BSCToolbox, Eip1193Provider } from "@internal/toolbox-evm";
 import {
   type WalletTxParams,
@@ -113,7 +113,7 @@ async function getWalletMethodsForChain({
     case Chain.Optimism:
     case Chain.Polygon:
     case Chain.Avalanche: {
-      const { prepareNetworkSwitch, addEVMWalletNetwork } = await import("@swapkit/helpers");
+      const { prepareNetworkSwitch, addEVMWalletNetwork } = await import("@internal/helpers");
       const {
         getToolboxByChain,
         getBalance,

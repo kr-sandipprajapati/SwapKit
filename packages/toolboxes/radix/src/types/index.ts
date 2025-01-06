@@ -1,4 +1,4 @@
-import { Chain } from "@swapkit/helpers";
+import { Chain } from "@internal/helpers";
 import type { RadixToolbox } from "../index";
 
 export const RadixMainnet = {

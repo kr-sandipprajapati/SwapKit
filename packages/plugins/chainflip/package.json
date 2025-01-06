@@ -5,7 +5,7 @@
     "@polkadot/keyring": "12.6.2",
     "@polkadot/util": "12.6.2",
     "@swapkit/api": "workspace:*",
-    "@swapkit/helpers": "workspace:*",
+    "@internal/helpers": "workspace:*",
     "@internal/toolbox-evm": "workspace:*",
     "@swapkit/toolbox-substrate": "workspace:*",
     "@internal/toolbox-utxo": "workspace:*",

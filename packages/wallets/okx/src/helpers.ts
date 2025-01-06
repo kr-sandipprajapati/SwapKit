@@ -7,7 +7,7 @@ import {
   addEVMWalletNetwork,
   getRPCUrl,
   prepareNetworkSwitch,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import type { GaiaToolbox } from "@swapkit/toolbox-cosmos";
 import type { Eip1193Provider } from "@internal/toolbox-evm";
 import type { BTCToolbox, Psbt, UTXOTransferParams } from "@internal/toolbox-utxo";

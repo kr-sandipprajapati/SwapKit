@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "@coinbase/wallet-sdk": "3.7.2",
-    "@swapkit/helpers": "workspace:*",
+    "@internal/helpers": "workspace:*",
     "@internal/toolbox-evm": "workspace:*"
   },
   "description": "SwapKit Wallet - Coinbase",

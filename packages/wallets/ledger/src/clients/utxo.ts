@@ -5,7 +5,7 @@ import {
   SwapKitError,
   derivationPathToString,
   getWalletFormatFor,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import type { Psbt, UTXOType } from "@internal/toolbox-utxo";
 
 import { getLedgerTransport } from "../helpers/getLedgerTransport";

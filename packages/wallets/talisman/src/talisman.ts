@@ -3,7 +3,7 @@ import {
   type ConnectWalletParams,
   WalletOption,
   setRequestClientConfig,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import { getWalletForChain } from "./helpers";
 
 const TALISMAN_SUPPORTED_CHAINS = [

@@ -5,7 +5,7 @@ import {
   type DerivationPathArray,
   NetworkDerivationPath,
   derivationPathToString,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import type { JsonRpcProvider, Provider, TransactionRequest } from "@internal/toolbox-evm";
 import { AbstractSigner } from "@internal/toolbox-evm";
 

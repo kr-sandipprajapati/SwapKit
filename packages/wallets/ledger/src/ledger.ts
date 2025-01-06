@@ -9,7 +9,7 @@ import {
   ensureEVMApiKeys,
   getRPCUrl,
   setRequestClientConfig,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import type { DepositParam, TransferParams } from "@swapkit/toolbox-cosmos";
 import type { UTXOBuildTxParams } from "@internal/toolbox-utxo";
 

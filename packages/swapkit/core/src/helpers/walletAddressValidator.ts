@@ -1,4 +1,4 @@
-import { Chain } from "@swapkit/helpers";
+import { Chain } from "@internal/helpers";
 
 export async function getAddressValidator() {
   const { cosmosValidateAddress } = await import("@swapkit/toolbox-cosmos");

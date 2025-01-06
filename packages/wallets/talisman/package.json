@@ -3,7 +3,7 @@
   "dependencies": {
     "@polkadot/util": "12.6.2",
     "@polkadot/util-crypto": "12.6.2",
-    "@swapkit/helpers": "workspace:*",
+    "@internal/helpers": "workspace:*",
     "@internal/toolbox-evm": "workspace:*",
     "@swapkit/toolbox-substrate": "workspace:*"
   },

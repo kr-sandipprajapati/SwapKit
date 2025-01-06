@@ -9,7 +9,7 @@ import {
   addEVMWalletNetwork,
   ensureEVMApiKeys,
   prepareNetworkSwitch,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import type {
   ARBToolbox,
   BASEToolbox,

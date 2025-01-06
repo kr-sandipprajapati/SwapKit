@@ -8,7 +8,7 @@ import {
   type WalletTxParams,
   ensureEVMApiKeys,
   setRequestClientConfig,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import type { SolanaProvider } from "@swapkit/toolbox-solana";
 
 export const PHANTOM_SUPPORTED_CHAINS = [Chain.Bitcoin, Chain.Ethereum, Chain.Solana] as const;

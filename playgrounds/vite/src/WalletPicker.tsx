@@ -7,7 +7,7 @@ import {
   WalletOption,
   getDerivationPathFor,
   getEIP6963Wallets,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import type { FullWallet } from "@swapkit/sdk";
 import { decryptFromKeystore } from "@swapkit/wallet-keystore";
 import { useCallback, useState } from "react";

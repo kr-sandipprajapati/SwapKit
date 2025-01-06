@@ -62,7 +62,7 @@ body:
         - label: "@swapkit/tokens"
 
         - label: "@swapkit/toolbox-cosmos"
-        - label: "@swapkit/toolbox-evm"
+        - label: "@internal/toolbox-evm"
         - label: "@swapkit/toolbox-utxo"
 
         - label: "@swapkit/wallet-evm-extensions"

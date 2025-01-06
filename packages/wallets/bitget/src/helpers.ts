@@ -13,7 +13,7 @@ import {
   prepareNetworkSwitch,
 } from "@swapkit/helpers";
 import type { TransferParams } from "@swapkit/toolbox-cosmos";
-import type { Eip1193Provider } from "@swapkit/toolbox-evm";
+import type { Eip1193Provider } from "@internal/toolbox-evm";
 import type { Psbt, UTXOTransferParams } from "@swapkit/toolbox-utxo";
 
 export function cosmosTransfer(rpcUrl?: string) {
@@ -81,7 +81,7 @@ export async function getWalletForChain({
 
       const wallet = bitget.ethereum;
 
-      const { getProvider } = await import("@swapkit/toolbox-evm");
+      const { getProvider } = await import("@internal/toolbox-evm");
 
       const evmWallet = await getWeb3WalletMethods({
         chain,
@@ -203,7 +203,7 @@ export const getWeb3WalletMethods = async ({
   covalentApiKey?: string;
   ethplorerApiKey?: string;
 }) => {
-  const { getToolboxByChain, BrowserProvider } = await import("@swapkit/toolbox-evm");
+  const { getToolboxByChain, BrowserProvider } = await import("@internal/toolbox-evm");
   if (!ethereumWindowProvider) throw new SwapKitError("wallet_provider_not_found");
 
   if (

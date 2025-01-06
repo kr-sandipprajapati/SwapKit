@@ -14,7 +14,7 @@
     "@scure/base": "1.1.7",
     "@swapkit/helpers": "workspace:*",
     "@swapkit/toolbox-cosmos": "workspace:*",
-    "@swapkit/toolbox-evm": "workspace:*",
+    "@internal/toolbox-evm": "workspace:*",
     "@swapkit/toolbox-utxo": "workspace:*",
     "@types/ripemd160": "2.0.3",
     "cosmjs-types": "0.9.0",

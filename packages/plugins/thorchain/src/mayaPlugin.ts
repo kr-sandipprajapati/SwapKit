@@ -66,7 +66,7 @@ function plugin({ getWallet, stagenet = false }: SwapKitPluginParams) {
 
         case Chain.Arbitrum:
         case Chain.Ethereum: {
-          const { getChecksumAddressFromAsset } = await import("@swapkit/toolbox-evm");
+          const { getChecksumAddressFromAsset } = await import("@internal/toolbox-evm");
           const wallet = getWallet(chain);
 
           const abi = chain === Chain.Arbitrum ? MayaArbitrumVaultAbi : MayaEthereumVaultAbi;

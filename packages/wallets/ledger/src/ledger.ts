@@ -111,7 +111,7 @@ const getToolbox = async ({
     case Chain.BinanceSmartChain:
     case Chain.Base: {
       const keys = ensureEVMApiKeys({ chain, covalentApiKey, ethplorerApiKey });
-      const { getToolboxByChain, getProvider } = await import("@swapkit/toolbox-evm");
+      const { getToolboxByChain, getProvider } = await import("@internal/toolbox-evm");
       const signer = await getLedgerClient({ chain, derivationPath });
       const address = await getLedgerAddress({ chain, ledgerClient: signer });
       const provider = getProvider(chain, rpcUrl);

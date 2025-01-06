@@ -11,7 +11,7 @@ import {
   Signature,
   Transaction,
   type TransactionRequest,
-} from "@swapkit/toolbox-evm";
+} from "@internal/toolbox-evm";
 
 import { getLedgerTransport } from "../helpers/getLedgerTransport";
 

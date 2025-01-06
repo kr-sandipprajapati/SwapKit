@@ -28,7 +28,7 @@ import {
   type SwapParams,
 } from "@swapkit/helpers";
 import type { TransferParams as CosmosTransferParams } from "@swapkit/toolbox-cosmos";
-import type { TransferParams as EVMTransferParams } from "@swapkit/toolbox-evm";
+import type { TransferParams as EVMTransferParams } from "@internal/toolbox-evm";
 import type { UTXOTransferParams } from "@swapkit/toolbox-utxo";
 
 import {

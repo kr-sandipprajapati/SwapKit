@@ -17,7 +17,7 @@ import {
   WalletOption,
   setRequestClientConfig,
 } from "@swapkit/helpers";
-import { ETHToolbox, getProvider } from "@swapkit/toolbox-evm";
+import { ETHToolbox, getProvider } from "@internal/toolbox-evm";
 import type { UTXOTransferParams } from "@swapkit/toolbox-utxo";
 import { BigNumber as BigNumberJS } from "bignumber.js";
 import { VoidSigner } from "ethers";

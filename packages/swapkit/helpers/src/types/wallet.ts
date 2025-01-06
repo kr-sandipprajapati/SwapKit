@@ -1,5 +1,5 @@
 import type { CosmosWallets, ThorchainWallets } from "@swapkit/toolbox-cosmos";
-import type { EVMWallets } from "@swapkit/toolbox-evm";
+import type { EVMWallets } from "@internal/toolbox-evm";
 import type { RadixWallets } from "@swapkit/toolbox-radix";
 import type { SolanaWallets } from "@swapkit/toolbox-solana";
 import type { SubstrateWallets } from "@swapkit/toolbox-substrate";

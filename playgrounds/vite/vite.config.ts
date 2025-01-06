@@ -46,7 +46,7 @@ export default defineConfig({
       "@swapkit/plugin-thorchain": resolve("../../packages/plugins/thorchain/src"),
 
       "@swapkit/toolbox-cosmos": resolve("../../packages/toolboxes/cosmos/src"),
-      "@swapkit/toolbox-evm": resolve("../../packages/toolboxes/evm/src"),
+      "@internal/toolbox-evm": resolve("../../packages/toolboxes/evm/src"),
       "@swapkit/toolbox-radix": resolve("../../packages/toolboxes/radix/src"),
       "@swapkit/toolbox-solana": resolve("../../packages/toolboxes/solana/src"),
       "@swapkit/toolbox-substrate": resolve("../../packages/toolboxes/substrate/src"),

@@ -10,7 +10,7 @@ import {
   ensureEVMApiKeys,
   setRequestClientConfig,
 } from "@swapkit/helpers";
-import type { ARBToolbox, AVAXToolbox, BSCToolbox } from "@swapkit/toolbox-evm";
+import type { ARBToolbox, AVAXToolbox, BSCToolbox } from "@internal/toolbox-evm";
 
 import type { WalletTxParams } from "./walletHelpers";
 import {
@@ -127,7 +127,7 @@ async function getWalletMethodsForChain({
         ethplorerApi,
         getBalance,
         BrowserProvider,
-      } = await import("@swapkit/toolbox-evm");
+      } = await import("@internal/toolbox-evm");
       const ethereumWindowProvider = getCtrlProvider(chain);
 
       if (!ethereumWindowProvider) {

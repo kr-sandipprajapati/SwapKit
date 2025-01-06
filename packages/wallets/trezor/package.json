@@ -16,7 +16,7 @@
   "name": "@knackroot/wallet-trezor",
   "repository": {
     "type": "git",
-    "url": "git@github.com:knackroot-technolabs-llp/SwapKit.git"
+    "url": "git+https://github.com/knackroot-technolabs-llp/SwapKit.git"
   },
   "scripts": {
     "build": "bun run ./build.ts",

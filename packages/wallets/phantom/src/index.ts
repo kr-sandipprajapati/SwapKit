@@ -50,7 +50,7 @@ async function getWalletMethods<T extends PhantomSupportedChains>({
     }
 
     case Chain.Ethereum: {
-      const { getToolboxByChain } = await import("@swapkit/toolbox-evm");
+      const { getToolboxByChain } = await import("@internal/toolbox-evm");
       const { BrowserProvider } = await import("ethers");
 
       const provider = new BrowserProvider(phantom?.ethereum, "any");

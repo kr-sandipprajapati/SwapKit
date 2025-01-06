@@ -76,7 +76,7 @@ function plugin({ getWallet, stagenet = false }: SwapKitPluginParams) {
         case Chain.BinanceSmartChain:
         case Chain.Avalanche: {
           const wallet = getWallet(chain);
-          const { getChecksumAddressFromAsset } = await import("@swapkit/toolbox-evm");
+          const { getChecksumAddressFromAsset } = await import("@internal/toolbox-evm");
 
           const abi =
             chain === Chain.Avalanche

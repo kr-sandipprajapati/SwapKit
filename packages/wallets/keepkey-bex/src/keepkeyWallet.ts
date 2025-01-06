@@ -12,7 +12,7 @@ import {
   ensureEVMApiKeys,
   setRequestClientConfig,
 } from "@swapkit/helpers";
-import type { ARBToolbox, AVAXToolbox, BSCToolbox, Eip1193Provider } from "@swapkit/toolbox-evm";
+import type { ARBToolbox, AVAXToolbox, BSCToolbox, Eip1193Provider } from "@internal/toolbox-evm";
 import {
   type WalletTxParams,
   cosmosTransfer,
@@ -121,7 +121,7 @@ async function getWalletMethodsForChain({
         ethplorerApi,
         getProvider,
         BrowserProvider,
-      } = await import("@swapkit/toolbox-evm");
+      } = await import("@internal/toolbox-evm");
       const ethereumWindowProvider = getKEEPKEYProvider(chain) as Eip1193Provider;
 
       if (!ethereumWindowProvider) {

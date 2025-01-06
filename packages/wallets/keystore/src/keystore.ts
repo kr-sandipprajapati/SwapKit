@@ -57,7 +57,7 @@ const getWalletMethodsForChain = async ({
     case Chain.Ethereum:
     case Chain.Optimism:
     case Chain.Polygon: {
-      const { HDNodeWallet, getProvider, getToolboxByChain } = await import("@swapkit/toolbox-evm");
+      const { HDNodeWallet, getProvider, getToolboxByChain } = await import("@internal/toolbox-evm");
 
       const keys = ensureEVMApiKeys({ chain, covalentApiKey, ethplorerApiKey });
       const provider = getProvider(chain, rpcUrl);

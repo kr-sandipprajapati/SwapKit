@@ -16,7 +16,7 @@ import {
   type Eip1193Provider,
   getProvider,
   getToolboxByChain,
-} from "@swapkit/toolbox-evm";
+} from "@internal/toolbox-evm";
 import { BTCToolbox, Psbt, type UTXOTransferParams } from "@swapkit/toolbox-utxo";
 import {
   AddressPurpose,

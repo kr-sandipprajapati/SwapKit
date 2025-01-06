@@ -58,7 +58,7 @@ const getWalletMethods = async ({
   ethplorerApiKey,
   blockchairApiKey,
 }: KeepKeyOptions) => {
-  const { getProvider, getToolboxByChain } = await import("@swapkit/toolbox-evm");
+  const { getProvider, getToolboxByChain } = await import("@internal/toolbox-evm");
 
   switch (chain) {
     case Chain.BinanceSmartChain:

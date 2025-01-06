@@ -1,12 +1,6 @@
 "use client";
 
-import {
-  Chain,
-  CosmosChains,
-  EVMChains,
-  UTXOChains,
-  WalletOption,
-} from "@internal/helpers";
+import { Chain, CosmosChains, EVMChains, UTXOChains, WalletOption } from "@internal/helpers";
 import { Power, PowerOff } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";

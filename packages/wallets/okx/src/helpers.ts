@@ -10,7 +10,7 @@ import {
 } from "@swapkit/helpers";
 import type { GaiaToolbox } from "@swapkit/toolbox-cosmos";
 import type { Eip1193Provider } from "@internal/toolbox-evm";
-import type { BTCToolbox, Psbt, UTXOTransferParams } from "@swapkit/toolbox-utxo";
+import type { BTCToolbox, Psbt, UTXOTransferParams } from "@internal/toolbox-utxo";
 
 const cosmosTransfer =
   (rpcUrl?: string) =>
@@ -92,7 +92,7 @@ export const getWalletForChain = async ({
       }
       const { bitcoin: wallet } = window.okxwallet;
 
-      const { Psbt, BTCToolbox } = await import("@swapkit/toolbox-utxo");
+      const { Psbt, BTCToolbox } = await import("@internal/toolbox-utxo");
 
       const address = (await wallet.connect()).address;
 

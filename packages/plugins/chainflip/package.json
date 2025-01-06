@@ -8,7 +8,7 @@
     "@swapkit/helpers": "workspace:*",
     "@internal/toolbox-evm": "workspace:*",
     "@swapkit/toolbox-substrate": "workspace:*",
-    "@swapkit/toolbox-utxo": "workspace:*",
+    "@internal/toolbox-utxo": "workspace:*",
     "bs58": "6.0.0"
   },
   "devDependencies": {

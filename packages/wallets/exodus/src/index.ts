@@ -17,7 +17,7 @@ import {
   getProvider,
   getToolboxByChain,
 } from "@internal/toolbox-evm";
-import { BTCToolbox, Psbt, type UTXOTransferParams } from "@swapkit/toolbox-utxo";
+import { BTCToolbox, Psbt, type UTXOTransferParams } from "@internal/toolbox-utxo";
 import {
   AddressPurpose,
   BitcoinNetworkType,

@@ -85,7 +85,7 @@ async function getWalletMethodsForChain({
     case Chain.BitcoinCash:
     case Chain.Dogecoin:
     case Chain.Litecoin: {
-      const { getToolboxByChain } = await import("@swapkit/toolbox-utxo");
+      const { getToolboxByChain } = await import("@internal/toolbox-utxo");
       const toolbox = getToolboxByChain(chain)({ apiKey: blockchairApiKey });
 
       const getBalance = async () => {

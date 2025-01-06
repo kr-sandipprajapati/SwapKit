@@ -11,7 +11,7 @@ import {
   setRequestClientConfig,
 } from "@swapkit/helpers";
 import type { DepositParam, TransferParams } from "@swapkit/toolbox-cosmos";
-import type { UTXOBuildTxParams } from "@swapkit/toolbox-utxo";
+import type { UTXOBuildTxParams } from "@internal/toolbox-utxo";
 
 import type { LEDGER_SUPPORTED_CHAINS } from "./helpers/index";
 import { getLedgerAddress, getLedgerClient } from "./helpers/index";
@@ -74,7 +74,7 @@ const getToolbox = async ({
     case Chain.Dash:
     case Chain.Dogecoin:
     case Chain.Litecoin: {
-      const { getToolboxByChain } = await import("@swapkit/toolbox-utxo");
+      const { getToolboxByChain } = await import("@internal/toolbox-utxo");
       const params = {
         apiClient: apis[chain],
         apiKey: blockchairApiKey,

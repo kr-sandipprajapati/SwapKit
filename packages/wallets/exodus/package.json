@@ -5,7 +5,7 @@
     "@passkeys/react": "2.3.3",
     "@swapkit/helpers": "workspace:*",
     "@internal/toolbox-evm": "workspace:*",
-    "@swapkit/toolbox-utxo": "workspace:*",
+    "@internal/toolbox-utxo": "workspace:*",
     "sats-connect": "2.4.1"
   },
   "description": "SwapKit Wallet Exodus",

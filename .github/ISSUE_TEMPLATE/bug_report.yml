@@ -63,7 +63,7 @@ body:
 
         - label: "@swapkit/toolbox-cosmos"
         - label: "@internal/toolbox-evm"
-        - label: "@swapkit/toolbox-utxo"
+        - label: "@internal/toolbox-utxo"
 
         - label: "@swapkit/wallet-evm-extensions"
         - label: "@swapkit/wallet-keepkey"

@@ -43,7 +43,7 @@ async function getWalletMethods<T extends PhantomSupportedChains>({
       }
       const [{ address }] = await provider.requestAccounts();
 
-      const { getToolboxByChain } = await import("@swapkit/toolbox-utxo");
+      const { getToolboxByChain } = await import("@internal/toolbox-utxo");
       const toolbox = getToolboxByChain(chain);
 
       return { ...toolbox({ rpcUrl }), address };

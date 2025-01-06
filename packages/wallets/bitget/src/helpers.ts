@@ -14,7 +14,7 @@ import {
 } from "@swapkit/helpers";
 import type { TransferParams } from "@swapkit/toolbox-cosmos";
 import type { Eip1193Provider } from "@internal/toolbox-evm";
-import type { Psbt, UTXOTransferParams } from "@swapkit/toolbox-utxo";
+import type { Psbt, UTXOTransferParams } from "@internal/toolbox-utxo";
 
 export function cosmosTransfer(rpcUrl?: string) {
   return async ({ from, recipient, assetValue, memo }: TransferParams) => {
@@ -104,7 +104,7 @@ export async function getWalletForChain({
       }
       const { unisat: wallet } = bitget;
 
-      const { Psbt, BTCToolbox } = await import("@swapkit/toolbox-utxo");
+      const { Psbt, BTCToolbox } = await import("@internal/toolbox-utxo");
 
       const [address] = await wallet.requestAccounts();
       const apiClient = typeof api === "object" && "getConfirmedBalance" in api ? api : undefined;

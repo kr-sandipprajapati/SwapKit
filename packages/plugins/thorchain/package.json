@@ -6,7 +6,7 @@
     "@swapkit/toolbox-cosmos": "workspace:*",
     "@internal/toolbox-evm": "workspace:*",
     "@swapkit/toolbox-substrate": "workspace:*",
-    "@swapkit/toolbox-utxo": "workspace:*"
+    "@internal/toolbox-utxo": "workspace:*"
   },
   "description": "SwapKit Plugin - Thorchain",
   "files": [

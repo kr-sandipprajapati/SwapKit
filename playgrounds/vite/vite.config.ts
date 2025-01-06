@@ -50,7 +50,7 @@ export default defineConfig({
       "@swapkit/toolbox-radix": resolve("../../packages/toolboxes/radix/src"),
       "@swapkit/toolbox-solana": resolve("../../packages/toolboxes/solana/src"),
       "@swapkit/toolbox-substrate": resolve("../../packages/toolboxes/substrate/src"),
-      "@swapkit/toolbox-utxo": resolve("../../packages/toolboxes/utxo/src"),
+      "@internal/toolbox-utxo": resolve("../../packages/toolboxes/utxo/src"),
 
       "@swapkit/wallet-bitget": resolve("../../packages/wallets/bitget/src"),
       "@swapkit/wallet-coinbase": resolve("../../packages/wallets/coinbase/src"),

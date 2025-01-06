@@ -4,7 +4,7 @@
     "@swapkit/helpers": "workspace:*",
     "@swapkit/toolbox-cosmos": "workspace:*",
     "@internal/toolbox-evm": "workspace:*",
-    "@swapkit/toolbox-utxo": "workspace:*"
+    "@internal/toolbox-utxo": "workspace:*"
   },
   "files": [
     "src/",

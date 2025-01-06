@@ -1,5 +1,5 @@
-import { type DerivationPathArray, NetworkDerivationPath } from "@internal/helpers";
 import { base64 } from "@scure/base";
+import { type DerivationPathArray, NetworkDerivationPath } from "@swapkit/helpers";
 
 import { CosmosLedgerInterface } from "../../interfaces/CosmosLedgerInterface";
 import type { GetAddressAndPubKeyResponse } from "../../types";

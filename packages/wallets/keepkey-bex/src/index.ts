@@ -1,4 +1,4 @@
-import type { Eip1193Provider } from "@internal/toolbox-evm";
+import type { Eip1193Provider } from "@swapkit/toolbox-evm";
 
 export { keepkeyBexWallet } from "./keepkeyWallet";
 

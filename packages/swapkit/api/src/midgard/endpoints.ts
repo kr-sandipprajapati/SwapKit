@@ -1,4 +1,4 @@
-import { AssetValue, BaseDecimal, Chain, RequestClient, SwapKitNumber } from "@internal/helpers";
+import { AssetValue, BaseDecimal, Chain, RequestClient, SwapKitNumber } from "@swapkit/helpers";
 import type {
   BorrowerDetails,
   MemberDetailsMayachain,

@@ -1,4 +1,4 @@
-import { Chain, type UTXOChain } from "@internal/helpers";
+import { Chain, type UTXOChain } from "@swapkit/helpers";
 
 import type { TargetOutput, UTXOCalculateTxSizeParams, UTXOType } from "../types/index";
 import {

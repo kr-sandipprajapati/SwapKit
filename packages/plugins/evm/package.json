@@ -1,9 +1,9 @@
 {
   "author": "swapkit-oss",
   "dependencies": {
-    "@internal/helpers": "workspace:*",
-    "@internal/toolbox-evm": "workspace:*",
-    "@swapkit/api": "workspace:*"
+    "@swapkit/api": "workspace:*",
+    "@swapkit/helpers": "workspace:*",
+    "@swapkit/toolbox-evm": "workspace:*"
   },
   "description": "SwapKit Plugin - EVM",
   "files": [
@@ -28,6 +28,5 @@
   },
   "type": "module",
   "types": "./src/index.ts",
-  "private": true,
   "version": "1.3.11"
 }

@@ -1,3 +1,11 @@
+import type {
+  Account,
+  BitcoinTransaction,
+  CosmosTransaction,
+  EthereumTransaction,
+  Transaction,
+} from "@ledgerhq/wallet-api-client";
+import { FAMILIES, WalletAPIClient, WindowMessageTransport } from "@ledgerhq/wallet-api-client";
 import {
   AssetValue,
   BaseDecimal,
@@ -8,17 +16,9 @@ import {
   SwapKitNumber,
   WalletOption,
   setRequestClientConfig,
-} from "@internal/helpers";
-import { ETHToolbox, getProvider } from "@internal/toolbox-evm";
-import type { UTXOTransferParams } from "@internal/toolbox-utxo";
-import type {
-  Account,
-  BitcoinTransaction,
-  CosmosTransaction,
-  EthereumTransaction,
-  Transaction,
-} from "@ledgerhq/wallet-api-client";
-import { FAMILIES, WalletAPIClient, WindowMessageTransport } from "@ledgerhq/wallet-api-client";
+} from "@swapkit/helpers";
+import { ETHToolbox, getProvider } from "@swapkit/toolbox-evm";
+import type { UTXOTransferParams } from "@swapkit/toolbox-utxo";
 import { BigNumber as BigNumberJS } from "bignumber.js";
 import { VoidSigner } from "ethers";
 
@@ -292,7 +292,7 @@ export const getLedgerLiveWallet = async ({
     case Chain.Bitcoin: {
       const ledgerLiveClient = BitcoinLedgerLive();
       const { BTCToolbox, LTCToolbox, BCHToolbox, DOGEToolbox } = await import(
-        "@internal/toolbox-utxo"
+        "@swapkit/toolbox-utxo"
       );
       const toolbox =
         chain === Chain.Bitcoin

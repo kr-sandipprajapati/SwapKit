@@ -1,6 +1,6 @@
 import type { CoinbaseWalletSDKOptions } from "@coinbase/wallet-sdk/dist/CoinbaseWalletSDK";
-import { setRequestClientConfig } from "@internal/helpers";
-import { Chain, type ConnectWalletParams, WalletOption } from "@internal/helpers";
+import { setRequestClientConfig } from "@swapkit/helpers";
+import { Chain, type ConnectWalletParams, WalletOption } from "@swapkit/helpers";
 
 import { getWalletForChain } from "./signer.js";
 

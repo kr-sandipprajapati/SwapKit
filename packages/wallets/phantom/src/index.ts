@@ -1,3 +1,4 @@
+import { PublicKey, SystemProgram, Transaction } from "@solana/web3.js";
 import {
   type AssetValue,
   Chain,
@@ -7,8 +8,7 @@ import {
   type WalletTxParams,
   ensureEVMApiKeys,
   setRequestClientConfig,
-} from "@internal/helpers";
-import { PublicKey, SystemProgram, Transaction } from "@solana/web3.js";
+} from "@swapkit/helpers";
 import type { SolanaProvider } from "@swapkit/toolbox-solana";
 
 export const PHANTOM_SUPPORTED_CHAINS = [Chain.Bitcoin, Chain.Ethereum, Chain.Solana] as const;
@@ -43,14 +43,14 @@ async function getWalletMethods<T extends PhantomSupportedChains>({
       }
       const [{ address }] = await provider.requestAccounts();
 
-      const { getToolboxByChain } = await import("@internal/toolbox-utxo");
+      const { getToolboxByChain } = await import("@swapkit/toolbox-utxo");
       const toolbox = getToolboxByChain(chain);
 
       return { ...toolbox({ rpcUrl }), address };
     }
 
     case Chain.Ethereum: {
-      const { getToolboxByChain } = await import("@internal/toolbox-evm");
+      const { getToolboxByChain } = await import("@swapkit/toolbox-evm");
       const { BrowserProvider } = await import("ethers");
 
       const provider = new BrowserProvider(phantom?.ethereum, "any");

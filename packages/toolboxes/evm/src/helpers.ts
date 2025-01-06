@@ -7,7 +7,7 @@ import {
   filterAssets,
   formatBigIntToSafeValue,
   isGasAsset,
-} from "@internal/helpers";
+} from "@swapkit/helpers";
 import type { BrowserProvider, JsonRpcProvider, Provider } from "ethers";
 
 import {

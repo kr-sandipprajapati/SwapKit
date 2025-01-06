@@ -5,7 +5,7 @@ import {
   type EVMChain,
   WalletOption,
   setRequestClientConfig,
-} from "@internal/helpers";
+} from "@swapkit/helpers";
 
 import { KeepKeySdk } from "@keepkey/keepkey-sdk";
 export type { PairingInfo } from "@keepkey/keepkey-sdk";
@@ -58,7 +58,7 @@ const getWalletMethods = async ({
   ethplorerApiKey,
   blockchairApiKey,
 }: KeepKeyOptions) => {
-  const { getProvider, getToolboxByChain } = await import("@internal/toolbox-evm");
+  const { getProvider, getToolboxByChain } = await import("@swapkit/toolbox-evm");
 
   switch (chain) {
     case Chain.BinanceSmartChain:

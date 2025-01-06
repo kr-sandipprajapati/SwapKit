@@ -58,12 +58,12 @@ body:
         - label: "@swapkit/sdk"
         - label: "@swapkit/core"
         - label: "@swapkit/api"
-        - label: "@internal/helpers"
+        - label: "@swapkit/helpers"
         - label: "@swapkit/tokens"
 
         - label: "@swapkit/toolbox-cosmos"
-        - label: "@internal/toolbox-evm"
-        - label: "@internal/toolbox-utxo"
+        - label: "@swapkit/toolbox-evm"
+        - label: "@swapkit/toolbox-utxo"
 
         - label: "@swapkit/wallet-evm-extensions"
         - label: "@swapkit/wallet-keepkey"

@@ -5,7 +5,7 @@ import {
   ChainToExplorerUrl,
   FeeOption,
   getRPCUrl,
-} from "@internal/helpers";
+} from "@swapkit/helpers";
 import type { BrowserProvider, JsonRpcProvider, Signer, TransactionRequest } from "ethers";
 import { Contract, Transaction } from "ethers";
 

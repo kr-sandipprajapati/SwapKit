@@ -1,6 +1,7 @@
 {
   "description": "SwapKit - Wallets",
   "dependencies": {
+    "@knackroot/wallet-trezor": "workspace:*",
     "@swapkit/wallet-bitget": "workspace:*",
     "@swapkit/wallet-coinbase": "workspace:*",
     "@swapkit/wallet-ctrl": "workspace:*",
@@ -16,7 +17,6 @@
     "@swapkit/wallet-polkadotjs": "workspace:*",
     "@swapkit/wallet-radix": "workspace:*",
     "@swapkit/wallet-talisman": "workspace:*",
-    "@knackroot/wallet-trezor": "workspace:*",
     "@swapkit/wallet-wc": "workspace:*"
   },
   "files": [

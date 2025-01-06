@@ -7,10 +7,10 @@ import {
   addEVMWalletNetwork,
   getRPCUrl,
   prepareNetworkSwitch,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
+import type { Eip1193Provider } from "@internal/toolbox-evm";
+import type { BTCToolbox, Psbt, UTXOTransferParams } from "@internal/toolbox-utxo";
 import type { GaiaToolbox } from "@swapkit/toolbox-cosmos";
-import type { Eip1193Provider } from "@swapkit/toolbox-evm";
-import type { BTCToolbox, Psbt, UTXOTransferParams } from "@swapkit/toolbox-utxo";
 
 const cosmosTransfer =
   (rpcUrl?: string) =>
@@ -69,7 +69,7 @@ export const getWalletForChain = async ({
         throw new Error("No okxwallet found");
       }
 
-      const { getProvider } = await import("@swapkit/toolbox-evm");
+      const { getProvider } = await import("@internal/toolbox-evm");
 
       const evmWallet = await getWeb3WalletMethods({
         chain,
@@ -92,7 +92,7 @@ export const getWalletForChain = async ({
       }
       const { bitcoin: wallet } = window.okxwallet;
 
-      const { Psbt, BTCToolbox } = await import("@swapkit/toolbox-utxo");
+      const { Psbt, BTCToolbox } = await import("@internal/toolbox-utxo");
 
       const address = (await wallet.connect()).address;
 
@@ -146,7 +146,7 @@ export const getWeb3WalletMethods = async ({
   covalentApiKey?: string;
   ethplorerApiKey?: string;
 }) => {
-  const { getToolboxByChain, BrowserProvider } = await import("@swapkit/toolbox-evm");
+  const { getToolboxByChain, BrowserProvider } = await import("@internal/toolbox-evm");
   if (!ethereumWindowProvider) throw new Error("Requested web3 wallet is not installed");
 
   if (

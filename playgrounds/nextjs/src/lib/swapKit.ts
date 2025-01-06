@@ -1,4 +1,4 @@
-import { type AssetValue, type Chain, WalletOption } from "@swapkit/helpers";
+import { type AssetValue, type Chain, WalletOption } from "@internal/helpers";
 
 import { atom, useAtom } from "jotai";
 import { useCallback, useEffect } from "react";

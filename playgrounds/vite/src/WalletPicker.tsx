@@ -7,12 +7,12 @@ import {
   WalletOption,
   getDerivationPathFor,
   getEIP6963Wallets,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import type { FullWallet } from "@swapkit/sdk";
 import { decryptFromKeystore } from "@swapkit/wallet-keystore";
 import { useCallback, useState } from "react";
 
-import type { Eip1193Provider } from "@swapkit/toolbox-evm";
+import type { Eip1193Provider } from "@internal/toolbox-evm";
 import { BITGET_SUPPORTED_CHAINS } from "@swapkit/wallet-bitget";
 import { PHANTOM_SUPPORTED_CHAINS } from "@swapkit/wallet-phantom";
 import type { SwapKitClient } from "./swapKitClient";

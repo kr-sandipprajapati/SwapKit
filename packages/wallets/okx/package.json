@@ -1,10 +1,10 @@
 {
   "description": "SwapKit Wallet - OKX",
   "dependencies": {
-    "@swapkit/helpers": "workspace:*",
-    "@swapkit/toolbox-cosmos": "workspace:*",
-    "@swapkit/toolbox-evm": "workspace:*",
-    "@swapkit/toolbox-utxo": "workspace:*"
+    "@internal/helpers": "workspace:*",
+    "@internal/toolbox-evm": "workspace:*",
+    "@internal/toolbox-utxo": "workspace:*",
+    "@swapkit/toolbox-cosmos": "workspace:*"
   },
   "files": [
     "src/",
@@ -28,5 +28,6 @@
   },
   "type": "module",
   "types": "./src/index.ts",
-  "version": "1.3.14"
+  "version": "1.3.14",
+  "private": true
 }

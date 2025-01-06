@@ -3,7 +3,7 @@ import {
   ChainIdToChain,
   RequestClient,
   formatBigIntToSafeValue,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 
 type CovalentBalanceResponse = {
   address: string;

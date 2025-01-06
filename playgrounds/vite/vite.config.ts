@@ -34,7 +34,7 @@ export default defineConfig({
       "@swapkit/api": resolve("../../packages/swapkit/api/src"),
       "@swapkit/core": resolve("../../packages/swapkit/core/src"),
       "@swapkit/contracts": resolve("../../packages/swapkit/contracts/src"),
-      "@swapkit/helpers": resolve("../../packages/swapkit/helpers/src"),
+      "@internal/helpers": resolve("../../packages/swapkit/helpers/src"),
       "@swapkit/sdk": resolve("../../packages/swapkit/sdk/src"),
       "@swapkit/types": resolve("../../packages/swapkit/types/src"),
       "@swapkit/wallets": resolve("../../packages/swapkit/wallets/src"),
@@ -46,11 +46,11 @@ export default defineConfig({
       "@swapkit/plugin-thorchain": resolve("../../packages/plugins/thorchain/src"),
 
       "@swapkit/toolbox-cosmos": resolve("../../packages/toolboxes/cosmos/src"),
-      "@swapkit/toolbox-evm": resolve("../../packages/toolboxes/evm/src"),
+      "@internal/toolbox-evm": resolve("../../packages/toolboxes/evm/src"),
       "@swapkit/toolbox-radix": resolve("../../packages/toolboxes/radix/src"),
       "@swapkit/toolbox-solana": resolve("../../packages/toolboxes/solana/src"),
       "@swapkit/toolbox-substrate": resolve("../../packages/toolboxes/substrate/src"),
-      "@swapkit/toolbox-utxo": resolve("../../packages/toolboxes/utxo/src"),
+      "@internal/toolbox-utxo": resolve("../../packages/toolboxes/utxo/src"),
 
       "@swapkit/wallet-bitget": resolve("../../packages/wallets/bitget/src"),
       "@swapkit/wallet-coinbase": resolve("../../packages/wallets/coinbase/src"),

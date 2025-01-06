@@ -24,5 +24,6 @@
   },
   "type": "module",
   "types": "./src/index.ts",
-  "version": "1.11.0"
+  "version": "1.11.0",
+  "private": true
 }

@@ -1,7 +1,7 @@
 {
   "author": "swapkit-oss",
   "dependencies": {
-    "@swapkit/helpers": "workspace:*",
+    "@internal/helpers": "workspace:*",
     "zod": "3.23.8"
   },
   "description": "SwapKit - API",
@@ -27,5 +27,6 @@
   },
   "type": "module",
   "types": "./src/index.ts",
-  "version": "2.2.1"
+  "version": "2.2.1",
+  "private": true
 }

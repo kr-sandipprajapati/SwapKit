@@ -1,4 +1,3 @@
-import type { Keplr } from "@keplr-wallet/types";
 import {
   type AssetValue,
   type Chain,
@@ -8,7 +7,8 @@ import {
   WalletOption,
   type WalletTxParams,
   setRequestClientConfig,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
+import type { Keplr } from "@keplr-wallet/types";
 import { chainRegistry } from "./chainRegistry";
 
 declare global {

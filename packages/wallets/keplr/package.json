@@ -1,8 +1,8 @@
 {
   "description": "SwapKit Wallet - Keplr",
   "dependencies": {
+    "@internal/helpers": "workspace:*",
     "@keplr-wallet/types": "0.12.110",
-    "@swapkit/helpers": "workspace:*",
     "@swapkit/toolbox-cosmos": "workspace:*"
   },
   "files": [
@@ -27,5 +27,6 @@
   },
   "type": "module",
   "types": "./src/index.ts",
-  "version": "1.1.24"
+  "version": "1.1.24",
+  "private": true
 }

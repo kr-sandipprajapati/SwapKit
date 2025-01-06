@@ -1,12 +1,12 @@
 {
   "author": "swapkit-oss",
   "dependencies": {
+    "@internal/helpers": "workspace:*",
     "@polkadot/api": "12.1.1",
     "@polkadot/api-base": "12.1.1",
     "@polkadot/keyring": "12.6.2",
     "@polkadot/util": "12.6.2",
-    "@polkadot/util-crypto": "12.6.2",
-    "@swapkit/helpers": "workspace:*"
+    "@polkadot/util-crypto": "12.6.2"
   },
   "description": "SwapKit - Toolbox substrate",
   "devDependencies": {
@@ -34,5 +34,6 @@
   },
   "type": "module",
   "types": "./src/index.ts",
-  "version": "1.3.11"
+  "version": "1.3.11",
+  "private": true
 }

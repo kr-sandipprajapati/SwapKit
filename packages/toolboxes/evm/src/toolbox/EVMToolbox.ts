@@ -10,7 +10,7 @@ import {
   type WalletTxParams,
   erc20ABI,
   isGasAsset,
-} from "@internal/helpers";
+} from "@swapkit/helpers";
 import {
   BrowserProvider,
   Contract,

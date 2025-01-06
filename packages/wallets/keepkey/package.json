@@ -1,11 +1,11 @@
 {
   "dependencies": {
     "@cosmjs/amino": "0.32.4",
-    "@internal/helpers": "workspace:*",
-    "@internal/toolbox-evm": "workspace:*",
-    "@internal/toolbox-utxo": "workspace:*",
     "@keepkey/keepkey-sdk": "0.2.57",
-    "@swapkit/toolbox-cosmos": "workspace:*"
+    "@swapkit/helpers": "workspace:*",
+    "@swapkit/toolbox-cosmos": "workspace:*",
+    "@swapkit/toolbox-evm": "workspace:*",
+    "@swapkit/toolbox-utxo": "workspace:*"
   },
   "description": "SwapKit Wallet - KeepKey",
   "files": [
@@ -30,6 +30,5 @@
   },
   "type": "module",
   "types": "./src/index.ts",
-  "version": "1.4.14",
-  "private": true
+  "version": "1.4.14"
 }

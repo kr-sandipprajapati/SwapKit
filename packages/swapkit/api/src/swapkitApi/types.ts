@@ -6,7 +6,7 @@ import {
   FeeTypeEnum,
   ProviderName,
   WarningCodeEnum,
-} from "@internal/helpers";
+} from "@swapkit/helpers";
 import { z } from "zod";
 
 export enum PriorityLabel {

@@ -1,4 +1,4 @@
-import { Chain } from "@internal/helpers";
+import { Chain } from "@swapkit/helpers";
 
 export const SupportedKadoChain = {
   thorchain: Chain.THORChain,

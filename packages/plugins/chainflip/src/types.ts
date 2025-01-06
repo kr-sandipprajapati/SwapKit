@@ -1,5 +1,5 @@
-import type { AssetValue, SwapParams } from "@internal/helpers";
 import type { QuoteResponseRoute } from "@swapkit/api";
+import type { AssetValue, SwapParams } from "@swapkit/helpers";
 
 export type WithdrawFeeResponse = {
   egressId: string;

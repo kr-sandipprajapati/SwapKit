@@ -6,9 +6,9 @@
     "@cosmjs/encoding": "0.32.4",
     "@cosmjs/proto-signing": "0.32.4",
     "@cosmjs/stargate": "0.32.4",
-    "@internal/helpers": "workspace:*",
     "@scure/base": "1.1.7",
     "@swapkit/api": "workspace:*",
+    "@swapkit/helpers": "workspace:*",
     "base64-js": "1.5.1",
     "cosmjs-types": "0.9.0",
     "protobufjs": "7.3.2"
@@ -41,6 +41,5 @@
   },
   "type": "module",
   "types": "./src/index.ts",
-  "version": "1.7.3",
-  "private": true
+  "version": "1.7.3"
 }

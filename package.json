@@ -17,7 +17,7 @@
     "react": "18.2.0",
     "typescript": "5.5.4"
   },
-  "name": "knackroot-monorepo",
+  "name": "swapkit-monorepo",
   "packageManager": "bun@^1.1.26",
   "private": true,
   "scripts": {
@@ -37,7 +37,7 @@
     "test": "bun --filter '*' test",
     "test:coverage": "bun --filter '*' test:coverage",
     "type-check": "bun --filter '*' type-check",
-    "version-bump": "bun   version",
+    "version-bump": "bun changeset version",
     "wizard": "bun --cwd ./packages/swapkit/wizard"
   },
   "trustedDependencies": [

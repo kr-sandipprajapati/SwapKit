@@ -1,8 +1,8 @@
 {
   "dependencies": {
-    "@swapkit/helpers": "2.2.1",
-    "@swapkit/toolbox-evm": "1.7.11",
-    "@swapkit/toolbox-utxo": "1.2.11",
+    "@swapkit/helpers": "workspace:*",
+    "@swapkit/toolbox-evm": "workspace:*",
+    "@swapkit/toolbox-utxo": "workspace:*",
     "@trezor/connect-web": "9.4.0"
   },
   "description": "Clone of SwapKit Wallet - Trezor compatible to webpack",
@@ -28,5 +28,5 @@
   },
   "type": "module",
   "types": "./src/index.ts",
-  "version": "0.0.1"
+  "version": "0.0.0-beta.1"
 }

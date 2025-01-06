@@ -1,3 +1,4 @@
+import { SwapKitApi, type ThornodeEndpointParams } from "@swapkit/api";
 import {
   ApproveMode,
   type ApproveReturnType,
@@ -19,8 +20,7 @@ import {
   getMemoForWithdraw,
   getMinAmountByChain,
   wrapWithThrow,
-} from "@internal/helpers";
-import { SwapKitApi, type ThornodeEndpointParams } from "@swapkit/api";
+} from "@swapkit/helpers";
 
 import type {
   AddLiquidityParams,

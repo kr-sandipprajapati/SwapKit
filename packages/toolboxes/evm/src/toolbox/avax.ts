@@ -1,4 +1,4 @@
-import { BaseDecimal, Chain, ChainId, ChainToExplorerUrl, type FeeOption } from "@internal/helpers";
+import { BaseDecimal, Chain, ChainId, ChainToExplorerUrl, type FeeOption } from "@swapkit/helpers";
 import type { BrowserProvider, JsonRpcProvider, Signer } from "ethers";
 
 import type { CovalentApiType } from "../api/covalentApi";

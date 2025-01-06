@@ -1,12 +1,6 @@
-import {
-  AssetValue,
-  Chain,
-  type SubstrateChain,
-  SwapKitNumber,
-  getRPCUrl,
-} from "@internal/helpers";
 import { ApiPromise, WsProvider } from "@polkadot/api";
 import type { KeyringPair } from "@polkadot/keyring/types";
+import { AssetValue, Chain, type SubstrateChain, SwapKitNumber, getRPCUrl } from "@swapkit/helpers";
 
 import { Network } from "../types/network";
 

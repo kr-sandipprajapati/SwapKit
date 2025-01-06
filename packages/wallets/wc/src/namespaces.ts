@@ -1,6 +1,6 @@
 import type { ProposalTypes } from "@walletconnect/types";
 
-import { SwapKitError } from "@internal/helpers";
+import { SwapKitError } from "@swapkit/helpers";
 import {
   DEFAULT_COSMOS_METHODS,
   DEFAULT_EIP155_METHODS,

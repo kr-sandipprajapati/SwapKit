@@ -1,3 +1,4 @@
+import { trezorWallet } from "@knackroot/wallet-trezor";
 import { bitgetWallet } from "@swapkit/wallet-bitget";
 import { coinbaseWallet } from "@swapkit/wallet-coinbase";
 import { ctrlWallet } from "@swapkit/wallet-ctrl";
@@ -12,7 +13,6 @@ import { phantomWallet } from "@swapkit/wallet-phantom";
 import { polkadotWallet } from "@swapkit/wallet-polkadotjs";
 import { radixWallet } from "@swapkit/wallet-radix";
 import { talismanWallet } from "@swapkit/wallet-talisman";
-import { trezorWallet } from "@swapkit/wallet-trezor";
 import { walletconnectWallet } from "@swapkit/wallet-wc";
 
 export const wallets = {

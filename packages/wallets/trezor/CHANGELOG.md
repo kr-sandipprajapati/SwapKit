@@ -1,4 +1,4 @@
-# @swapkit/wallet-trezor
+# @knackroot/wallet-trezor
 
 ## 1.2.19
 

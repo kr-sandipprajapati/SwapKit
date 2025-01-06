@@ -5,18 +5,18 @@
     "@swapkit/toolbox-utxo": "workspace:*",
     "@trezor/connect-web": "9.4.0"
   },
-  "description": "SwapKit Wallet - Trezor",
+  "description": "Clone of SwapKit Wallet - Trezor compatible to webpack",
   "files": [
     "src/",
     "dist/"
   ],
-  "homepage": "https://github.com/thorswap/SwapKit",
+  "homepage": "https://github.com/knackroot-technolabs-llp/SwapKit",
   "license": "Apache-2.0",
   "main": "./dist/index.js",
-  "name": "@swapkit/wallet-trezor",
+  "name": "@knackroot/wallet-trezor",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thorswap/SwapKit.git"
+    "url": "git+https://github.com/knackroot-technolabs-llp/SwapKit.git"
   },
   "scripts": {
     "build": "bun run ./build.ts",
@@ -28,5 +28,5 @@
   },
   "type": "module",
   "types": "./src/index.ts",
-  "version": "1.2.19"
+  "version": "0.0.0-beta.1"
 }

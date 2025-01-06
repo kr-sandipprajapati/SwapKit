@@ -16,7 +16,7 @@
     "@swapkit/wallet-polkadotjs": "workspace:*",
     "@swapkit/wallet-radix": "workspace:*",
     "@swapkit/wallet-talisman": "workspace:*",
-    "@swapkit/wallet-trezor": "workspace:*",
+    "@knackroot/wallet-trezor": "workspace:*",
     "@swapkit/wallet-wc": "workspace:*"
   },
   "files": [

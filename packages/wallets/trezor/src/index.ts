@@ -114,7 +114,9 @@ async function getToolbox({
       const toolbox = getToolboxByChain(chain)(params);
 
       const getAddress = async (path: DerivationPathArray = derivationPath) => {
-        const { default: TrezorConnect } = await import("@trezor/connect-web");
+        const Trezor = await import("@trezor/connect-web");
+        const TrezorConnect = Trezor.default ?? Trezor;
+
         const { success, payload } = await TrezorConnect.getAddress({
           path: derivationPathToString(path),
           coin,

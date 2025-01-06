@@ -1,4 +1,3 @@
-import type { Wallet } from "@passkeys/core";
 import {
   Chain,
   ChainToHexChainId,
@@ -18,6 +17,7 @@ import {
   getToolboxByChain,
 } from "@internal/toolbox-evm";
 import { BTCToolbox, Psbt, type UTXOTransferParams } from "@internal/toolbox-utxo";
+import type { Wallet } from "@passkeys/core";
 import {
   AddressPurpose,
   BitcoinNetworkType,

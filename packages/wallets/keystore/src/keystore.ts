@@ -13,13 +13,13 @@ import {
   setRequestClientConfig,
   updatedLastIndex,
 } from "@internal/helpers";
-import type { DepositParam, TransferParams } from "@swapkit/toolbox-cosmos";
 import type {
   Psbt,
   TransactionType,
   UTXOTransferParams,
   UTXOWalletTransferParams,
 } from "@internal/toolbox-utxo";
+import type { DepositParam, TransferParams } from "@swapkit/toolbox-cosmos";
 
 type KeystoreSupportedChain = Exclude<Chain, Chain.Fiat | Chain.Radix>;
 
@@ -57,7 +57,9 @@ const getWalletMethodsForChain = async ({
     case Chain.Ethereum:
     case Chain.Optimism:
     case Chain.Polygon: {
-      const { HDNodeWallet, getProvider, getToolboxByChain } = await import("@internal/toolbox-evm");
+      const { HDNodeWallet, getProvider, getToolboxByChain } = await import(
+        "@internal/toolbox-evm"
+      );
 
       const keys = ensureEVMApiKeys({ chain, covalentApiKey, ethplorerApiKey });
       const provider = getProvider(chain, rpcUrl);

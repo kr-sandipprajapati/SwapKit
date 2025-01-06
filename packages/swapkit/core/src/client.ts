@@ -27,9 +27,9 @@ import {
   type SwapKitWallet,
   type SwapParams,
 } from "@internal/helpers";
-import type { TransferParams as CosmosTransferParams } from "@swapkit/toolbox-cosmos";
 import type { TransferParams as EVMTransferParams } from "@internal/toolbox-evm";
 import type { UTXOTransferParams } from "@internal/toolbox-utxo";
+import type { TransferParams as CosmosTransferParams } from "@swapkit/toolbox-cosmos";
 
 import {
   getExplorerAddressUrl as getAddressUrl,

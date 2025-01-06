@@ -1,4 +1,3 @@
-import type { EVMTransaction, QuoteResponseRoute } from "@swapkit/api";
 import {
   ApproveMode,
   type ApproveReturnType,
@@ -10,6 +9,7 @@ import {
   type SwapKitPluginParams,
   type SwapParams,
 } from "@internal/helpers";
+import type { EVMTransaction, QuoteResponseRoute } from "@swapkit/api";
 
 type ApproveParams = {
   assetValue: AssetValue;

@@ -1,4 +1,3 @@
-import type { KeepKeySdk } from "@keepkey/keepkey-sdk";
 import {
   type Chain,
   ChainToChainId,
@@ -8,6 +7,7 @@ import {
 } from "@internal/helpers";
 import type { JsonRpcProvider, Provider, TransactionRequest } from "@internal/toolbox-evm";
 import { AbstractSigner } from "@internal/toolbox-evm";
+import type { KeepKeySdk } from "@keepkey/keepkey-sdk";
 
 import { bip32ToAddressNList } from "../helpers/coins";
 

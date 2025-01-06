@@ -1,10 +1,10 @@
 {
   "author": "swapkit-oss",
   "dependencies": {
-    "@swapkit/api": "workspace:*",
     "@internal/helpers": "workspace:*",
     "@internal/toolbox-evm": "workspace:*",
     "@internal/toolbox-utxo": "workspace:*",
+    "@swapkit/api": "workspace:*",
     "@swapkit/plugin-evm": "workspace:*",
     "@swapkit/toolbox-cosmos": "workspace:*",
     "@swapkit/toolbox-radix": "workspace:*",

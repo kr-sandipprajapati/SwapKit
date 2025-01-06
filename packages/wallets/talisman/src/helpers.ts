@@ -1,4 +1,3 @@
-import { decodeAddress, encodeAddress } from "@polkadot/util-crypto";
 import {
   Chain,
   ChainToHexChainId,
@@ -18,6 +17,7 @@ import type {
   MATICToolbox,
   OPToolbox,
 } from "@internal/toolbox-evm";
+import { decodeAddress, encodeAddress } from "@polkadot/util-crypto";
 import type { InjectedWindow } from "@swapkit/toolbox-substrate";
 
 declare const window: {

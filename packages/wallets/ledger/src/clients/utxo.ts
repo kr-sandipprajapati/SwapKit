@@ -1,5 +1,3 @@
-import type BitcoinApp from "@ledgerhq/hw-app-btc";
-import type { CreateTransactionArg } from "@ledgerhq/hw-app-btc/lib-es/createTransaction";
 import {
   type DerivationPathArray,
   SwapKitError,
@@ -7,6 +5,8 @@ import {
   getWalletFormatFor,
 } from "@internal/helpers";
 import type { Psbt, UTXOType } from "@internal/toolbox-utxo";
+import type BitcoinApp from "@ledgerhq/hw-app-btc";
+import type { CreateTransactionArg } from "@ledgerhq/hw-app-btc/lib-es/createTransaction";
 
 import { getLedgerTransport } from "../helpers/getLedgerTransport";
 

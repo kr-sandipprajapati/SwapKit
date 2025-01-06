@@ -10,8 +10,8 @@ import {
   getRPCUrl,
   setRequestClientConfig,
 } from "@internal/helpers";
-import type { DepositParam, TransferParams } from "@swapkit/toolbox-cosmos";
 import type { UTXOBuildTxParams } from "@internal/toolbox-utxo";
+import type { DepositParam, TransferParams } from "@swapkit/toolbox-cosmos";
 
 import type { LEDGER_SUPPORTED_CHAINS } from "./helpers/index";
 import { getLedgerAddress, getLedgerClient } from "./helpers/index";

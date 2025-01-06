@@ -1,11 +1,3 @@
-import type {
-  Account,
-  BitcoinTransaction,
-  CosmosTransaction,
-  EthereumTransaction,
-  Transaction,
-} from "@ledgerhq/wallet-api-client";
-import { FAMILIES, WalletAPIClient, WindowMessageTransport } from "@ledgerhq/wallet-api-client";
 import {
   AssetValue,
   BaseDecimal,
@@ -19,6 +11,14 @@ import {
 } from "@internal/helpers";
 import { ETHToolbox, getProvider } from "@internal/toolbox-evm";
 import type { UTXOTransferParams } from "@internal/toolbox-utxo";
+import type {
+  Account,
+  BitcoinTransaction,
+  CosmosTransaction,
+  EthereumTransaction,
+  Transaction,
+} from "@ledgerhq/wallet-api-client";
+import { FAMILIES, WalletAPIClient, WindowMessageTransport } from "@ledgerhq/wallet-api-client";
 import { BigNumber as BigNumberJS } from "bignumber.js";
 import { VoidSigner } from "ethers";
 

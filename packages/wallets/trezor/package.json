@@ -13,7 +13,7 @@
   "homepage": "https://github.com/kr-sandipprajapati/SwapKit",
   "license": "Apache-2.0",
   "main": "./dist/index.js",
-  "name": "sandip_prajapati/wallet-trezor",
+  "name": "wallet-trezor",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kr-sandipprajapati/SwapKit.git"
@@ -31,5 +31,5 @@
   },
   "type": "module",
   "types": "./src/index.ts",
-  "version": "0.0.0"
+  "version": "0.0.1"
 }

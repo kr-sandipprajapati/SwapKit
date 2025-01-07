@@ -1,4 +1,4 @@
-# @knackroot/wallet-trezor
+# wallet-trezor
 
 ## 0.0.2
 

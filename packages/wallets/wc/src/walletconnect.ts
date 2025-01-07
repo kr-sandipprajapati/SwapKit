@@ -8,7 +8,7 @@ import {
   ensureEVMApiKeys,
   getRPCUrl,
   setRequestClientConfig,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import type { BaseCosmosToolboxType, DepositParam, TransferParams } from "@swapkit/toolbox-cosmos";
 import type { WalletConnectModalSign } from "@walletconnect/modal-sign-html";
 import type { SessionTypes, SignClientTypes } from "@walletconnect/types";
@@ -62,7 +62,7 @@ async function getToolbox({
     case Chain.Ethereum:
     case Chain.Optimism:
     case Chain.Polygon: {
-      const { getProvider, getToolboxByChain } = await import("@swapkit/toolbox-evm");
+      const { getProvider, getToolboxByChain } = await import("@internal/toolbox-evm");
 
       const keys = ensureEVMApiKeys({ chain, ethplorerApiKey, covalentApiKey });
       const provider = getProvider(chain);

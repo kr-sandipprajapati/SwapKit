@@ -9,9 +9,9 @@ import {
   ensureEVMApiKeys,
   getRPCUrl,
   setRequestClientConfig,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
+import type { UTXOBuildTxParams } from "@internal/toolbox-utxo";
 import type { DepositParam, TransferParams } from "@swapkit/toolbox-cosmos";
-import type { UTXOBuildTxParams } from "@swapkit/toolbox-utxo";
 
 import type { LEDGER_SUPPORTED_CHAINS } from "./helpers/index";
 import { getLedgerAddress, getLedgerClient } from "./helpers/index";
@@ -74,7 +74,7 @@ const getToolbox = async ({
     case Chain.Dash:
     case Chain.Dogecoin:
     case Chain.Litecoin: {
-      const { getToolboxByChain } = await import("@swapkit/toolbox-utxo");
+      const { getToolboxByChain } = await import("@internal/toolbox-utxo");
       const params = {
         apiClient: apis[chain],
         apiKey: blockchairApiKey,
@@ -111,7 +111,7 @@ const getToolbox = async ({
     case Chain.BinanceSmartChain:
     case Chain.Base: {
       const keys = ensureEVMApiKeys({ chain, covalentApiKey, ethplorerApiKey });
-      const { getToolboxByChain, getProvider } = await import("@swapkit/toolbox-evm");
+      const { getToolboxByChain, getProvider } = await import("@internal/toolbox-evm");
       const signer = await getLedgerClient({ chain, derivationPath });
       const address = await getLedgerAddress({ chain, ledgerClient: signer });
       const provider = getProvider(chain, rpcUrl);

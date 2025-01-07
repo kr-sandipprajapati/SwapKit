@@ -6,7 +6,7 @@ import {
   ChainId,
   DerivationPath,
   SwapKitNumber,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 
 import { CosmosClient } from "../cosmosClient";
 

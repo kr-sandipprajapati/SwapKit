@@ -1,4 +1,4 @@
-import { ChainToRPC, type EVMChain } from "@swapkit/helpers";
+import { ChainToRPC, type EVMChain } from "@internal/helpers";
 import { JsonRpcProvider } from "ethers";
 
 export const getProvider = (chain: EVMChain, customUrl?: string) => {

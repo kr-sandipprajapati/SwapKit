@@ -1,6 +1,4 @@
 import * as secp256k1 from "@bitcoinerlab/secp256k1";
-import { HDKey } from "@scure/bip32";
-import { mnemonicToSeedSync } from "@scure/bip39";
 import {
   AssetValue,
   BaseDecimal,
@@ -8,7 +6,9 @@ import {
   FeeOption,
   SwapKitNumber,
   type UTXOChain,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
+import { HDKey } from "@scure/bip32";
+import { mnemonicToSeedSync } from "@scure/bip39";
 import { Psbt, address as btcLibAddress, initEccLib, payments } from "bitcoinjs-lib";
 import { ECPairFactory, type ECPairInterface } from "ecpair";
 

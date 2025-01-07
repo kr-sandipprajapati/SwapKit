@@ -5,14 +5,14 @@ import {
   FeeOption,
   type UTXOChain,
   derivationPathToString,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import type {
   BCHToolbox,
   BaseUTXOToolbox,
   Psbt,
   UTXOToolbox,
   UTXOTransferParams,
-} from "@swapkit/toolbox-utxo";
+} from "@internal/toolbox-utxo";
 
 import { ChainToKeepKeyName, bip32ToAddressNList } from "../helpers/coins";
 
@@ -60,7 +60,7 @@ export const utxoWalletMethods = async ({
   }
 > => {
   if (!(apiKey || apiClient)) throw new Error("UTXO API key not found");
-  const { getToolboxByChain } = await import("@swapkit/toolbox-utxo");
+  const { getToolboxByChain } = await import("@internal/toolbox-utxo");
 
   const toolbox = getToolboxByChain(chain)({ apiClient, apiKey });
   const scriptType = [Chain.Bitcoin, Chain.Litecoin].includes(chain) ? "p2wpkh" : "p2pkh";

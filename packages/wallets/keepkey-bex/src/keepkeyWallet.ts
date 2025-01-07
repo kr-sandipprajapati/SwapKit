@@ -11,8 +11,8 @@ import {
   WalletOption,
   ensureEVMApiKeys,
   setRequestClientConfig,
-} from "@swapkit/helpers";
-import type { ARBToolbox, AVAXToolbox, BSCToolbox, Eip1193Provider } from "@swapkit/toolbox-evm";
+} from "@internal/helpers";
+import type { ARBToolbox, AVAXToolbox, BSCToolbox, Eip1193Provider } from "@internal/toolbox-evm";
 import {
   type WalletTxParams,
   cosmosTransfer,
@@ -85,7 +85,7 @@ async function getWalletMethodsForChain({
     case Chain.BitcoinCash:
     case Chain.Dogecoin:
     case Chain.Litecoin: {
-      const { getToolboxByChain } = await import("@swapkit/toolbox-utxo");
+      const { getToolboxByChain } = await import("@internal/toolbox-utxo");
       const toolbox = getToolboxByChain(chain)({ apiKey: blockchairApiKey });
 
       const getBalance = async () => {
@@ -113,7 +113,7 @@ async function getWalletMethodsForChain({
     case Chain.Optimism:
     case Chain.Polygon:
     case Chain.Avalanche: {
-      const { prepareNetworkSwitch, addEVMWalletNetwork } = await import("@swapkit/helpers");
+      const { prepareNetworkSwitch, addEVMWalletNetwork } = await import("@internal/helpers");
       const {
         getToolboxByChain,
         getBalance,
@@ -121,7 +121,7 @@ async function getWalletMethodsForChain({
         ethplorerApi,
         getProvider,
         BrowserProvider,
-      } = await import("@swapkit/toolbox-evm");
+      } = await import("@internal/toolbox-evm");
       const ethereumWindowProvider = getKEEPKEYProvider(chain) as Eip1193Provider;
 
       if (!ethereumWindowProvider) {

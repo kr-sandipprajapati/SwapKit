@@ -1,4 +1,3 @@
-import { swapkitApiEndpoints } from "@swapkit/api";
 import {
   AssetValue,
   type EVMWallets,
@@ -8,7 +7,8 @@ import {
   SwapKitError,
   type SwapKitPluginParams,
   type UTXOWallets,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
+import { swapkitApiEndpoints } from "@swapkit/api";
 import type { RequestSwapDepositAddressParams } from "./types";
 
 type SupportedChain = keyof (EVMWallets & SubstrateWallets & UTXOWallets & SolanaWallets);

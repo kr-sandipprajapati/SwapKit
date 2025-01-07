@@ -8,7 +8,6 @@ import {
 import { Secp256k1, Secp256k1Signature, stringToPath } from "@cosmjs/crypto";
 import type { OfflineDirectSigner } from "@cosmjs/proto-signing";
 import { type Account, makeMultisignedTxBytes } from "@cosmjs/stargate";
-import { base64 } from "@scure/base";
 import {
   type AssetValue,
   BaseDecimal,
@@ -19,7 +18,8 @@ import {
   RequestClient,
   SwapKitError,
   SwapKitNumber,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
+import { base64 } from "@scure/base";
 
 import { CosmosClient } from "../cosmosClient";
 import {

@@ -7,12 +7,12 @@ import {
   WalletOption,
   getDerivationPathFor,
   getEIP6963Wallets,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
 import type { FullWallet } from "@swapkit/sdk";
 import { decryptFromKeystore } from "@swapkit/wallet-keystore";
 import { useCallback, useState } from "react";
 
-import type { Eip1193Provider } from "@swapkit/toolbox-evm";
+import type { Eip1193Provider } from "@internal/toolbox-evm";
 import { BITGET_SUPPORTED_CHAINS } from "@swapkit/wallet-bitget";
 import { PHANTOM_SUPPORTED_CHAINS } from "@swapkit/wallet-phantom";
 import type { SwapKitClient } from "./swapKitClient";
@@ -23,7 +23,9 @@ type Props = {
   skClient?: SwapKitClient;
 };
 
-const walletOptions = Object.values(WalletOption).filter((o) => ![WalletOption.EXODUS].includes(o));
+const walletOptions = Object.values(WalletOption).filter(
+  (o) => ![WalletOption.EXODUS].includes(o)
+);
 
 const AllChainsSupported = [
   Chain.Arbitrum,
@@ -142,7 +144,12 @@ export const availableChainsByWallet = {
     Chain.Optimism,
     Chain.Polkadot,
   ],
-  [WalletOption.EXODUS]: [Chain.Ethereum, Chain.BinanceSmartChain, Chain.Polygon, Chain.Bitcoin],
+  [WalletOption.EXODUS]: [
+    Chain.Ethereum,
+    Chain.BinanceSmartChain,
+    Chain.Polygon,
+    Chain.Bitcoin,
+  ],
   [WalletOption.LEDGER_LIVE]: [],
   [WalletOption.RADIX_WALLET]: [Chain.Radix],
 };
@@ -171,7 +178,9 @@ export const WalletPicker = ({ skClient, setWallet, setPhrase }: Props) => {
           // @ts-ignore
           return skClient.connectKeplr(chains, option.toLowerCase());
         case WalletOption.KEEPKEY: {
-          const derivationPaths = chains.map((chain) => getDerivationPathFor({ chain, index: 0 }));
+          const derivationPaths = chains.map((chain) =>
+            getDerivationPathFor({ chain, index: 0 })
+          );
 
           await skClient.connectKeepkey?.(chains, derivationPaths);
           localStorage.setItem("keepkeyApiKey", "1234");
@@ -185,9 +194,14 @@ export const WalletPicker = ({ skClient, setWallet, setPhrase }: Props) => {
           if (!chain) return alert("chain is required");
 
           const connectMethod =
-            WalletOption.TREZOR === option ? skClient.connectTrezor : skClient.connectLedger;
+            WalletOption.TREZOR === option
+              ? skClient.connectTrezor
+              : skClient.connectLedger;
 
-          return connectMethod?.(chains, getDerivationPathFor({ chain, index: 0 }));
+          return connectMethod?.(
+            chains,
+            getDerivationPathFor({ chain, index: 0 })
+          );
         }
 
         case WalletOption.EXODUS:
@@ -216,7 +230,7 @@ export const WalletPicker = ({ skClient, setWallet, setPhrase }: Props) => {
           throw new Error(`Unsupported wallet option: ${option}`);
       }
     },
-    [chains, skClient],
+    [chains, skClient]
   );
 
   const handleKeystoreConnection = useCallback(
@@ -231,13 +245,16 @@ export const WalletPicker = ({ skClient, setWallet, setPhrase }: Props) => {
 
         if (!password) return alert("password is required");
         try {
-          const phrases = await decryptFromKeystore(JSON.parse(keystoreFile), password);
+          const phrases = await decryptFromKeystore(
+            JSON.parse(keystoreFile),
+            password
+          );
           setPhrase(phrases);
 
           await skClient.connectKeystore(chains, phrases);
 
           const walletDataArray = await Promise.all(
-            chains.map((chain) => skClient.getWalletWithBalance(chain, true)),
+            chains.map((chain) => skClient.getWalletWithBalance(chain, true))
           );
 
           setWallet(walletDataArray.filter(Boolean));
@@ -248,7 +265,7 @@ export const WalletPicker = ({ skClient, setWallet, setPhrase }: Props) => {
         }
       }, 500);
     },
-    [chains, setWallet, skClient, setPhrase],
+    [chains, setWallet, skClient, setPhrase]
   );
 
   const handleConnection = useCallback(
@@ -258,13 +275,13 @@ export const WalletPicker = ({ skClient, setWallet, setPhrase }: Props) => {
       await connectWallet(option, provider);
 
       const walletDataArray = await Promise.all(
-        chains.map((chain) => skClient.getWalletWithBalance(chain, true)),
+        chains.map((chain) => skClient.getWalletWithBalance(chain, true))
       );
 
       setWallet(walletDataArray.filter(Boolean));
       setLoading(false);
     },
-    [chains, connectWallet, setWallet, skClient],
+    [chains, connectWallet, setWallet, skClient]
   );
 
   const isWalletDisabled = useCallback(
@@ -272,10 +289,10 @@ export const WalletPicker = ({ skClient, setWallet, setPhrase }: Props) => {
       chains.length > 0
         ? !chains.every((chain) =>
             // @ts-ignore
-            availableChainsByWallet[wallet].includes(chain),
+            availableChainsByWallet[wallet].includes(chain)
           )
         : false,
-    [chains],
+    [chains]
   );
 
   const handleChainSelect = useCallback((chain: Chain) => {
@@ -283,12 +300,14 @@ export const WalletPicker = ({ skClient, setWallet, setPhrase }: Props) => {
       (prev) =>
         (prev.includes(chain as never)
           ? prev.filter((c) => c !== chain)
-          : [...prev, chain]) as never,
+          : [...prev, chain]) as never
     );
   }, []);
 
   const handleMultipleSelect = useCallback((e: any) => {
-    const selectedChains = Array.from(e.target.selectedOptions).map((o: any) => o.value);
+    const selectedChains = Array.from(e.target.selectedOptions).map(
+      (o: any) => o.value
+    );
 
     if (selectedChains.length > 1) {
       setChains(selectedChains as never);
@@ -317,7 +336,11 @@ export const WalletPicker = ({ skClient, setWallet, setPhrase }: Props) => {
             .sort()
             .map((chain) => (
               // biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
-              <option key={chain} onClick={() => handleChainSelect(chain)} value={chain}>
+              <option
+                key={chain}
+                onClick={() => handleChainSelect(chain)}
+                value={chain}
+              >
                 {chain}
               </option>
             ))}
@@ -358,7 +381,9 @@ export const WalletPicker = ({ skClient, setWallet, setPhrase }: Props) => {
         {eip6963Wallets.map((wallet) => (
           <button
             key={wallet.info.name}
-            onClick={() => handleConnection(WalletOption.EIP6963, wallet.provider)}
+            onClick={() =>
+              handleConnection(WalletOption.EIP6963, wallet.provider)
+            }
             type="button"
           >
             {wallet.info.name}

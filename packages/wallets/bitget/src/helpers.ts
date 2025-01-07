@@ -1,4 +1,3 @@
-import { PublicKey } from "@solana/web3.js";
 import {
   type AssetValue,
   Chain,
@@ -11,10 +10,11 @@ import {
   addEVMWalletNetwork,
   getRPCUrl,
   prepareNetworkSwitch,
-} from "@swapkit/helpers";
+} from "@internal/helpers";
+import type { Eip1193Provider } from "@internal/toolbox-evm";
+import type { Psbt, UTXOTransferParams } from "@internal/toolbox-utxo";
+import { PublicKey } from "@solana/web3.js";
 import type { TransferParams } from "@swapkit/toolbox-cosmos";
-import type { Eip1193Provider } from "@swapkit/toolbox-evm";
-import type { Psbt, UTXOTransferParams } from "@swapkit/toolbox-utxo";
 
 export function cosmosTransfer(rpcUrl?: string) {
   return async ({ from, recipient, assetValue, memo }: TransferParams) => {
@@ -81,7 +81,7 @@ export async function getWalletForChain({
 
       const wallet = bitget.ethereum;
 
-      const { getProvider } = await import("@swapkit/toolbox-evm");
+      const { getProvider } = await import("@internal/toolbox-evm");
 
       const evmWallet = await getWeb3WalletMethods({
         chain,
@@ -104,7 +104,7 @@ export async function getWalletForChain({
       }
       const { unisat: wallet } = bitget;
 
-      const { Psbt, BTCToolbox } = await import("@swapkit/toolbox-utxo");
+      const { Psbt, BTCToolbox } = await import("@internal/toolbox-utxo");
 
       const [address] = await wallet.requestAccounts();
       const apiClient = typeof api === "object" && "getConfirmedBalance" in api ? api : undefined;
@@ -203,7 +203,7 @@ export const getWeb3WalletMethods = async ({
   covalentApiKey?: string;
   ethplorerApiKey?: string;
 }) => {
-  const { getToolboxByChain, BrowserProvider } = await import("@swapkit/toolbox-evm");
+  const { getToolboxByChain, BrowserProvider } = await import("@internal/toolbox-evm");
   if (!ethereumWindowProvider) throw new SwapKitError("wallet_provider_not_found");
 
   if (

@@ -273,7 +273,9 @@ function connectTrezor({
 
     setRequestClientConfig({ apiKey: thorswapApiKey });
 
-    const { default: TrezorConnect } = await import("@trezor/connect-web");
+    // const { default: TrezorConnect } = await import("@trezor/connect-web");
+    const trezorConnect = await import("@trezor/connect-web");
+    const TrezorConnect = trezorConnect.default;
     const { success } = await TrezorConnect.getDeviceState();
 
     if (!success) {

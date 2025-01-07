@@ -32,5 +32,6 @@
   },
   "type": "module",
   "types": "./src/index.ts",
-  "version": "1.7.11"
+  "version": "1.7.11",
+  "private": true
 }

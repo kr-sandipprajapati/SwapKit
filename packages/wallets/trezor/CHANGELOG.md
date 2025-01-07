@@ -1,5 +1,11 @@
 # @knackroot/wallet-trezor
 
+## 0.0.2
+
+### Patch Changes
+
+- fix
+
 ## 1.2.19
 
 ### Patch Changes

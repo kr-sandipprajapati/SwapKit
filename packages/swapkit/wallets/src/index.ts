@@ -13,7 +13,7 @@ import { polkadotWallet } from "@swapkit/wallet-polkadotjs";
 import { radixWallet } from "@swapkit/wallet-radix";
 import { talismanWallet } from "@swapkit/wallet-talisman";
 import { walletconnectWallet } from "@swapkit/wallet-wc";
-import { trezorWallet } from "wallet-trezor";
+import { trezorWallet } from "@thortradekit/wallet-trezor";
 
 export const wallets = {
   ...bitgetWallet,

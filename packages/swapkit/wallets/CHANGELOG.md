@@ -20,7 +20,7 @@
   - @swapkit/wallet-polkadotjs@1.0.53
   - @swapkit/wallet-radix@1.2.27
   - @swapkit/wallet-talisman@1.3.18
-  - wallet-trezor@1.2.19
+  - @thortradekit/wallet-trezor@1.2.19
   - @swapkit/wallet-wc@1.5.14
 
 ## 2.0.6
@@ -100,7 +100,7 @@
   - @swapkit/wallet-polkadotjs@1.0.52
   - @swapkit/wallet-radix@1.2.26
   - @swapkit/wallet-talisman@1.3.17
-  - wallet-trezor@1.2.18
+  - @thortradekit/wallet-trezor@1.2.18
   - @swapkit/wallet-wc@1.5.10
 
 ## 2.0.1
@@ -122,7 +122,7 @@
   - @swapkit/wallet-okx@1.3.9
   - @swapkit/wallet-phantom@1.1.33
   - @swapkit/wallet-radix@1.2.25
-  - wallet-trezor@1.2.17
+  - @thortradekit/wallet-trezor@1.2.17
   - @swapkit/wallet-wc@1.5.9
 
 ## 2.0.0
@@ -148,7 +148,7 @@
   - @swapkit/wallet-polkadotjs@1.0.50
   - @swapkit/wallet-radix@1.2.24
   - @swapkit/wallet-talisman@1.3.15
-  - wallet-trezor@1.2.16
+  - @thortradekit/wallet-trezor@1.2.16
   - @swapkit/wallet-wc@1.5.8
 
 ## 1.2.38
@@ -169,7 +169,7 @@
   - @swapkit/wallet-polkadotjs@1.0.49
   - @swapkit/wallet-radix@1.2.23
   - @swapkit/wallet-talisman@1.3.14
-  - wallet-trezor@1.2.15
+  - @thortradekit/wallet-trezor@1.2.15
   - @swapkit/wallet-wc@1.5.7
   - @swapkit/wallet-xdefi@1.3.7
 
@@ -193,7 +193,7 @@
   - @swapkit/wallet-polkadotjs@1.0.48
   - @swapkit/wallet-radix@1.2.22
   - @swapkit/wallet-talisman@1.3.13
-  - wallet-trezor@1.2.14
+  - @thortradekit/wallet-trezor@1.2.14
 
 ## 1.2.36
 
@@ -213,7 +213,7 @@
   - @swapkit/wallet-polkadotjs@1.0.47
   - @swapkit/wallet-radix@1.2.21
   - @swapkit/wallet-talisman@1.3.12
-  - wallet-trezor@1.2.13
+  - @thortradekit/wallet-trezor@1.2.13
   - @swapkit/wallet-wc@1.5.5
   - @swapkit/wallet-xdefi@1.3.5
 
@@ -235,7 +235,7 @@
   - @swapkit/wallet-polkadotjs@1.0.46
   - @swapkit/wallet-radix@1.2.20
   - @swapkit/wallet-talisman@1.3.11
-  - wallet-trezor@1.2.12
+  - @thortradekit/wallet-trezor@1.2.12
   - @swapkit/wallet-wc@1.5.4
   - @swapkit/wallet-xdefi@1.3.4
 
@@ -257,7 +257,7 @@
   - @swapkit/wallet-polkadotjs@1.0.45
   - @swapkit/wallet-radix@1.2.19
   - @swapkit/wallet-talisman@1.3.10
-  - wallet-trezor@1.2.11
+  - @thortradekit/wallet-trezor@1.2.11
   - @swapkit/wallet-wc@1.5.3
   - @swapkit/wallet-xdefi@1.3.3
 
@@ -279,7 +279,7 @@
   - @swapkit/wallet-polkadotjs@1.0.44
   - @swapkit/wallet-radix@1.2.18
   - @swapkit/wallet-talisman@1.3.9
-  - wallet-trezor@1.2.10
+  - @thortradekit/wallet-trezor@1.2.10
   - @swapkit/wallet-wc@1.5.2
   - @swapkit/wallet-xdefi@1.3.2
 
@@ -301,7 +301,7 @@
   - @swapkit/wallet-polkadotjs@1.0.43
   - @swapkit/wallet-radix@1.2.17
   - @swapkit/wallet-talisman@1.3.8
-  - wallet-trezor@1.2.9
+  - @thortradekit/wallet-trezor@1.2.9
   - @swapkit/wallet-wc@1.5.1
   - @swapkit/wallet-xdefi@1.3.1
 
@@ -325,7 +325,7 @@
   - @swapkit/wallet-evm-extensions@1.1.20
   - @swapkit/wallet-exodus@1.2.26
   - @swapkit/wallet-radix@1.2.16
-  - wallet-trezor@1.2.8
+  - @thortradekit/wallet-trezor@1.2.8
 
 ## 1.2.30
 
@@ -345,7 +345,7 @@
   - @swapkit/wallet-polkadotjs@1.0.41
   - @swapkit/wallet-radix@1.2.15
   - @swapkit/wallet-talisman@1.3.6
-  - wallet-trezor@1.2.7
+  - @thortradekit/wallet-trezor@1.2.7
   - @swapkit/wallet-wc@1.4.7
   - @swapkit/wallet-xdefi@1.2.3
 
@@ -367,7 +367,7 @@
   - @swapkit/wallet-polkadotjs@1.0.40
   - @swapkit/wallet-radix@1.2.14
   - @swapkit/wallet-talisman@1.3.5
-  - wallet-trezor@1.2.6
+  - @thortradekit/wallet-trezor@1.2.6
   - @swapkit/wallet-wc@1.4.6
   - @swapkit/wallet-xdefi@1.2.2
 
@@ -408,7 +408,7 @@
   - @swapkit/wallet-polkadotjs@1.0.39
   - @swapkit/wallet-radix@1.2.13
   - @swapkit/wallet-talisman@1.3.4
-  - wallet-trezor@1.2.5
+  - @thortradekit/wallet-trezor@1.2.5
   - @swapkit/wallet-wc@1.4.5
 
 ## 1.2.25
@@ -426,7 +426,7 @@
   - @swapkit/wallet-okx@1.2.4
   - @swapkit/wallet-phantom@1.1.18
   - @swapkit/wallet-talisman@1.3.3
-  - wallet-trezor@1.2.4
+  - @thortradekit/wallet-trezor@1.2.4
   - @swapkit/wallet-wc@1.4.4
   - @swapkit/wallet-xdefi@1.1.30
 
@@ -438,7 +438,7 @@
   - @swapkit/wallet-ledger@1.4.3
   - @swapkit/wallet-xdefi@1.1.29
   - @swapkit/wallet-keepkey-bex@1.0.5
-  - wallet-trezor@1.2.3
+  - @thortradekit/wallet-trezor@1.2.3
   - @swapkit/wallet-keepkey@1.3.18
   - @swapkit/wallet-keplr@1.1.6
   - @swapkit/wallet-keystore@1.2.29
@@ -474,7 +474,7 @@
   - @swapkit/wallet-okx@1.2.2
   - @swapkit/wallet-phantom@1.1.17
   - @swapkit/wallet-talisman@1.3.2
-  - wallet-trezor@1.2.2
+  - @thortradekit/wallet-trezor@1.2.2
   - @swapkit/wallet-wc@1.4.2
   - @swapkit/wallet-xdefi@1.1.28
   - @swapkit/wallet-keplr@1.1.5
@@ -503,7 +503,7 @@
   - @swapkit/wallet-polkadotjs@1.0.37
   - @swapkit/wallet-radix@1.2.11
   - @swapkit/wallet-talisman@1.3.1
-  - wallet-trezor@1.2.1
+  - @thortradekit/wallet-trezor@1.2.1
   - @swapkit/wallet-wc@1.4.1
   - @swapkit/wallet-xdefi@1.1.27
 
@@ -515,7 +515,7 @@
   - @swapkit/wallet-ledger@1.4.0
   - @swapkit/wallet-okx@1.2.0
   - @swapkit/wallet-talisman@1.3.0
-  - wallet-trezor@1.2.0
+  - @thortradekit/wallet-trezor@1.2.0
   - @swapkit/wallet-wc@1.4.0
   - @swapkit/wallet-phantom@1.1.15
   - @swapkit/wallet-coinbase@1.1.18
@@ -554,7 +554,7 @@
   - @swapkit/wallet-polkadotjs@1.0.35
   - @swapkit/wallet-radix@1.2.9
   - @swapkit/wallet-talisman@1.2.16
-  - wallet-trezor@1.1.5
+  - @thortradekit/wallet-trezor@1.1.5
   - @swapkit/wallet-wc@1.3.14
   - @swapkit/wallet-xdefi@1.1.24
 
@@ -575,7 +575,7 @@
   - @swapkit/wallet-polkadotjs@1.0.34
   - @swapkit/wallet-radix@1.2.8
   - @swapkit/wallet-talisman@1.2.15
-  - wallet-trezor@1.1.4
+  - @thortradekit/wallet-trezor@1.1.4
   - @swapkit/wallet-wc@1.3.13
   - @swapkit/wallet-xdefi@1.1.23
 
@@ -596,7 +596,7 @@
   - @swapkit/wallet-polkadotjs@1.0.33
   - @swapkit/wallet-radix@1.2.7
   - @swapkit/wallet-talisman@1.2.14
-  - wallet-trezor@1.1.3
+  - @thortradekit/wallet-trezor@1.1.3
   - @swapkit/wallet-wc@1.3.12
   - @swapkit/wallet-xdefi@1.1.22
 
@@ -651,7 +651,7 @@
   - @swapkit/wallet-polkadotjs@1.0.32
   - @swapkit/wallet-radix@1.2.6
   - @swapkit/wallet-talisman@1.2.13
-  - wallet-trezor@1.1.2
+  - @thortradekit/wallet-trezor@1.1.2
   - @swapkit/wallet-wc@1.3.9
 
 ## 1.2.10
@@ -680,7 +680,7 @@
   - @swapkit/wallet-okx@1.1.16
   - @swapkit/wallet-phantom@1.1.7
   - @swapkit/wallet-radix@1.2.5
-  - wallet-trezor@1.1.1
+  - @thortradekit/wallet-trezor@1.1.1
   - @swapkit/wallet-wc@1.3.8
   - @swapkit/wallet-xdefi@1.1.17
 
@@ -698,7 +698,7 @@
 ### Patch Changes
 
 - Updated dependencies [[`2008496`](https://github.com/thorswap/SwapKit/commit/2008496df4d52faa790a84e85b72752aa09eec17)]:
-  - wallet-trezor@1.1.0
+  - @thortradekit/wallet-trezor@1.1.0
   - @swapkit/wallet-coinbase@1.1.12
   - @swapkit/wallet-evm-extensions@1.1.7
   - @swapkit/wallet-exodus@1.2.13
@@ -731,7 +731,7 @@
   - @swapkit/wallet-polkadotjs@1.0.29
   - @swapkit/wallet-radix@1.2.3
   - @swapkit/wallet-talisman@1.2.10
-  - wallet-trezor@1.0.33
+  - @thortradekit/wallet-trezor@1.0.33
   - @swapkit/wallet-wc@1.3.6
   - @swapkit/wallet-xdefi@1.1.14
 
@@ -752,7 +752,7 @@
   - @swapkit/wallet-polkadotjs@1.0.28
   - @swapkit/wallet-radix@1.2.2
   - @swapkit/wallet-talisman@1.2.9
-  - wallet-trezor@1.0.32
+  - @thortradekit/wallet-trezor@1.0.32
   - @swapkit/wallet-wc@1.3.5
   - @swapkit/wallet-xdefi@1.1.13
 
@@ -794,7 +794,7 @@
   - @swapkit/wallet-polkadotjs@1.0.27
   - @swapkit/wallet-radix@1.2.1
   - @swapkit/wallet-talisman@1.2.8
-  - wallet-trezor@1.0.31
+  - @thortradekit/wallet-trezor@1.0.31
   - @swapkit/wallet-wc@1.3.3
   - @swapkit/wallet-xdefi@1.1.11
 
@@ -815,7 +815,7 @@
   - @swapkit/wallet-phantom@1.1.1
   - @swapkit/wallet-polkadotjs@1.0.26
   - @swapkit/wallet-talisman@1.2.7
-  - wallet-trezor@1.0.30
+  - @thortradekit/wallet-trezor@1.0.30
   - @swapkit/wallet-wc@1.3.2
   - @swapkit/wallet-xdefi@1.1.10
 
@@ -839,7 +839,7 @@
   - @swapkit/wallet-phantom@1.1.0
   - @swapkit/wallet-exodus@1.2.7
   - @swapkit/wallet-ledger@1.3.1
-  - wallet-trezor@1.0.29
+  - @thortradekit/wallet-trezor@1.0.29
   - @swapkit/wallet-keplr@1.0.33
   - @swapkit/wallet-radix@1.1.0
   - @swapkit/wallet-xdefi@1.1.9
@@ -863,7 +863,7 @@
   - @swapkit/wallet-phantom@1.0.28
   - @swapkit/wallet-polkadotjs@1.0.24
   - @swapkit/wallet-talisman@1.2.5
-  - wallet-trezor@1.0.28
+  - @thortradekit/wallet-trezor@1.0.28
 
 ## 1.1.5
 
@@ -882,7 +882,7 @@
   - @swapkit/wallet-phantom@1.0.27
   - @swapkit/wallet-polkadotjs@1.0.23
   - @swapkit/wallet-talisman@1.2.4
-  - wallet-trezor@1.0.27
+  - @thortradekit/wallet-trezor@1.0.27
 
 ## 1.1.4
 
@@ -901,7 +901,7 @@
   - @swapkit/wallet-phantom@1.0.26
   - @swapkit/wallet-polkadotjs@1.0.22
   - @swapkit/wallet-talisman@1.2.3
-  - wallet-trezor@1.0.26
+  - @thortradekit/wallet-trezor@1.0.26
 
 ## 1.1.3
 
@@ -918,7 +918,7 @@
   - @swapkit/wallet-phantom@1.0.25
   - @swapkit/wallet-polkadotjs@1.0.21
   - @swapkit/wallet-talisman@1.2.2
-  - wallet-trezor@1.0.25
+  - @thortradekit/wallet-trezor@1.0.25
   - @swapkit/wallet-wc@1.1.5
   - @swapkit/wallet-xdefi@1.1.5
 
@@ -951,7 +951,7 @@
   - @swapkit/wallet-phantom@1.0.24
   - @swapkit/wallet-polkadotjs@1.0.20
   - @swapkit/wallet-talisman@1.2.1
-  - wallet-trezor@1.0.24
+  - @thortradekit/wallet-trezor@1.0.24
   - @swapkit/wallet-wc@1.1.3
 
 ## 1.1.0
@@ -980,7 +980,7 @@
   - @swapkit/wallet-phantom@1.0.23
   - @swapkit/wallet-polkadotjs@1.0.19
   - @swapkit/wallet-talisman@1.1.18
-  - wallet-trezor@1.0.23
+  - @thortradekit/wallet-trezor@1.0.23
   - @swapkit/wallet-wc@1.1.2
   - @swapkit/wallet-xdefi@1.1.2
 
@@ -1014,7 +1014,7 @@
   - @swapkit/wallet-ledger@1.0.25
   - @swapkit/wallet-evm-extensions@1.0.22
   - @swapkit/wallet-phantom@1.0.22
-  - wallet-trezor@1.0.22
+  - @thortradekit/wallet-trezor@1.0.22
 
 ## 1.0.24
 
@@ -1033,7 +1033,7 @@
   - @swapkit/wallet-phantom@1.0.21
   - @swapkit/wallet-polkadotjs@1.0.17
   - @swapkit/wallet-talisman@1.1.16
-  - wallet-trezor@1.0.21
+  - @thortradekit/wallet-trezor@1.0.21
 
 ## 1.0.23
 
@@ -1050,7 +1050,7 @@
   - @swapkit/wallet-phantom@1.0.20
   - @swapkit/wallet-polkadotjs@1.0.16
   - @swapkit/wallet-talisman@1.1.15
-  - wallet-trezor@1.0.20
+  - @thortradekit/wallet-trezor@1.0.20
   - @swapkit/wallet-wc@1.0.22
   - @swapkit/wallet-xdefi@1.0.22
 
@@ -1069,7 +1069,7 @@
   - @swapkit/wallet-phantom@1.0.19
   - @swapkit/wallet-polkadotjs@1.0.15
   - @swapkit/wallet-talisman@1.1.14
-  - wallet-trezor@1.0.19
+  - @thortradekit/wallet-trezor@1.0.19
   - @swapkit/wallet-wc@1.0.21
   - @swapkit/wallet-xdefi@1.0.21
 
@@ -1088,7 +1088,7 @@
   - @swapkit/wallet-phantom@1.0.18
   - @swapkit/wallet-polkadotjs@1.0.14
   - @swapkit/wallet-talisman@1.1.13
-  - wallet-trezor@1.0.18
+  - @thortradekit/wallet-trezor@1.0.18
   - @swapkit/wallet-wc@1.0.20
   - @swapkit/wallet-xdefi@1.0.20
 
@@ -1107,7 +1107,7 @@
   - @swapkit/wallet-phantom@1.0.17
   - @swapkit/wallet-polkadotjs@1.0.13
   - @swapkit/wallet-talisman@1.1.12
-  - wallet-trezor@1.0.17
+  - @thortradekit/wallet-trezor@1.0.17
   - @swapkit/wallet-wc@1.0.19
   - @swapkit/wallet-xdefi@1.0.19
 
@@ -1121,7 +1121,7 @@
   - @swapkit/wallet-talisman@1.1.11
   - @swapkit/wallet-keepkey@1.0.18
   - @swapkit/wallet-ledger@1.0.19
-  - wallet-trezor@1.0.16
+  - @thortradekit/wallet-trezor@1.0.16
   - @swapkit/wallet-xdefi@1.0.18
   - @swapkit/wallet-wc@1.0.18
   - @swapkit/wallet-coinbase@1.0.16
@@ -1145,7 +1145,7 @@
   - @swapkit/wallet-phantom@1.0.15
   - @swapkit/wallet-polkadotjs@1.0.11
   - @swapkit/wallet-talisman@1.1.10
-  - wallet-trezor@1.0.15
+  - @thortradekit/wallet-trezor@1.0.15
   - @swapkit/wallet-wc@1.0.17
   - @swapkit/wallet-xdefi@1.0.17
 
@@ -1164,7 +1164,7 @@
   - @swapkit/wallet-phantom@1.0.14
   - @swapkit/wallet-polkadotjs@1.0.10
   - @swapkit/wallet-talisman@1.1.9
-  - wallet-trezor@1.0.14
+  - @thortradekit/wallet-trezor@1.0.14
   - @swapkit/wallet-wc@1.0.16
   - @swapkit/wallet-xdefi@1.0.16
 
@@ -1196,7 +1196,7 @@
   - @swapkit/wallet-phantom@1.0.13
   - @swapkit/wallet-polkadotjs@1.0.9
   - @swapkit/wallet-talisman@1.1.8
-  - wallet-trezor@1.0.13
+  - @thortradekit/wallet-trezor@1.0.13
   - @swapkit/wallet-wc@1.0.14
   - @swapkit/wallet-xdefi@1.0.14
 
@@ -1217,7 +1217,7 @@
   - @swapkit/wallet-phantom@1.0.12
   - @swapkit/wallet-polkadotjs@1.0.8
   - @swapkit/wallet-talisman@1.1.7
-  - wallet-trezor@1.0.12
+  - @thortradekit/wallet-trezor@1.0.12
 
 ## 1.0.13
 
@@ -1234,7 +1234,7 @@
   - @swapkit/wallet-phantom@1.0.11
   - @swapkit/wallet-polkadotjs@1.0.7
   - @swapkit/wallet-talisman@1.1.6
-  - wallet-trezor@1.0.11
+  - @thortradekit/wallet-trezor@1.0.11
   - @swapkit/wallet-wc@1.0.12
   - @swapkit/wallet-xdefi@1.0.12
 
@@ -1255,7 +1255,7 @@
   - @swapkit/wallet-phantom@1.0.10
   - @swapkit/wallet-polkadotjs@1.0.6
   - @swapkit/wallet-talisman@1.1.5
-  - wallet-trezor@1.0.10
+  - @thortradekit/wallet-trezor@1.0.10
 
 ## 1.0.11
 
@@ -1285,7 +1285,7 @@
   - @swapkit/wallet-phantom@1.0.9
   - @swapkit/wallet-polkadotjs@1.0.5
   - @swapkit/wallet-talisman@1.1.4
-  - wallet-trezor@1.0.9
+  - @thortradekit/wallet-trezor@1.0.9
   - @swapkit/wallet-wc@1.0.9
   - @swapkit/wallet-xdefi@1.0.9
 
@@ -1304,7 +1304,7 @@
   - @swapkit/wallet-phantom@1.0.8
   - @swapkit/wallet-polkadotjs@1.0.4
   - @swapkit/wallet-talisman@1.1.3
-  - wallet-trezor@1.0.8
+  - @thortradekit/wallet-trezor@1.0.8
   - @swapkit/wallet-wc@1.0.8
   - @swapkit/wallet-xdefi@1.0.8
 
@@ -1325,7 +1325,7 @@
   - @swapkit/wallet-phantom@1.0.7
   - @swapkit/wallet-polkadotjs@1.0.3
   - @swapkit/wallet-talisman@1.1.2
-  - wallet-trezor@1.0.7
+  - @thortradekit/wallet-trezor@1.0.7
   - @swapkit/wallet-wc@1.0.7
   - @swapkit/wallet-xdefi@1.0.7
 
@@ -1348,7 +1348,7 @@
   - @swapkit/wallet-phantom@1.0.6
   - @swapkit/wallet-polkadotjs@1.0.2
   - @swapkit/wallet-talisman@1.1.1
-  - wallet-trezor@1.0.6
+  - @thortradekit/wallet-trezor@1.0.6
   - @swapkit/wallet-wc@1.0.6
   - @swapkit/wallet-xdefi@1.0.6
 
@@ -1367,7 +1367,7 @@
   - @swapkit/wallet-keplr@1.0.5
   - @swapkit/wallet-okx@1.0.5
   - @swapkit/wallet-phantom@1.0.5
-  - wallet-trezor@1.0.5
+  - @thortradekit/wallet-trezor@1.0.5
   - @swapkit/wallet-wc@1.0.5
   - @swapkit/wallet-xdefi@1.0.5
 
@@ -1385,7 +1385,7 @@
   - @swapkit/wallet-ledger@1.0.5
   - @swapkit/wallet-okx@1.0.4
   - @swapkit/wallet-phantom@1.0.4
-  - wallet-trezor@1.0.4
+  - @thortradekit/wallet-trezor@1.0.4
   - @swapkit/wallet-wc@1.0.4
   - @swapkit/wallet-xdefi@1.0.4
 
@@ -1410,7 +1410,7 @@
   - @swapkit/wallet-okx@1.0.3
   - @swapkit/wallet-phantom@1.0.3
   - @swapkit/wallet-talisman@1.0.3
-  - wallet-trezor@1.0.3
+  - @thortradekit/wallet-trezor@1.0.3
   - @swapkit/wallet-wc@1.0.3
   - @swapkit/wallet-xdefi@1.0.3
 
@@ -1428,7 +1428,7 @@
   - @swapkit/wallet-okx@1.0.2
   - @swapkit/wallet-phantom@1.0.2
   - @swapkit/wallet-talisman@1.0.2
-  - wallet-trezor@1.0.2
+  - @thortradekit/wallet-trezor@1.0.2
   - @swapkit/wallet-wc@1.0.2
   - @swapkit/wallet-xdefi@1.0.2
 
@@ -1448,7 +1448,7 @@
   - @swapkit/wallet-okx@1.0.1
   - @swapkit/wallet-phantom@1.0.1
   - @swapkit/wallet-talisman@1.0.1
-  - wallet-trezor@1.0.1
+  - @thortradekit/wallet-trezor@1.0.1
   - @swapkit/wallet-wc@1.0.1
   - @swapkit/wallet-xdefi@1.0.1
 
@@ -1476,7 +1476,7 @@
   - @swapkit/wallet-keepkey@1.0.0
   - @swapkit/wallet-phantom@1.0.0
   - @swapkit/wallet-ledger@1.0.0
-  - wallet-trezor@1.0.0
+  - @thortradekit/wallet-trezor@1.0.0
   - @swapkit/wallet-keplr@1.0.0
   - @swapkit/wallet-xdefi@1.0.0
   - @swapkit/wallet-okx@1.0.0
@@ -1498,7 +1498,7 @@
   - @swapkit/wallet-keepkey@1.0.0-rc.86
   - @swapkit/wallet-phantom@1.0.0-rc.7
   - @swapkit/wallet-ledger@1.0.0-rc.171
-  - wallet-trezor@1.0.0-rc.140
+  - @thortradekit/wallet-trezor@1.0.0-rc.140
   - @swapkit/wallet-keplr@1.0.0-rc.150
   - @swapkit/wallet-xdefi@1.0.0-rc.167
   - @swapkit/wallet-okx@1.0.0-rc.164
@@ -1518,7 +1518,7 @@
   - @swapkit/wallet-keepkey@1.0.0-rc.85
   - @swapkit/wallet-phantom@1.0.0-rc.6
   - @swapkit/wallet-ledger@1.0.0-rc.170
-  - wallet-trezor@1.0.0-rc.139
+  - @thortradekit/wallet-trezor@1.0.0-rc.139
   - @swapkit/wallet-keplr@1.0.0-rc.149
   - @swapkit/wallet-xdefi@1.0.0-rc.166
   - @swapkit/wallet-okx@1.0.0-rc.163
@@ -1538,7 +1538,7 @@
   - @swapkit/wallet-keepkey@1.0.0-rc.84
   - @swapkit/wallet-phantom@1.0.0-rc.5
   - @swapkit/wallet-ledger@1.0.0-rc.169
-  - wallet-trezor@1.0.0-rc.138
+  - @thortradekit/wallet-trezor@1.0.0-rc.138
   - @swapkit/wallet-keplr@1.0.0-rc.148
   - @swapkit/wallet-xdefi@1.0.0-rc.165
   - @swapkit/wallet-okx@1.0.0-rc.162
@@ -1558,7 +1558,7 @@
   - @swapkit/wallet-okx@1.0.0-rc.161
   - @swapkit/wallet-phantom@1.0.0-rc.4
   - @swapkit/wallet-talisman@1.0.0-rc.5
-  - wallet-trezor@1.0.0-rc.137
+  - @thortradekit/wallet-trezor@1.0.0-rc.137
   - @swapkit/wallet-wc@1.0.0-rc.151
   - @swapkit/wallet-xdefi@1.0.0-rc.164
 
@@ -1576,7 +1576,7 @@
   - @swapkit/wallet-keepkey@1.0.0-rc.82
   - @swapkit/wallet-phantom@1.0.0-rc.3
   - @swapkit/wallet-ledger@1.0.0-rc.167
-  - wallet-trezor@1.0.0-rc.136
+  - @thortradekit/wallet-trezor@1.0.0-rc.136
   - @swapkit/wallet-keplr@1.0.0-rc.146
   - @swapkit/wallet-xdefi@1.0.0-rc.163
   - @swapkit/wallet-okx@1.0.0-rc.160
@@ -1596,7 +1596,7 @@
   - @swapkit/wallet-keepkey@1.0.0-rc.81
   - @swapkit/wallet-phantom@1.0.0-rc.2
   - @swapkit/wallet-ledger@1.0.0-rc.166
-  - wallet-trezor@1.0.0-rc.135
+  - @thortradekit/wallet-trezor@1.0.0-rc.135
   - @swapkit/wallet-keplr@1.0.0-rc.145
   - @swapkit/wallet-xdefi@1.0.0-rc.162
   - @swapkit/wallet-okx@1.0.0-rc.159
@@ -1616,7 +1616,7 @@
   - @swapkit/wallet-keepkey@1.0.0-rc.81
   - @swapkit/wallet-phantom@1.0.0-rc.2
   - @swapkit/wallet-ledger@1.0.0-rc.166
-  - wallet-trezor@1.0.0-rc.135
+  - @thortradekit/wallet-trezor@1.0.0-rc.135
   - @swapkit/wallet-keplr@1.0.0-rc.145
   - @swapkit/wallet-xdefi@1.0.0-rc.162
   - @swapkit/wallet-okx@1.0.0-rc.159

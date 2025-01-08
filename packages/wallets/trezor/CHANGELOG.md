@@ -1,4 +1,4 @@
-# wallet-trezor
+# @thortradekit/wallet-trezor
 
 ## 0.0.2
 

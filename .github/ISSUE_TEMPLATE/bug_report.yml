@@ -71,7 +71,7 @@ body:
         - label: "@swapkit/wallet-keystore"
         - label: "@swapkit/wallet-ledger"
         - label: "@swapkit/wallet-okx"
-        - label: "wallet-trezor"
+        - label: "@thortradekit/wallet-trezor"
         - label: "@swapkit/wallet-wc"
         - label: "@swapkit/wallet-ctrl"
 

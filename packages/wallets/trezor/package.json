@@ -13,7 +13,7 @@
   "homepage": "https://github.com/kr-sandipprajapati/SwapKit",
   "license": "Apache-2.0",
   "main": "./dist/index.js",
-  "name": "@knackroot/wallet-trezor",
+  "name": "@thortradekit/wallet-trezor",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kr-sandipprajapati/SwapKit.git"
@@ -26,7 +26,10 @@
     "test:coverage": "bun test --coverage",
     "type-check": "tsc --noEmit"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
   "types": "./src/index.ts",
-  "version": "0.0.0-beta.1"
+  "version": "0.0.2-beta.1"
 }

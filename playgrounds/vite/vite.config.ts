@@ -66,7 +66,7 @@ export default defineConfig({
       "@swapkit/wallet-phantom": resolve("../../packages/wallets/phantom/src"),
       "@swapkit/wallet-radix": resolve("../../packages/wallets/radix/src"),
       "@swapkit/wallet-talisman": resolve("../../packages/wallets/talisman/src"),
-      "@knackroot/wallet-trezor": resolve("../../packages/wallets/trezor/src"),
+      "@thortradekit/wallet-trezor": resolve("../../packages/wallets/trezor/src"),
       "@swapkit/wallet-wc": resolve("../../packages/wallets/wc/src"),
       "@swapkit/wallet-ctrl": resolve("../../packages/wallets/ctrl/src"),
 

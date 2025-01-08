@@ -114,8 +114,9 @@ async function getToolbox({
       const toolbox = getToolboxByChain(chain)(params);
 
       const getAddress = async (path: DerivationPathArray = derivationPath) => {
-        const Trezor = await import("@trezor/connect-web");
-        const TrezorConnect = Trezor.default ?? Trezor;
+        const ConnectWeb = (await import("@trezor/connect-web")).default;
+        // @ts-ignore
+        const TrezorConnect = ConnectWeb?.default ?? ConnectWeb;
 
         const { success, payload } = await TrezorConnect.getAddress({
           path: derivationPathToString(path),
@@ -140,7 +141,9 @@ async function getToolbox({
       const address = await getAddress();
 
       const signTransaction = async (psbt: Psbt, inputs: UTXOType[], memo = "") => {
-        const { default: TrezorConnect } = await import("@trezor/connect-web");
+        const ConnectWeb = (await import("@trezor/connect-web")).default;
+        // @ts-ignore
+        const TrezorConnect = ConnectWeb?.default ?? ConnectWeb;
         const address_n = derivationPath.map((pathElement, index) =>
           index < 3 ? ((pathElement as number) | 0x80000000) >>> 0 : (pathElement as number),
         );
@@ -273,7 +276,9 @@ function connectTrezor({
 
     setRequestClientConfig({ apiKey: thorswapApiKey });
 
-    const { default: TrezorConnect } = await import("@trezor/connect-web");
+    const ConnectWeb = (await import("@trezor/connect-web")).default;
+    // @ts-ignore
+    const TrezorConnect = ConnectWeb?.default ?? ConnectWeb;
     const { success } = await TrezorConnect.getDeviceState();
 
     if (!success) {

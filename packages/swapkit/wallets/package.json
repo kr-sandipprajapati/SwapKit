@@ -1,7 +1,6 @@
 {
   "description": "SwapKit - Wallets",
   "dependencies": {
-    "@knackroot/wallet-trezor": "workspace:*",
     "@swapkit/wallet-bitget": "workspace:*",
     "@swapkit/wallet-coinbase": "workspace:*",
     "@swapkit/wallet-ctrl": "workspace:*",
@@ -17,7 +16,9 @@
     "@swapkit/wallet-polkadotjs": "workspace:*",
     "@swapkit/wallet-radix": "workspace:*",
     "@swapkit/wallet-talisman": "workspace:*",
-    "@swapkit/wallet-wc": "workspace:*"
+    "@swapkit/wallet-wc": "workspace:*",
+    "@thortradekit/wallet-trezor": "workspace:*"
+
   },
   "files": [
     "src/",
@@ -27,6 +28,7 @@
   "license": "Apache-2.0",
   "main": "./dist/index.js",
   "name": "@swapkit/wallets",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thorswap/SwapKit.git"

@@ -16,9 +16,11 @@
     "@ledgerhq/wallet-api-client": "1.5.10",
     "@scure/base": "1.1.7",
     "@swapkit/toolbox-cosmos": "workspace:*",
-    "@types/ripemd160": "2.0.3",
     "cosmjs-types": "0.9.0",
     "ripemd160": "2.0.2"
+  },
+  "devDependencies": {
+    "@types/ripemd160": "2.0.3"
   },
   "description": "SwapKit Wallet - Ledger",
   "files": [
@@ -29,6 +31,7 @@
   "license": "Apache-2.0",
   "main": "./dist/index.js",
   "name": "@swapkit/wallet-ledger",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thorswap/SwapKit.git"

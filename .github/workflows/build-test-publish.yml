@@ -1,7 +1,6 @@
 name: Run build, test & publish
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  INFURA_API_KEY: ${{ secrets.INFURA_API_KEY }}
   NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
 
 on:
@@ -83,31 +82,3 @@ jobs:
           version: bun version-bump
           publish: bun publish-packages --tag nightly
           setupGitUser: false
-
-  deploy-playground:
-    if: contains(github.ref_name, 'develop')
-    needs: [build-lint-test]
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    steps:
-      - uses: actions/checkout@v4
-      - name: Setup Repo
-        uses: ./tools/github/setup-repo
-      - name: Setup Pages
-        uses: actions/configure-pages@v5.0.0
-
-      - name: Build playground
-        run: |
-          bun run build
-          bun playground:vite build-playground
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3.0.1
-        with:
-          path: "./playgrounds/vite/dist"
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4.0.5

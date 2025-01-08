@@ -24,8 +24,7 @@ function getPackagePrefix(type: string) {
 for (const file of onlyPackageJson) {
   const { version } = await import(`../packages/${file}`);
   const [type, name] = file.split("/");
-
-  const packageName = `@swapkit/${getPackagePrefix(type)}${name}`;
+  const packageName = `@thortradekit/${getPackagePrefix(type)}${name}`;
 
   versions[packageName] = version;
 }
@@ -36,7 +35,7 @@ for (const file of onlyPackageJson) {
   const content = await packageJson.text();
 
   const replacedContent = content.replace(
-    /"(@swapkit\/[^"]+)": "[^"]+"/g,
+    /"(@thortradekit\/[^"]+)": "[^"]+"/g,
     (_, p1) => `"${p1}": "${versions[p1]}"`,
   );
 
